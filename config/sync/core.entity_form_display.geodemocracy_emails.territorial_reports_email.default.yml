@@ -1,0 +1,60 @@
+uuid: 89e874a3-1541-42c1-87f5-7e2766b9de08
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.geodemocracy_emails.territorial_reports_email.field_email_recipients
+    - geodemocracy_emails.geodemocracy_emails_type.territorial_reports_email
+  module:
+    - text
+id: geodemocracy_emails.territorial_reports_email.default
+targetEntityType: geodemocracy_emails
+bundle: territorial_reports_email
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_email_recipients:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

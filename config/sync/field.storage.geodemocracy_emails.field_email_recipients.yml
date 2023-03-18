@@ -1,0 +1,27 @@
+uuid: 0edb9e56-908f-44a5-b764-1d53fe27ff14
+langcode: it
+status: true
+dependencies:
+  module:
+    - geodemocracy_emails
+    - options
+id: geodemocracy_emails.field_email_recipients
+field_name: field_email_recipients
+entity_type: geodemocracy_emails
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Polizia Municipale'
+      label: 'Polizia Municipale'
+    -
+      value: 'Corriere del Giorno'
+      label: 'Corriere del Giorno'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
