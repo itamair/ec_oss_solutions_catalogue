@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * @file
+ * Provides a geodemocracy emails entity type.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\geodemocracy_emails\Entity\GeodemocracyEmails;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function geodemocracy_emails_theme() {
+  return [
+    'geodemocracy_emails' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for geodemocracy emails templates.
+ *
+ * Default template: geodemocracy-emails.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the geodemocracy emails information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_geodemocracy_emails(array &$variables) {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function geodemocracy_emails_user_cancel($edit, UserInterface $account, $method) {
+  switch ($method) {
+    case 'user_cancel_block_unpublish':
+      // Unpublish geodemocracy emailss.
+      $storage = \Drupal::entityTypeManager()->getStorage('geodemocracy_emails');
+      $geodemocracy_emails_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->condition('status', 1)
+        ->execute();
+      foreach ($storage->loadMultiple($geodemocracy_emails_ids) as $geodemocracy_emails) {
+        $geodemocracy_emails->set('status', FALSE);
+        $geodemocracy_emails->save();
+      }
+      break;
+
+    case 'user_cancel_reassign':
+      // Anonymize geodemocracy emailss.
+      $storage = \Drupal::entityTypeManager()->getStorage('geodemocracy_emails');
+      $geodemocracy_emails_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->execute();
+      foreach ($storage->loadMultiple($geodemocracy_emails_ids) as $geodemocracy_emails) {
+        $geodemocracy_emails->setOwnerId(0);
+        $geodemocracy_emails->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function geodemocracy_emails_user_predelete(UserInterface $account) {
+  // Delete geodemocracy emails.
+  $storage = \Drupal::entityTypeManager()->getStorage('geodemocracy_emails');
+  $geodemocracy_emails_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->execute();
+  $geodemocracy_emailss = $storage->loadMultiple($geodemocracy_emails_ids);
+  $storage->delete($geodemocracy_emailss);
+}

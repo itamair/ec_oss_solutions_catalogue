@@ -1,0 +1,5 @@
+name: Geodemocracy Emails
+type: module
+description: A simple scaffold of Geodemocracy Emails entity type definition.
+package: Geodemocracy
+core_version_requirement: ^9.2

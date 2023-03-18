@@ -1,0 +1,12 @@
+geodemocracy_emails.geodemocracy_emails_type.*:
+  type: config_entity
+  label: 'Geodemocracy emails type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

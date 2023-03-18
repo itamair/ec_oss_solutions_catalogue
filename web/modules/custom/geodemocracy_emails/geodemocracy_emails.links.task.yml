@@ -1,0 +1,26 @@
+entity.geodemocracy_emails.view:
+  title: 'View'
+  route_name: entity.geodemocracy_emails.canonical
+  base_route: entity.geodemocracy_emails.canonical
+entity.geodemocracy_emails.edit_form:
+  title: 'Edit'
+  route_name: entity.geodemocracy_emails.edit_form
+  base_route: entity.geodemocracy_emails.canonical
+entity.geodemocracy_emails.delete_form:
+  title: 'Delete'
+  route_name: entity.geodemocracy_emails.delete_form
+  base_route: entity.geodemocracy_emails.canonical
+  weight: 10
+entity.geodemocracy_emails.collection:
+  title: 'Geodemocracy emailss'
+  route_name: entity.geodemocracy_emails.collection
+  base_route: system.admin_content
+  weight: 10
+entity.geodemocracy_emails_type.edit_form:
+  title: 'Edit'
+  route_name: entity.geodemocracy_emails_type.edit_form
+  base_route: entity.geodemocracy_emails_type.edit_form
+entity.geodemocracy_emails_type.collection:
+  title: 'List'
+  route_name: entity.geodemocracy_emails_type.collection
+  base_route: entity.geodemocracy_emails_type.collection

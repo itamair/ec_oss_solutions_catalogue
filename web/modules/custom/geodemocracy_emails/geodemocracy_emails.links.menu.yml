@@ -1,0 +1,5 @@
+entity.geodemocracy_emails_type.collection:
+  title: 'Geodemocracy emails types'
+  description: 'Manage and CRUD actions on Geodemocracy emails type.'
+  parent: system.admin_structure
+  route_name: entity.geodemocracy_emails_type.collection
