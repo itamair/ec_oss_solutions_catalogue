@@ -1,6 +1,0 @@
-uuid: e913a09d-5477-4b09-845d-5018c9c8e9e1
-langcode: it
-status: true
-dependencies: {  }
-id: territorial_reports_email
-label: 'Territorial Reports Email'
