@@ -1,0 +1,6 @@
+publiccode_yml_repositories.settings_form:
+  title: 'publiccode_yml_repositories'
+  description: 'Configure publiccode_yml_repositories.'
+  parent: system.admin_config_system
+  route_name: publiccode_yml_repositories.settings_form
+  weight: 10

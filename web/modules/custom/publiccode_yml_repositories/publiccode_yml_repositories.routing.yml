@@ -1,0 +1,15 @@
+publiccode_yml_repositories.settings_form:
+  path: '/admin/config/system/publiccode-yml-repositories'
+  defaults:
+    _title: 'publiccode_yml_repositories settings'
+    _form: 'Drupal\publiccode_yml_repositories\Form\SettingsForm'
+  requirements:
+    _permission: 'administer publiccode_yml_repositories configuration'
+
+publiccode_yml_repositories.publiccodeyml_sources_list:
+  path: 'publiccodeyml_sources_list'
+  defaults:
+    _title: 'Pubblicode.Yml Sources List'
+    _controller: '\Drupal\publiccode_yml_repositories\Controller\PubliccodeSourcesController::build'
+  requirements:
+    _permission: 'access content'
