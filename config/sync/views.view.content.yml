@@ -379,7 +379,7 @@ display:
           settings:
             format: custom
             format_custom_false: 'Non pubblicato'
-            format_custom_true: Pubblicato
+            format_custom_true: Published
         changed:
           id: changed
           table: node_field_data
@@ -670,7 +670,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Pubblicato
+                title: Published
                 operator: '='
                 value: '1'
               2:

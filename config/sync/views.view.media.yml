@@ -234,7 +234,7 @@ display:
           entity_type: media
           entity_field: bundle
           plugin_id: field
-          label: Tipo
+          label: Type
           exclude: false
           alter:
             alter_text: false
@@ -410,7 +410,7 @@ display:
           settings:
             format: custom
             format_custom_false: 'Non pubblicato'
-            format_custom_true: Pubblicato
+            format_custom_true: Published
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -621,7 +621,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tutte -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -784,7 +784,7 @@ display:
           exposed: true
           expose:
             operator_id: bundle_op
-            label: Tipo
+            label: Type
             description: ''
             use_operator: false
             operator: bundle_op
@@ -852,7 +852,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Pubblicato
+                title: Published
                 operator: '='
                 value: '1'
               2:
