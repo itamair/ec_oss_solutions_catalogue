@@ -129,7 +129,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: machine_name
-          label: Severity
+          label: Rilevanza
           exclude: true
           alter:
             alter_text: false
@@ -280,7 +280,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: dblog_message
-          label: Message
+          label: Messaggio
           exclude: false
           alter:
             alter_text: false
@@ -554,7 +554,7 @@ display:
           exposed: true
           expose:
             operator_id: severity_op
-            label: Severity
+            label: Rilevanza
             description: ''
             use_operator: false
             operator: severity_op

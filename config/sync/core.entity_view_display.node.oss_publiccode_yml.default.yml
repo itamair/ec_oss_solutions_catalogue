@@ -19,13 +19,13 @@ mode: default
 content:
   field_oss_publiccode_active:
     type: boolean
-    label: above
+    label: inline
     settings:
-      format: default
+      format: true-false
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 2
     region: content
   field_oss_publiccode_aliases:
     type: string
@@ -37,7 +37,7 @@ content:
     region: content
   field_oss_publiccode_gitrepo_url:
     type: link
-    label: above
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -45,7 +45,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_oss_publiccode_id:
     type: string
@@ -53,7 +53,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_oss_publiccode_yml_content:
     type: basic_string
@@ -65,7 +65,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 5
     region: content
 hidden:
   langcode: true

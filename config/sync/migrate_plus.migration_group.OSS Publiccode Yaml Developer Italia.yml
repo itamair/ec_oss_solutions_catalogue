@@ -1,0 +1,10 @@
+uuid: 7952e564-2237-4760-a625-1794bfaf66ef
+langcode: it
+status: true
+dependencies: {  }
+id: 'OSS Publiccode Yaml Developer Italia'
+label: 'OSS Publiccode Yaml Developer Italia'
+description: ''
+source_type: null
+module: null
+shared_configuration: null

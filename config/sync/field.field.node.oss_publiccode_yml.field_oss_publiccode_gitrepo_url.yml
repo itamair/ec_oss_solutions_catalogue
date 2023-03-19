@@ -11,7 +11,7 @@ id: node.oss_publiccode_yml.field_oss_publiccode_gitrepo_url
 field_name: field_oss_publiccode_gitrepo_url
 entity_type: node
 bundle: oss_publiccode_yml
-label: oss_publiccode_gitrepo_url
+label: 'GIT Repo Url'
 description: ''
 required: false
 translatable: false

@@ -9,7 +9,7 @@ id: node.oss_publiccode_yml.field_oss_publiccode_id
 field_name: field_oss_publiccode_id
 entity_type: node
 bundle: oss_publiccode_yml
-label: oss_publiccode_id
+label: id
 description: ''
 required: false
 translatable: false

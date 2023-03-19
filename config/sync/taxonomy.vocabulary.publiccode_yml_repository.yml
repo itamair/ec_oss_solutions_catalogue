@@ -1,0 +1,8 @@
+uuid: 8a30e51f-05f0-450f-a83c-17961b09eb3c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Publiccode Yml Repository'
+vid: publiccode_yml_repository
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+uuid: 2536e29e-a7f3-4b12-b9b2-4a3685a64c4e
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publiccode_yml_repository
+id: taxonomy_term.publiccode_yml_repository
+target_entity_type_id: taxonomy_term
+target_bundle: publiccode_yml_repository
+default_langcode: site_default
+language_alterable: false
