@@ -1,6 +1,7 @@
-publiccode_yml_repositories.settings_form:
-  title: 'publiccode_yml_repositories'
-  description: 'Configure publiccode_yml_repositories.'
-  parent: system.admin_config_system
-  route_name: publiccode_yml_repositories.settings_form
-  weight: 10
+# Publiccode Sources List.
+publiccode_yml_repositories.sources_list:
+  title: Publiccode Sources
+  description: Lists all Publiccode Sources.
+  menu_name: main
+  route_name: publiccode_yml_repositories.sources_list
+
