@@ -1,0 +1,57 @@
+# This migration demonstrates a simple import from a JSON file.
+id: oss_publiccode_yml_developers Italia
+label: "OSS Publiccode Yaml Developer Italia"
+migration_group: "Developer Italia"
+migration_tags:
+  - "OSS Publiccode Yaml Developer Italia"
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls:
+    - 'https://api.developers.italia.it/v1/software?all=true&page%5Bsize%5D=5'
+  item_selector: data
+  fields:
+    -
+      name: uuid
+      label: 'The unique Identifier of the OSS Publiccode.yml project'
+      selector: url
+    -
+      name: url
+      label: 'Url of the OSS Git repo'
+      selector: url
+    -
+      name: aliases
+      label: 'Aliases'
+      selector: aliases
+    -
+      name: publiccodeYml
+      label: 'The publiccode content in Yml format'
+      selector: publiccodeYml
+    -
+      name: active
+      label: 'Activation State of the specific OSS'
+      selector: active
+  ids:
+    uuid:
+      type: string
+    url:
+      type: string
+process:
+  type:
+    plugin: default_value
+    default_value: oss_publiccode_yml
+  uuid: uuid
+  title: url
+  field_oss_publiccode_gitrepo_url: url
+  field_oss_publiccode_aliases: aliases
+  field_oss_publiccode_yml_content: publiccodeYml
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

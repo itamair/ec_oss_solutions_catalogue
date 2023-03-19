@@ -23,6 +23,8 @@
         }
     },
     "require": {
-        "drupal/yaml_editor": "^1.1"
+        "drupal/yaml_editor": "^1.1",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/tools": "^5.2'"
     }
 }
