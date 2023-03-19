@@ -1,0 +1,22 @@
+uuid: 6a17bf47-4061-450d-bfde-4de71473c912
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.oss_publiccode_yml
+id: node.oss_publiccode_yml.promote
+field_name: promote
+entity_type: node
+bundle: oss_publiccode_yml
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
