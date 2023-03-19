@@ -1,5 +1,8 @@
 name: Publiccode.yml_Repositories
 type: module
-description: Allows the defintion of publiccode.yml feedrated source repositories and generation of a catalogue of those
+description: "Catalogue builder of Publiccode.yml federated sources & repositories"
 package: publiccode_yml
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9
+
+dependencies:
+  - yaml_editor:yaml_editor

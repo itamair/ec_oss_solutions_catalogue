@@ -1,0 +1,71 @@
+uuid: 5c61fe03-94e9-46aa-8fd8-edb789c811b1
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_active
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_aliases
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_gitrepo_url
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - node.type.oss_publiccode_yml
+  module:
+    - link
+    - user
+id: node.oss_publiccode_yml.default
+targetEntityType: node
+bundle: oss_publiccode_yml
+mode: default
+content:
+  field_oss_publiccode_active:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_oss_publiccode_aliases:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_oss_publiccode_gitrepo_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_oss_publiccode_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_oss_publiccode_yml_content:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
