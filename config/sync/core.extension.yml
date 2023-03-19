@@ -70,6 +70,10 @@ module:
   media_library_importer: 0
   menu_link_content: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_scheduler: 0
+  migrate_tools: 0
   mysql: 0
   node: 0
   optional_end_date: 0
@@ -96,6 +100,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  ultimate_cron: 0
   update: 0
   upgrade_status: 0
   user: 0
