@@ -1,0 +1,19 @@
+uuid: 361f8e70-229e-41c2-917c-d521d8acbff2
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oss_publiccode_yml_content
+    - node.type.oss_publiccode_yml
+id: node.oss_publiccode_yml.field_oss_publiccode_yml_content
+field_name: field_oss_publiccode_yml_content
+entity_type: node
+bundle: oss_publiccode_yml
+label: oss_publiccode_yml_content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

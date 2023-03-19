@@ -1,0 +1,19 @@
+uuid: 213f7de0-1775-4116-bcc9-8b09e5297427
+langcode: it
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_oss_publiccode_gitrepo_url
+field_name: field_oss_publiccode_gitrepo_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
