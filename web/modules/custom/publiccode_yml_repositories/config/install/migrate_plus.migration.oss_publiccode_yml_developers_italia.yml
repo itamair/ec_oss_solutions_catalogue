@@ -38,6 +38,14 @@ source:
       name: active
       label: 'Activation State of the specific OSS'
       selector: active
+    -
+      name: createdAt
+      label: 'Creation date in Zulu time (UTC)'
+      selector: createdAt
+    -
+      name: updatedAt
+      label: 'Update date in Zulu time (UTC)'
+      selector: updatedAt
   ids:
     id:
       type: string
@@ -48,7 +56,20 @@ process:
     plugin: default_value
     default_value: oss_publiccode_yml
   uuid: id
+  created:
+    plugin: format_date
+    source: createdAt
+    from_format: 'ISO8601'
+    to_format: 'U'
+  changed:
+    plugin: format_date
+    source: updatedAt
+    from_format: 'ISO8601'
+    to_format: 'U'
   title: url
+  field_oss_publiccode_active:
+    plugin: convert_boolean
+    source: active
   field_oss_publiccode_gitrepo_url: url
   field_oss_publiccode_aliases: aliases
   field_oss_publiccode_yml_content: publiccodeYml
