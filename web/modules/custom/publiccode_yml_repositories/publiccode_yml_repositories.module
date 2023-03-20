@@ -55,7 +55,7 @@ function publiccode_yml_repositories_node_insert(NodeInterface $node) {
     $yml_content = Yaml::parse($node->field_oss_publiccode_yml_content->value);
 
     // Set the Entity Title, from the Yml Name property.
-    if (isset($yml_content) && isset($yml_content['name'])) {
+    if (isset($yml_content) && array_key_exists('name', $yml_content) &&  !empty($yml_content['name'])) {
       $node->setTitle($yml_content['name']);
       $node_save = TRUE;
     }
