@@ -5,28 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_address
     - paragraphs.paragraphs_type.location
-  module:
-    - geocoder_field
-third_party_settings:
-  geocoder_field:
-    method: reverse_geocode
-    weight: 0
-    field: field_geofield
-    skip_not_empty_value: true
-    disabled: false
-    hidden: false
-    providers:
-      - arcgisonline
-      - file
-    dumper: addresstext
-    delta_handling: default
-    failure:
-      handling: preserve
-      status_message: true
-      log: true
-    geocode:
-      field: parent_id
-      delta_handling: default
 id: paragraph.location.field_address
 field_name: field_address
 entity_type: paragraph

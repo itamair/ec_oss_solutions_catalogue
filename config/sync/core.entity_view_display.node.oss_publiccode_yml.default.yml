@@ -8,9 +8,12 @@ dependencies:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_gitrepo_url
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
+    - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
     - node.type.oss_publiccode_yml
   module:
     - link
+    - svg_image
     - user
 id: node.oss_publiccode_yml.default
 targetEntityType: node
@@ -62,10 +65,33 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  field_oss_publiccode_yml_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_publiccode_yml_fed_catalog:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
 hidden:
   langcode: true

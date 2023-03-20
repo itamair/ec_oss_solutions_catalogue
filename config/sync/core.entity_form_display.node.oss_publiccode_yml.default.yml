@@ -8,10 +8,14 @@ dependencies:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_gitrepo_url
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
+    - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
+    - image.style.thumbnail
     - node.type.oss_publiccode_yml
   module:
     - link
     - path
+    - svg_image
     - yaml_editor
 id: node.oss_publiccode_yml.default
 targetEntityType: node
@@ -20,20 +24,20 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   field_oss_publiccode_active:
     type: boolean_checkbox
-    weight: 13
+    weight: 1
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_oss_publiccode_aliases:
     type: string_textfield
-    weight: 10
+    weight: 4
     region: content
     settings:
       size: 60
@@ -41,7 +45,7 @@ content:
     third_party_settings: {  }
   field_oss_publiccode_gitrepo_url:
     type: link_default
-    weight: 9
+    weight: 3
     region: content
     settings:
       placeholder_url: ''
@@ -49,7 +53,7 @@ content:
     third_party_settings: {  }
   field_oss_publiccode_id:
     type: string_textfield
-    weight: 8
+    weight: 2
     region: content
     settings:
       size: 60
@@ -57,42 +61,56 @@ content:
     third_party_settings: {  }
   field_oss_publiccode_yml_content:
     type: yaml_editor
-    weight: 12
+    weight: 5
     region: content
     settings:
       rows: '30'
       placeholder: ''
     third_party_settings: {  }
+  field_oss_publiccode_yml_logo:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_publiccode_yml_fed_catalog:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 1
+    weight: 7
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 4
+    weight: 10
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 5
+    weight: 11
     region: content
     settings:
       display_label: true
@@ -107,7 +125,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS

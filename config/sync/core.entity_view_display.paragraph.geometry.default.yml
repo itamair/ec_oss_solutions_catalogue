@@ -19,7 +19,7 @@ dependencies:
     - field.field.paragraph.geometry.field_zindex
     - paragraphs.paragraphs_type.geometry
   module:
-    - leaflet
+    - geofield
     - link
 id: paragraph.geometry.default
 targetEntityType: paragraph
@@ -37,97 +37,13 @@ content:
     weight: 3
     region: content
   field_geofield:
-    type: leaflet_formatter_default
-    label: hidden
+    type: geofield_default
+    label: above
     settings:
-      multiple_map: false
-      leaflet_map: multilayers
-      height: 800
-      height_unit: px
-      hide_empty_map: false
-      disable_wheel: false
-      gesture_handling: false
-      reset_map:
-        control: true
-        options: '{"position":"topleft","title":"Reset View"}'
-      locate:
-        control: true
-        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
-        automatic: true
-      leaflet_tooltip:
-        value: ''
-        options: '{"permanent":false,"direction":"center"}'
-      popup: false
-      popup_content: ''
-      leaflet_popup:
-        control: '1'
-        content: '[paragraph:field_title:value]'
-        options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
-      map_position:
-        force: false
-        center:
-          lat: 40.45
-          lon: 17.26
-        zoom: 18
-        minZoom: 3
-        maxZoom: 18
-        zoomFiner: -1
-      icon:
-        iconType: marker
-        iconUrl: ''
-        shadowUrl: ''
-        className: ''
-        iconSize:
-          x: ''
-          'y': ''
-        iconAnchor:
-          x: ''
-          'y': ''
-        shadowSize:
-          x: ''
-          'y': ''
-        shadowAnchor:
-          x: ''
-          'y': ''
-        popupAnchor:
-          x: ''
-          'y': ''
-        html: '<div></div>'
-        html_class: leaflet-map-divicon
-        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
-      leaflet_markercluster:
-        control: false
-        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
-        include_path: false
-      fullscreen:
-        control: false
-        options: '{"position":"topleft","pseudoFullscreen":false}'
-      path: '{"color":"[paragraph:field_stroke_color:color]","opacity":"[paragraph:field_stroke_opacity:value]","stroke":true,"weight":"[paragraph:field_stroke_weight:value]","fill":"depends","fillColor":"[paragraph:field_fill_color:color]","fillOpacity":"[paragraph:field_fill_opacity:value]","interactive":true,"arrowed":"[paragraph:field_arrowed:value]"}'
-      feature_properties:
-        values: ''
-      geocoder:
-        control: true
-        settings:
-          position: topright
-          input_size: 25
-          providers:
-            arcgisonline:
-              weight: 0
-              checked: true
-            file:
-              weight: 0
-              checked: false
-            googlemaps:
-              weight: 0
-              checked: false
-          min_terms: 4
-          delay: 800
-          zoom: 16
-          popup: false
-          options: ''
-      weight: null
+      output_format: wkt
+      output_escape: true
     third_party_settings: {  }
-    weight: 1
+    weight: 6
     region: content
   field_link:
     type: link

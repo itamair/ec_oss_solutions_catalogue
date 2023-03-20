@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.location.field_classname
     - field.field.paragraph.location.field_exclude_from_map_bounds
     - field.field.paragraph.location.field_geofield
-    - field.field.paragraph.location.field_image
     - field.field.paragraph.location.field_location_icon_width
     - field.field.paragraph.location.field_location_type
     - field.field.paragraph.location.field_markercluster_exclude
@@ -15,7 +14,7 @@ dependencies:
     - field.field.paragraph.location.field_zindex
     - paragraphs.paragraphs_type.location
   module:
-    - leaflet
+    - geofield
 id: paragraph.location.default
 targetEntityType: paragraph
 bundle: location
@@ -40,99 +39,13 @@ content:
     weight: 6
     region: content
   field_geofield:
-    type: leaflet_formatter_default
-    label: hidden
+    type: geofield_default
+    label: above
     settings:
-      multiple_map: false
-      leaflet_map: 'OSM Mapnik'
-      height: 400
-      height_unit: px
-      hide_empty_map: false
-      disable_wheel: false
-      gesture_handling: false
-      reset_map:
-        control: false
-        position: topright
-      locate:
-        control: false
-        options: '{"position": "topright", "setView": "untilPanOrZoom", "returnToPrevBounds":true, "keepCurrentZoomLevel": true, "strings": {"title": "Locate my position"}}'
-        automatic: false
-      leaflet_tooltip:
-        value: ''
-        options: '{"permanent":false,"direction":"center"}'
-      popup: false
-      popup_content: ''
-      leaflet_popup:
-        control: ''
-        content: ''
-        options: '{"maxWidth":"300","minWidth":"50", "autoPan": true}'
-        value: ''
-        view_mode: full
-      map_position:
-        force: false
-        center:
-          lat: !!float 0
-          lon: !!float 0
-        zoom: 15
-        minZoom: 1
-        maxZoom: 18
-        zoomFiner: 0
-      icon:
-        iconType: marker
-        iconUrl: '[paragraph:field_location_icon:thumbnail:uri]'
-        shadowUrl: ''
-        className: ''
-        iconSize:
-          x: '[paragraph:field_location_icon_width:value]'
-          'y': ''
-        iconAnchor:
-          x: ''
-          'y': ''
-        shadowSize:
-          x: ''
-          'y': ''
-        shadowAnchor:
-          x: ''
-          'y': ''
-        popupAnchor:
-          x: ''
-          'y': ''
-        html: '<div></div>'
-        html_class: leaflet-map-divicon
-        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
-      leaflet_markercluster:
-        control: true
-        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
-        include_path: false
-      fullscreen:
-        control: false
-        options: '{"position":"topleft","pseudoFullscreen":false}'
-      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
-      feature_properties:
-        values: ''
-      geocoder:
-        control: false
-        settings:
-          position: topright
-          input_size: 25
-          providers:
-            arcgisonline:
-              weight: 0
-              checked: false
-            file:
-              weight: 0
-              checked: false
-            googlemaps:
-              weight: 0
-              checked: false
-          min_terms: 4
-          delay: 800
-          zoom: 16
-          popup: false
-          options: ''
-      weight: null
+      output_format: wkt
+      output_escape: true
     third_party_settings: {  }
-    weight: 1
+    weight: 8
     region: content
   field_location_icon_width:
     type: number_integer
@@ -172,6 +85,5 @@ content:
     region: content
 hidden:
   field_classname: true
-  field_image: true
   field_location_type: true
   geomarker_icon_url: true

@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_gitrepo_url
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
+    - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
     - node.type.oss_publiccode_yml
   module:
     - user
@@ -28,4 +30,6 @@ hidden:
   field_oss_publiccode_gitrepo_url: true
   field_oss_publiccode_id: true
   field_oss_publiccode_yml_content: true
+  field_oss_publiccode_yml_logo: true
+  field_publiccode_yml_fed_catalog: true
   langcode: true

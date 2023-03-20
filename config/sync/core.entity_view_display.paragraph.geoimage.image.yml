@@ -5,23 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.image
     - field.field.paragraph.geoimage.field_exclude_from_map_bounds
-    - field.field.paragraph.geoimage.field_geoimage
     - field.field.paragraph.geoimage.field_location_type
     - paragraphs.paragraphs_type.geoimage
 id: paragraph.geoimage.image
 targetEntityType: paragraph
 bundle: geoimage
 mode: image
-content:
-  field_geoimage:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: leaflet_popup
-      link: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
+content: {  }
 hidden:
   field_exclude_from_map_bounds: true
   field_location_type: true
