@@ -129,7 +129,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: machine_name
-          label: Severity
+          label: Rilevanza
           exclude: true
           alter:
             alter_text: false
@@ -179,7 +179,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: Tipo
+          label: Type
           exclude: false
           alter:
             alter_text: false
@@ -280,7 +280,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: dblog_message
-          label: Message
+          label: Messaggio
           exclude: false
           alter:
             alter_text: false
@@ -451,7 +451,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tutte -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
       exposed_form:
@@ -513,7 +513,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Tipo
+            label: Type
             description: ''
             use_operator: false
             operator: type_op
@@ -554,7 +554,7 @@ display:
           exposed: true
           expose:
             operator_id: severity_op
-            label: Severity
+            label: Rilevanza
             description: ''
             use_operator: false
             operator: severity_op

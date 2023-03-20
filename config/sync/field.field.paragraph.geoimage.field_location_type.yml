@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_location_type
     - paragraphs.paragraphs_type.geoimage
-    - taxonomy.vocabulary.place_types
   content:
     - 'taxonomy_term:place_types:5f210458-7dd2-4703-aaf8-f9e3a8cf33a8'
 id: paragraph.geoimage.field_location_type
@@ -23,8 +22,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      place_types: place_types
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

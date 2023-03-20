@@ -3,13 +3,7 @@ langcode: it
 status: true
 dependencies:
   module:
-    - content_translation
     - paragraphs_library
-third_party_settings:
-  content_translation:
-    enabled: false
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 id: paragraphs_library_item.paragraphs_library_item
 target_entity_type_id: paragraphs_library_item
 target_bundle: paragraphs_library_item

@@ -8,8 +8,6 @@ dependencies:
     - comment
     - contact
     - filter
-    - media
-    - rate
     - search
     - system
 _core:
@@ -23,7 +21,5 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access user profiles'
-  - 'cast rate vote on node of territorial_report'
   - 'search content'
   - 'use text format restricted_html'
-  - 'view media'

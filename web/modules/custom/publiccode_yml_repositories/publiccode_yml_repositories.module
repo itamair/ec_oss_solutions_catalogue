@@ -1,0 +1,95 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for publiccode_yml_repositories module.
+ */
+
+use Drupal\migrate\MigrateExecutable;
+use Drupal\migrate\MigrateMessage;
+use Drupal\migrate\MigrateException;
+use Drupal\Component\Plugin\Exception\PluginException;
+use Symfony\Component\Yaml\Yaml;
+use Drupal\Node\NodeInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_cron().
+ */
+function publiccode_yml_repositories_importer_cron() {
+
+  $ordered_migrations = [
+    'developers_italia',
+  ];
+
+  /** @var \Drupal\migrate\Plugin\MigrationPluginManager $migration_manager */
+  $migration_manager = \Drupal::service('plugin.manager.migration');
+  $migrations = $migration_manager->getDefinitions();
+
+  foreach ($ordered_migrations as $id) {
+    if (array_key_exists($id, $migrations)) {
+      try {
+        /** @var \Drupal\migrate\Plugin\MigrationInterface $migration */
+        $migration = $migration_manager->createInstance($id);
+        $migration->getIdMap()->prepareUpdate();
+        $executable = new MigrateExecutable($migration, new MigrateMessage());
+        $executable->import();
+      }
+      catch (MigrateException $e) {
+        watchdog_exception('un_developer_import', $e);
+      }
+      catch (PluginException $e) {
+        watchdog_exception('un_developer_import', $e);
+      }
+    }
+
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function publiccode_yml_repositories_node_insert(NodeInterface $node) {
+  $node_save = FALSE;
+  if ($node->bundle() === "oss_publiccode_yml") {
+    $yml_content = Yaml::parse($node->field_oss_publiccode_yml_content->value);
+
+    // Set the Entity Title, from the Yml Name property.
+    if (isset($yml_content) && isset($yml_content['name'])) {
+      $node->setTitle($yml_content['name']);
+      $node_save = TRUE;
+    }
+
+    // Set the Entity Logo, from the Yml Logo property.
+    /*    if (isset($yml_content) && isset($yml_content['logo'])) {
+          $uri = $yml_content["url"] . '/blob/master/' . $yml_content['logo'] . "?raw=true";
+
+          // Check first if the file exists for the uri.
+          $files = \Drupal::entityTypeManager()
+            ->getStorage('file')
+            ->loadByProperties(['uri' => $uri]);
+          $file = reset($files);
+
+          // If not create a file.
+          if (!$file) {
+            $file = File::create([
+              'uri' => $uri,
+            ]);
+            $file->save();
+          }
+
+          $node->field_oss_publiccode_yml_logo[] = [
+            'target_id' => $file->id(),
+            'alt' => 'Alt text',
+          ];
+
+          $node_save = TRUE;
+
+        }*/
+
+    if ($node_save) {
+      $node->save();
+    }
+
+  }
+}

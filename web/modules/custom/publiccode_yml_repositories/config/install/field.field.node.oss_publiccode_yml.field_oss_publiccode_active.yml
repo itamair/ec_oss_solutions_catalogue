@@ -1,0 +1,23 @@
+uuid: 87082326-1d05-4e48-b3f3-9e286eac6c5b
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oss_publiccode_active
+    - node.type.oss_publiccode_yml
+id: node.oss_publiccode_yml.field_oss_publiccode_active
+field_name: field_oss_publiccode_active
+entity_type: node
+bundle: oss_publiccode_yml
+label: Active
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

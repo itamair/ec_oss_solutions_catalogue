@@ -1,0 +1,31 @@
+{
+    "name": "publiccode_yml_repositories",
+    "description": "Catalogue builder of Publiccode.yml federated sources & repositories",
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/publiccode_yml_repositories",
+    "authors": [
+        {
+            "name": "Italo Mairo",
+            "homepage": "https://www.drupal.org/u/itamair",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/publiccode_yml_repositories",
+        "source": "https://git.drupalcode.org/project/publiccode_yml_repositories"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {
+        "drupal/yaml_editor": "^1.1",
+        "drupal/svg_image": "^3.0",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/tools": "^5.2'"
+    }
+}

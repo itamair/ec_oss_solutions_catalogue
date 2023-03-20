@@ -21,7 +21,7 @@ dependencies:
   module:
     - color_field
     - field_group
-    - leaflet
+    - geofield
     - link
 third_party_settings:
   field_group:
@@ -81,130 +81,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_geofield:
-    type: leaflet_widget_default
-    weight: 3
+    type: geofield_latlon
+    weight: 16
     region: content
     settings:
-      map:
-        leaflet_map: multilayers
-        height: 700
-        auto_center: 1
-        map_position:
-          force: false
-          center:
-            lat: 40.47
-            lon: 17.24
-          zoom: 15
-          minZoom: 1
-          maxZoom: 20
-          zoomFiner: 0
-        scroll_zoom_enabled: 1
-      input:
-        show: true
-        readonly: false
-      toolbar:
-        position: topright
-        marker: none
-        drawPolyline: true
-        drawRectangle: true
-        drawPolygon: true
-        drawCircle: false
-        drawText: false
-        editMode: true
-        dragMode: true
-        cutPolygon: true
-        removalMode: true
-        rotateMode: false
-      reset_map:
-        control: true
-        options: '{"position":"topleft","title":"Reset View"}'
-      locate:
-        control: true
-        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
-        automatic: false
-      fullscreen:
-        control: true
-        options: '{"position":"topleft","pseudoFullscreen":false}'
-      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
-      geocoder:
-        control: true
-        settings:
-          position: topright
-          input_size: 25
-          providers:
-            arcgisonline:
-              weight: 0
-              checked: true
-            googlemaps:
-              weight: 1
-              checked: true
-            file:
-              weight: 0
-              checked: false
-          min_terms: 4
-          delay: 800
-          zoom: 16
-          popup: true
-          options: ''
-      geometry_validation: '1'
-      multiple_map: false
-      leaflet_map: 'OSM Mapnik'
-      height: 400
-      height_unit: px
-      hide_empty_map: false
-      disable_wheel: false
-      gesture_handling: false
-      popup: false
-      popup_content: ''
-      leaflet_popup:
-        value: ''
-        options: '{"maxWidth":"300","minWidth":"50", "autoPan": true}'
-        view_mode: full
-        control: false
-        content: ''
-      leaflet_tooltip:
-        value: ''
-        options: '{"permanent":false,"direction":"center"}'
-      map_position:
-        force: false
-        center:
-          lat: 0
-          lon: 0
-        zoom: 12
-        minZoom: 1
-        maxZoom: 18
-        zoomFiner: 0
-      weight: null
-      icon:
-        iconType: marker
-        iconUrl: ''
-        shadowUrl: ''
-        className: ''
-        iconSize:
-          x: null
-          'y': null
-        iconAnchor:
-          x: null
-          'y': null
-        shadowSize:
-          x: null
-          'y': null
-        shadowAnchor:
-          x: null
-          'y': null
-        popupAnchor:
-          x: null
-          'y': null
-        html: '<div></div>'
-        html_class: leaflet-map-divicon
-        circle_marker_options: '{"radius": 100, "color": "red", "fillColor": "#f03", "fillOpacity": 0.5}'
-      leaflet_markercluster:
-        control: false
-        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
-        excluded: false
-        include_path: false
-      feature_properties:
-        values: ''
+      html5_geolocation: false
     third_party_settings: {  }
   field_link:
     type: link_default

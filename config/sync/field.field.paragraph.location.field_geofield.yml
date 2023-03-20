@@ -28,6 +28,5 @@ default_value:
     geohash: srhq0q3ccpee
     latlon: '40.464361,17.24'
 default_value_callback: ''
-settings:
-  backend: geofield_backend_default
+settings: {  }
 field_type: geofield

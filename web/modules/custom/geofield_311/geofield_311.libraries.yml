@@ -1,6 +1,0 @@
-geofield_311:
-  version: 1.x
-  js:
-    js/geofield_311.js: {}
-  dependencies:
-    - leaflet/leaflet
