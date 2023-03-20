@@ -1,0 +1,21 @@
+uuid: 95a3d33c-ea64-4e08-873e-fdc1d819c66a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oss_publiccode_created
+    - node.type.oss_publiccode_yml
+  module:
+    - datetime
+id: node.oss_publiccode_yml.field_oss_publiccode_created
+field_name: field_oss_publiccode_created
+entity_type: node
+bundle: oss_publiccode_yml
+label: 'Created at'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

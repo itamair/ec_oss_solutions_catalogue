@@ -5,13 +5,16 @@ dependencies:
   config:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_active
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_aliases
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_created
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_gitrepo_url
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_updated
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
     - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
     - node.type.oss_publiccode_yml
   module:
+    - datetime
     - link
     - svg_image
     - user
@@ -38,6 +41,15 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_oss_publiccode_created:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: d_m_y
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_oss_publiccode_gitrepo_url:
     type: link
     label: inline
@@ -52,11 +64,20 @@ content:
     region: content
   field_oss_publiccode_id:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_oss_publiccode_updated:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: d_m_y
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_oss_publiccode_yml_content:
     type: basic_string
@@ -78,7 +99,7 @@ content:
         height: null
       svg_render_as_image: true
     third_party_settings: {  }
-    weight: 7
+    weight: 9
     region: content
   field_publiccode_yml_fed_catalog:
     type: entity_reference_label
@@ -86,12 +107,12 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 8
     region: content
 hidden:
   langcode: true

@@ -56,16 +56,36 @@ process:
     plugin: default_value
     default_value: oss_publiccode_yml
   uuid: id
-  created:
-    plugin: format_date
-    source: createdAt
-    from_format: 'ISO8601'
-    to_format: 'U'
-  changed:
-    plugin: format_date
-    source: updatedAt
-    from_format: 'ISO8601'
-    to_format: 'U'
+  field_oss_publiccode_created:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: createdAt
+    -
+      plugin: substr
+      start: 0
+      length: 10
+    -
+      plugin: format_date
+      from_format: Y-m-d
+      to_format: Y-m-d
+      from_timezone: UTC
+      to_timezone: UTC
+  field_oss_publiccode_updated:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: updatedAt
+    -
+      plugin: substr
+      start: 0
+      length: 10
+    -
+      plugin: format_date
+      from_format: Y-m-d
+      to_format: Y-m-d
+      from_timezone: UTC
+      to_timezone: UTC
   title: url
   field_oss_publiccode_active:
     plugin: convert_boolean
