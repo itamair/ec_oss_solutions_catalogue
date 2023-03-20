@@ -52,6 +52,15 @@ process:
   field_oss_publiccode_gitrepo_url: url
   field_oss_publiccode_aliases: aliases
   field_oss_publiccode_yml_content: publiccodeYml
+  field_publiccode_yml_fed_catalog:
+    -
+      plugin: default_value
+      default_value: 'Developers Italia'
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+      value_key: name
+      bundle: publiccode_yml_repository
   sticky:
     plugin: default_value
     default_value: 0
