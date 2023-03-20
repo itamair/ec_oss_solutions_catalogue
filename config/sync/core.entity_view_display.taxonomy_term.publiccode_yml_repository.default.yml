@@ -1,0 +1,36 @@
+uuid: a4b0f54f-589d-45dd-a2dd-9396ff27adbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.publiccode_yml_repository.field_link
+    - taxonomy.vocabulary.publiccode_yml_repository
+  module:
+    - link
+    - text
+id: taxonomy_term.publiccode_yml_repository.default
+targetEntityType: taxonomy_term
+bundle: publiccode_yml_repository
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
