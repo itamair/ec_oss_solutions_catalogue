@@ -37,7 +37,7 @@
  * example.org, with all subdomains included.
  */
 $settings['trusted_host_patterns'] = [
-  '^taranto2021.ddev.site$',
+  '^publiccode-yml-repositories.ddev.site$',
   '^www.geodemocracy.com$',
 ];
 
