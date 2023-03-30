@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_updated
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_descrip
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
     - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
     - node.type.oss_publiccode_yml
@@ -34,6 +35,7 @@ hidden:
   field_oss_publiccode_id: true
   field_oss_publiccode_updated: true
   field_oss_publiccode_yml_content: true
+  field_oss_publiccode_yml_descrip: true
   field_oss_publiccode_yml_logo: true
   field_publiccode_yml_fed_catalog: true
   langcode: true

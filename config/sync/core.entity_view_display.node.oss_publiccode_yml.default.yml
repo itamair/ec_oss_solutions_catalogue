@@ -10,14 +10,31 @@ dependencies:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_updated
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_descrip
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
     - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
     - node.type.oss_publiccode_yml
   module:
     - datetime
+    - field_group
     - link
-    - svg_image
     - user
+third_party_settings:
+  field_group:
+    group_publiccodeyml:
+      children:
+        - field_oss_publiccode_yml_content
+      label: 'Publiccode.Yml Content'
+      parent_name: ''
+      region: content
+      weight: 8
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
 id: node.oss_publiccode_yml.default
 targetEntityType: node
 bundle: oss_publiccode_yml
@@ -81,25 +98,17 @@ content:
     region: content
   field_oss_publiccode_yml_content:
     type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_oss_publiccode_yml_descrip:
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 4
-    region: content
-  field_oss_publiccode_yml_logo:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-      svg_attributes:
-        width: null
-        height: null
-      svg_render_as_image: true
-    third_party_settings: {  }
-    weight: 9
     region: content
   field_publiccode_yml_fed_catalog:
     type: entity_reference_label
@@ -112,7 +121,8 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
 hidden:
+  field_oss_publiccode_yml_logo: true
   langcode: true

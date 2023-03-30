@@ -1,14 +1,14 @@
-uuid: 6a17bf47-4061-450d-bfde-4de71473c912
-langcode: it
+uuid: 8a64b00f-e678-46a9-b496-f4655a4f3b51
+langcode: en
 status: true
 dependencies:
   config:
     - node.type.oss_publiccode_yml
-id: node.oss_publiccode_yml.promote
-field_name: promote
+id: node.oss_publiccode_yml.sticky
+field_name: sticky
 entity_type: node
 bundle: oss_publiccode_yml
-label: 'Promoted to front page'
+label: 'Sticky at top of lists'
 description: ''
 required: false
 translatable: false

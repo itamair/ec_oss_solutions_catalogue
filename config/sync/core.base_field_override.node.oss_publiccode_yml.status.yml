@@ -1,20 +1,20 @@
-uuid: 6a17bf47-4061-450d-bfde-4de71473c912
-langcode: it
+uuid: 39952cf6-c791-4b4c-87f9-abbf6577b2cd
+langcode: en
 status: true
 dependencies:
   config:
     - node.type.oss_publiccode_yml
-id: node.oss_publiccode_yml.promote
-field_name: promote
+id: node.oss_publiccode_yml.status
+field_name: status
 entity_type: node
 bundle: oss_publiccode_yml
-label: 'Promoted to front page'
+label: Published
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'On'

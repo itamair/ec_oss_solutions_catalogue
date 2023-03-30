@@ -1,0 +1,20 @@
+uuid: 5f20a139-631d-47bc-ac2d-b7b410036992
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publiccode_yml_repository
+  module:
+    - path
+id: taxonomy_term.publiccode_yml_repository.path
+field_name: path
+entity_type: taxonomy_term
+bundle: publiccode_yml_repository
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

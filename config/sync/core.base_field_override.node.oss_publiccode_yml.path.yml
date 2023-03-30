@@ -1,0 +1,20 @@
+uuid: 27a1e027-6ec5-4795-90bd-a9f668341344
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oss_publiccode_yml
+  module:
+    - path
+id: node.oss_publiccode_yml.path
+field_name: path
+entity_type: node
+bundle: oss_publiccode_yml
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

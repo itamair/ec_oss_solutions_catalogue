@@ -95,6 +95,7 @@ module:
   views_ui: 0
   yaml_editor: 0
   pathauto: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000

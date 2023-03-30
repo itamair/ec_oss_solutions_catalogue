@@ -1,0 +1,18 @@
+uuid: 2d7ce9a4-61ac-4e37-b38e-c558aac9d365
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oss_publiccode_yml
+id: node.oss_publiccode_yml.created
+field_name: created
+entity_type: node
+bundle: oss_publiccode_yml
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created
