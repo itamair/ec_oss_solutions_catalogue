@@ -13,25 +13,26 @@ use Symfony\Component\Yaml\Yaml;
  * @see \Drupal\migrate\Plugin\MigrateProcessInterface
  *
  * @MigrateProcessPlugin(
- *   id = "publiccode_yml_description_it"
+ *   id = "publiccode_yml_description"
  * )
  */
-class PubliccodeYmlDescriptionIt extends ProcessPluginBase {
+class PubliccodeYmlDescription extends ProcessPluginBase {
 
   /**
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
     $publiccode_yml_values = Yaml::parse($value);
-    $description_it = '';
+    $description = '';
+    $langcode = $row->getSourceProperty('langcode') ?? 'it';
     if (isset($publiccode_yml_values) &&
       array_key_exists('description', $publiccode_yml_values) &&
-      array_key_exists('it', $publiccode_yml_values['description']) &&
-      array_key_exists('longDescription', $publiccode_yml_values['description']['it']) &&
-      !empty($publiccode_yml_values['description']['it']['longDescription'])) {
-      $description_it = $publiccode_yml_values['description']['it']['longDescription'];
+      array_key_exists($langcode, $publiccode_yml_values['description']) &&
+      array_key_exists('longDescription', $publiccode_yml_values['description'][$langcode]) &&
+      !empty($publiccode_yml_values['description'][$langcode]['longDescription'])) {
+      $description = $publiccode_yml_values['description'][$langcode]['longDescription'];
     }
-    return $description_it;
+    return $description;
   }
 
 }
