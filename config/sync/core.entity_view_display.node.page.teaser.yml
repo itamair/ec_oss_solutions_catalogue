@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_tags
     - node.type.page
   module:
     - text
@@ -22,10 +23,11 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 100
+    weight: 10
     region: content
   links:
     weight: 101
     region: content
 hidden:
+  field_tags: true
   langcode: true

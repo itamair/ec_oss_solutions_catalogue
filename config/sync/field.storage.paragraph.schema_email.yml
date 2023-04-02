@@ -1,0 +1,18 @@
+uuid: 354c74bf-8a20-4d45-a261-5124f64c4b7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.schema_email
+field_name: schema_email
+entity_type: paragraph
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

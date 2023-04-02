@@ -1,0 +1,21 @@
+uuid: 55f99de6-3758-4735-b776-910c552e7c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_gender
+    - node.type.person
+  module:
+    - options
+id: node.person.schema_gender
+field_name: schema_gender
+entity_type: node
+bundle: person
+label: Gender
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

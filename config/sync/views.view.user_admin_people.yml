@@ -482,9 +482,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtra
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Ripristina
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -632,7 +632,7 @@ display:
           exposed: true
           expose:
             operator_id: roles_target_id_op
-            label: Role
+            label: Ruolo
             description: ''
             use_operator: false
             operator: roles_target_id_op

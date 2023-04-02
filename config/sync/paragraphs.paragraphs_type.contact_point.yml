@@ -1,0 +1,15 @@
+uuid: 53f2d98d-afda-46b6-a13a-e456037a14f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: contact_point
+label: 'Contact Point'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

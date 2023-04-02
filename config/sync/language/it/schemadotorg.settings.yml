@@ -1,0 +1,44 @@
+schema_properties:
+  default_fields:
+    FAQPage--mainEntity:
+      label: Domande
+    MenuItem--offers:
+      label: Prezzo
+    Person--familyName:
+      label: Cognome
+    Person--givenName:
+      label: Nome
+    QAPage--mainEntity:
+      label: Domande
+    Question--acceptedAnswer:
+      label: Risposta
+    Question--name:
+      label: Domanda
+    MediaGallery--hasPart:
+      label: Media
+    ImageGallery--hasPart:
+      label: Immagini
+    category:
+      label: Categorie
+    character:
+      label: Caratteri
+    comment:
+      label: Commenti
+    containsSeason:
+      label: Stagioni
+    educationalLevel:
+      label: Difficoltà
+    hasMenu:
+      label: Menù
+    hasMenuItem:
+      label: 'Elementi di menu'
+    hasPart:
+      label: Elementi
+    itemListElement:
+      label: Elementi
+    material:
+      label: Materiali
+    step:
+      label: Passi
+    tool:
+      label: Strumenti

@@ -1,0 +1,42 @@
+uuid: 50c3f048-4ae3-4f75-bc23-23a24e3e1bda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_point.schema_contact_type
+    - field.field.paragraph.contact_point.schema_email
+    - field.field.paragraph.contact_point.schema_telephone
+    - paragraphs.paragraphs_type.contact_point
+  module:
+    - telephone
+id: paragraph.contact_point.default
+targetEntityType: paragraph
+bundle: contact_point
+mode: default
+content:
+  schema_contact_type:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  schema_email:
+    type: email_default
+    weight: 16
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  schema_telephone:
+    type: telephone_default
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

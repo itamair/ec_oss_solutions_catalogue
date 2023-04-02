@@ -1,0 +1,21 @@
+uuid: 127fa218-416a-47e1-99a9-eae9ced344db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.schema_telephone
+    - paragraphs.paragraphs_type.contact_point
+  module:
+    - telephone
+id: paragraph.contact_point.schema_telephone
+field_name: schema_telephone
+entity_type: paragraph
+bundle: contact_point
+label: Telephone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

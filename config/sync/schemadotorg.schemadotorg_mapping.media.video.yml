@@ -1,0 +1,18 @@
+uuid: 9a33e448-cdf7-40a0-b488-5d897a530343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_media_oembed_video
+    - media.type.video
+id: media.video
+target_entity_type_id: media
+target_bundle: video
+schema_type: VideoObject
+schema_properties:
+  created: dateCreated
+  changed: dateModified
+  langcode: inLanguage
+  name: name
+  thumbnail: thumbnail
+  field_media_oembed_video: video

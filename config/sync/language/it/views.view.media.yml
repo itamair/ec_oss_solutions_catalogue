@@ -1,0 +1,48 @@
+label: Media
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Azione
+        bundle:
+          label: Tipo
+        status:
+          label: Stato
+          settings:
+            format_custom_false: 'Non pubblicato'
+            format_custom_true: Pubblicato
+        operations:
+          label: Operazioni
+      pager:
+        options:
+          tags:
+            next: 'Seguente ›'
+            previous: '‹ Precedente'
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Ripristina
+      filters:
+        bundle:
+          expose:
+            label: Tipo
+        status:
+          expose:
+            label: Vero
+          group_info:
+            group_items:
+              1:
+                title: Pubblicato
+              2:
+                title: 'Non pubblicato'
+        langcode:
+          expose:
+            label: Lingua
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

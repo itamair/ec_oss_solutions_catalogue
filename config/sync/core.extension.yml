@@ -55,6 +55,7 @@ module:
   link: 0
   locale: 0
   masquerade: 0
+  media: 0
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
@@ -74,6 +75,16 @@ module:
   replicate: 0
   replicate_ui: 0
   rest: 0
+  schemadotorg: 0
+  schemadotorg_jsonld: 0
+  schemadotorg_jsonld_preview: 0
+  schemadotorg_mapping_set: 0
+  schemadotorg_media: 0
+  schemadotorg_paragraphs: 0
+  schemadotorg_report: 0
+  schemadotorg_subtype: 0
+  schemadotorg_taxonomy: 0
+  schemadotorg_ui: 0
   search: 0
   serialization: 0
   shortcut: 0
@@ -81,6 +92,7 @@ module:
   svg_image: 0
   system: 0
   taxonomy: 0
+  telephone: 0
   text: 0
   token: 0
   toolbar: 0
@@ -96,6 +108,7 @@ module:
   yaml_editor: 0
   pathauto: 1
   content_translation: 10
+  schemadotorg_descriptions: 10
   views: 10
   paragraphs: 11
   standard: 1000

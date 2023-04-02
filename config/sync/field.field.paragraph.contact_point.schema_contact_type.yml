@@ -1,0 +1,19 @@
+uuid: 0bff06cd-cce5-4675-83ef-3e57ec3fc0f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.schema_contact_type
+    - paragraphs.paragraphs_type.contact_point
+id: paragraph.contact_point.schema_contact_type
+field_name: schema_contact_type
+entity_type: paragraph
+bundle: contact_point
+label: 'Contact type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

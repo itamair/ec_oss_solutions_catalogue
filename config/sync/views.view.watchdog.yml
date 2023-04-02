@@ -179,7 +179,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: Type
+          label: Tipo
           exclude: false
           alter:
             alter_text: false
@@ -228,7 +228,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: date
-          label: Date
+          label: Data
           exclude: false
           alter:
             alter_text: false
@@ -457,9 +457,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtra
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Ripristina
           exposed_sorts_label: 'Sort by'
           expose_sort_order: false
           sort_asc_label: Asc
@@ -513,7 +513,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: Tipo
             description: ''
             use_operator: false
             operator: type_op

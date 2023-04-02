@@ -1,0 +1,17 @@
+uuid: 07a54af7-fb2f-4242-be01-a5cf10ea6152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.audio.field_media_audio_file
+    - media.type.audio
+id: media.audio
+target_entity_type_id: media
+target_bundle: audio
+schema_type: AudioObject
+schema_properties:
+  field_media_audio_file: contentUrl
+  created: dateCreated
+  changed: dateModified
+  langcode: inLanguage
+  name: name

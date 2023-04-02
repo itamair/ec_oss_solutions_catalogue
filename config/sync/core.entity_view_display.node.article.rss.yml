@@ -8,6 +8,8 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.schema_article_subtype
+    - field.field.node.article.schema_author
     - node.type.article
   module:
     - user
@@ -27,3 +29,5 @@ hidden:
   field_image: true
   field_tags: true
   langcode: true
+  schema_article_subtype: true
+  schema_author: true

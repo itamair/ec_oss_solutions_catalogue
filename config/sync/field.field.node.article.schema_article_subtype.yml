@@ -1,0 +1,21 @@
+uuid: c338f213-36ff-45ec-a894-1b06b7bd9928
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_article_subtype
+    - node.type.article
+  module:
+    - options
+id: node.article.schema_article_subtype
+field_name: schema_article_subtype
+entity_type: node
+bundle: article
+label: Subtype
+description: ''
+required: null
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

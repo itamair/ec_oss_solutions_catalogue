@@ -4,10 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_tags
     - node.type.page
   module:
+    - field_group
     - text
     - user
+third_party_settings:
+  field_group:
+    group_taxonomy:
+      children:
+        - field_tags
+      label: 'Tags / Categories'
+      parent_name: ''
+      region: content
+      weight: 99
+      format_type: fieldset
+      format_settings: {  }
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -20,7 +33,15 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 10
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
     region: content
   links:
     weight: 101

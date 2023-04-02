@@ -8,6 +8,8 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.schema_article_subtype
+    - field.field.node.article.schema_author
     - image.style.medium
     - node.type.article
   module:
@@ -27,7 +29,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 0
+    weight: 109
     region: content
   field_image:
     type: image
@@ -46,12 +48,13 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 109
     region: content
   links:
     weight: 100
     region: content
 hidden:
   comment: true
-  field_tags: true
   langcode: true
+  schema_article_subtype: true
+  schema_author: true

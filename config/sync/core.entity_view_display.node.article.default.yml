@@ -8,13 +8,28 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.schema_article_subtype
+    - field.field.node.article.schema_author
     - image.style.large
     - node.type.article
   module:
     - comment
+    - field_group
+    - options
     - svg_image
     - text
     - user
+third_party_settings:
+  field_group:
+    group_taxonomy:
+      children:
+        - field_tags
+      label: 'Tags / Categories'
+      parent_name: ''
+      region: content
+      weight: 99
+      format_type: fieldset
+      format_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -27,7 +42,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 109
     region: content
   comment:
     type: comment_default
@@ -55,12 +70,27 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 111
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
+    region: content
+  schema_article_subtype:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  schema_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
     region: content
 hidden:
   langcode: true

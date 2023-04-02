@@ -1,0 +1,17 @@
+uuid: 392a3a5c-7b53-4087-9003-083ae6ab25e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_point.schema_contact_type
+    - field.field.paragraph.contact_point.schema_email
+    - field.field.paragraph.contact_point.schema_telephone
+    - paragraphs.paragraphs_type.contact_point
+id: paragraph.contact_point
+target_entity_type_id: paragraph
+target_bundle: contact_point
+schema_type: ContactPoint
+schema_properties:
+  schema_contact_type: contactType
+  schema_email: email
+  schema_telephone: telephone

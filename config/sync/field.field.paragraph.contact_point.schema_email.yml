@@ -1,0 +1,19 @@
+uuid: b2990e23-f687-491c-91e5-41682252623a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.schema_email
+    - paragraphs.paragraphs_type.contact_point
+id: paragraph.contact_point.schema_email
+field_name: schema_email
+entity_type: paragraph
+bundle: contact_point
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

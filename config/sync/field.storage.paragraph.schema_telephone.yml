@@ -1,0 +1,19 @@
+uuid: 1c11ae8a-04e2-4736-a660-35517344693b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - telephone
+id: paragraph.schema_telephone
+field_name: schema_telephone
+entity_type: paragraph
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

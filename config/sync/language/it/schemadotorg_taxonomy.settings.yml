@@ -1,0 +1,4 @@
+default_vocabularies:
+  tags:
+    label: Tags
+    description: 'Utilizza i tag per organizzare in categorie i contenuti riguardanti lo stesso argomento.'
