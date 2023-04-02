@@ -17,10 +17,35 @@ dependencies:
     - node.type.oss_publiccode_yml
   module:
     - datetime
+    - field_group
     - link
     - path
     - svg_image
     - yaml_editor
+third_party_settings:
+  field_group:
+    group_software_application:
+      children:
+        - field_oss_publiccode_gitrepo_url
+      label: 'Software application information'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        open: true
+    group_general:
+      children:
+        - title
+        - field_oss_publiccode_yml_content
+        - field_oss_publiccode_yml_descrip
+      label: 'General information'
+      region: content
+      parent_name: ''
+      weight: -5
+      format_type: details
+      format_settings:
+        open: true
 id: node.oss_publiccode_yml.default
 targetEntityType: node
 bundle: oss_publiccode_yml
@@ -28,7 +53,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 13
+    weight: 200
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -55,7 +80,7 @@ content:
     third_party_settings: {  }
   field_oss_publiccode_gitrepo_url:
     type: link_default
-    weight: 4
+    weight: 108
     region: content
     settings:
       placeholder_url: ''
@@ -77,7 +102,7 @@ content:
     third_party_settings: {  }
   field_oss_publiccode_yml_content:
     type: yaml_editor
-    weight: 6
+    weight: 8
     region: content
     settings:
       rows: '30'
@@ -85,7 +110,7 @@ content:
     third_party_settings: {  }
   field_oss_publiccode_yml_descrip:
     type: string_textarea
-    weight: 3
+    weight: 6
     region: content
     settings:
       rows: 5
@@ -107,41 +132,41 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 1
+    weight: 200
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 16
+    weight: 220
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 14
+    weight: 210
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 17
+    weight: 220
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 15
+    weight: 210
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 2
     region: content
     settings:
       size: 60
@@ -154,7 +179,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 200
     region: content
     settings:
       match_operator: CONTAINS

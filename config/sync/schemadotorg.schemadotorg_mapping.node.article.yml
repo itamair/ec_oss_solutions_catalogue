@@ -13,11 +13,11 @@ target_entity_type_id: node
 target_bundle: article
 schema_type: Article
 schema_properties:
-  schema_article_subtype: subtype
   body: articleBody
   schema_author: author
   created: dateCreated
   changed: dateModified
-  title: name
   langcode: inLanguage
   field_tags: keywords
+  title: name
+  schema_article_subtype: subtype

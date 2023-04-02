@@ -49,6 +49,8 @@ module:
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
+  jsonapi: 0
+  jsonapi_extras: 0
   language: 0
   layout_builder: 0
   layout_builder_styles: 0
@@ -78,7 +80,14 @@ module:
   rest: 0
   schemadotorg: 0
   schemadotorg_custom_field: 0
+  schemadotorg_devel: 0
+  schemadotorg_field_group: 0
+  schemadotorg_jsonapi_preview: 0
   schemadotorg_jsonld: 0
+  schemadotorg_jsonld_breadcrumb: 0
+  schemadotorg_jsonld_custom: 0
+  schemadotorg_jsonld_embed: 0
+  schemadotorg_jsonld_endpoint: 0
   schemadotorg_jsonld_preview: 0
   schemadotorg_mapping_set: 0
   schemadotorg_media: 0
@@ -109,6 +118,7 @@ module:
   views_ui: 0
   yaml_editor: 0
   pathauto: 1
+  schemadotorg_jsonapi: 1
   content_translation: 10
   schemadotorg_descriptions: 10
   views: 10

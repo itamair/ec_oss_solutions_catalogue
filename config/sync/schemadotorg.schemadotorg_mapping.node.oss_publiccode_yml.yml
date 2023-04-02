@@ -1,0 +1,21 @@
+uuid: af9d223c-5cac-49f4-b1c4-f3a433660843
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_gitrepo_url
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_descrip
+    - node.type.oss_publiccode_yml
+id: node.oss_publiccode_yml
+target_entity_type_id: node
+target_bundle: oss_publiccode_yml
+schema_type: SoftwareApplication
+schema_properties:
+  field_oss_publiccode_yml_descrip: about
+  created: dateCreated
+  changed: dateModified
+  field_oss_publiccode_gitrepo_url: downloadUrl
+  langcode: inLanguage
+  title: name
+  field_oss_publiccode_yml_content: text

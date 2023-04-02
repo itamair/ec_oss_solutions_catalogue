@@ -17,6 +17,7 @@ dependencies:
   module:
     - datetime
     - field_group
+    - layout_builder
     - link
     - user
 third_party_settings:
@@ -27,7 +28,7 @@ third_party_settings:
       label: 'Publiccode.Yml Content'
       parent_name: ''
       region: content
-      weight: 8
+      weight: 9
       format_type: details
       format_settings:
         classes: ''
@@ -35,6 +36,23 @@ third_party_settings:
         id: ''
         open: false
         description: ''
+    group_description:
+      children:
+        - field_oss_publiccode_yml_descrip
+      label: Description
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: node.oss_publiccode_yml.default
 targetEntityType: node
 bundle: oss_publiccode_yml
@@ -48,7 +66,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 5
     region: content
   field_oss_publiccode_aliases:
     type: string
@@ -56,7 +74,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 6
     region: content
   field_oss_publiccode_created:
     type: datetime_default
@@ -65,7 +83,7 @@ content:
       timezone_override: ''
       format_type: d_m_y
     third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
   field_oss_publiccode_gitrepo_url:
     type: link
@@ -77,7 +95,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_oss_publiccode_id:
     type: string
@@ -85,7 +103,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_oss_publiccode_updated:
     type: datetime_default
@@ -94,21 +112,21 @@ content:
       timezone_override: ''
       format_type: d_m_y
     third_party_settings: {  }
-    weight: 6
+    weight: 8
     region: content
   field_oss_publiccode_yml_content:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 8
     region: content
   field_oss_publiccode_yml_descrip:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 8
     region: content
   field_publiccode_yml_fed_catalog:
     type: entity_reference_label
@@ -116,13 +134,21 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 4
+    region: content
+  langcode:
+    type: language
+    label: inline
+    settings:
+      link_to_entity: false
+      native_language: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
 hidden:
   field_oss_publiccode_yml_logo: true
-  langcode: true
