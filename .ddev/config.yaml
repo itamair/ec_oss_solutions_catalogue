@@ -149,8 +149,8 @@ nodejs_version: "16"
 # The phpmyadmin (dba) port is not normally bound on the host at all, instead being routed
 # through ddev-router, but it can be specified and bound.
 
-# mailhog_port: "8025"
-# mailhog_https_port: "8026"
+mailhog_port: "8027"
+mailhog_https_port: "8028"
 # The MailHog ports can be changed from the default 8025 and 8026
 
 # host_mailhog_port: "8025"
