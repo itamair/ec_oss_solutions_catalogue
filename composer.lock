@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38eb384c794e41c36bf81aca2f64fa86",
+    "content-hash": "35a09a1b53aad0587e6a0c19267284e5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3221,6 +3221,58 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/custom_field",
+            "version": "1.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/custom_field.git",
+                "reference": "1.0.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/custom_field-1.0.0-beta5.zip",
+                "reference": "1.0.0-beta5",
+                "shasum": "450881618232ac3b29db52a00c01e7317a6b6777"
+            },
+            "require": {
+                "drupal/core": "^8.8.3 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta5",
+                    "datestamp": "1673646325",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "apmsooner",
+                    "homepage": "https://www.drupal.org/user/593202"
+                },
+                {
+                    "name": "kamkejj",
+                    "homepage": "https://www.drupal.org/user/81043"
+                }
+            ],
+            "description": "Create simple, but flexible, multivalue fields without the hassle of entity references.",
+            "homepage": "https://www.drupal.org/project/custom_field",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/custom_field",
+                "issues": "https://www.drupal.org/project/issues/custom_field"
             }
         },
         {
