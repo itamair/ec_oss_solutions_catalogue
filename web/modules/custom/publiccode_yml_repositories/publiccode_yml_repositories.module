@@ -9,9 +9,13 @@ use Drupal\migrate\MigrateExecutable;
 use Drupal\migrate\MigrateMessage;
 use Drupal\migrate\MigrateException;
 use Drupal\Component\Plugin\Exception\PluginException;
-use Symfony\Component\Yaml\Yaml;
-use Drupal\Node\NodeInterface;
-use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function publiccode_yml_repositories_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'publiccode_yml_repositories/common';
+}
 
 /**
  * Implements hook_cron().

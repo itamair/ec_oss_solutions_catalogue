@@ -154,7 +154,7 @@ resourceFields:
     enhancer:
       id: ''
   field_oss_publiccode_created:
-    disabled: true
+    disabled: false
     fieldName: field_oss_publiccode_created
     publicName: field_oss_publiccode_created
     enhancer:
@@ -172,7 +172,7 @@ resourceFields:
     enhancer:
       id: ''
   field_oss_publiccode_updated:
-    disabled: true
+    disabled: false
     fieldName: field_oss_publiccode_updated
     publicName: field_oss_publiccode_updated
     enhancer:
@@ -196,7 +196,7 @@ resourceFields:
     enhancer:
       id: ''
   field_publiccode_yml_fed_catalog:
-    disabled: true
+    disabled: false
     fieldName: field_publiccode_yml_fed_catalog
     publicName: field_publiccode_yml_fed_catalog
     enhancer:

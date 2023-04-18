@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - node.type.oss_publiccode_yml
   module:
     - comment
     - contact
@@ -30,7 +31,10 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'create oss_publiccode_yml content'
+  - 'delete own oss_publiccode_yml content'
   - 'edit own comments'
+  - 'edit own oss_publiccode_yml content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
