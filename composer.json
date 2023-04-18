@@ -62,7 +62,7 @@
         "drupal/pathauto": "^1.11",
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
-        "drupal/schemadotorg": "^1.0@alpha",
+        "drupal/schemadotorg": "1.0.x-dev",
         "drupal/single_image_formatter": "^1.6",
         "drupal/svg_image": "^3.0",
         "drupal/token": "^1.11",
