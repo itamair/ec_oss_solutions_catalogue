@@ -9,6 +9,8 @@ dependencies:
     - contact
     - filter
     - media
+    - openapi
+    - schemata
     - search
     - system
 _core:
@@ -20,6 +22,8 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access openapi api docs'
+  - 'access schemata data models'
   - 'access site-wide contact form'
   - 'access user profiles'
   - 'search content'

@@ -1,0 +1,21 @@
+uuid: e2f73a20-8c25-4e14-8499-2542b1ab6f90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publiccode_yml
+    - node.type.oss_publiccode_yml
+  module:
+    - text
+id: node.oss_publiccode_yml.field_publiccode_yml
+field_name: field_publiccode_yml
+entity_type: node
+bundle: oss_publiccode_yml
+label: Publiccode.yml
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

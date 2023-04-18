@@ -10,6 +10,8 @@ dependencies:
     - filter
     - media
     - node
+    - openapi
+    - schemata
     - search
     - shortcut
     - system
@@ -23,6 +25,8 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access content overview'
+  - 'access openapi api docs'
+  - 'access schemata data models'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
