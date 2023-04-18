@@ -1,0 +1,113 @@
+uuid: 09ec00ef-75a6-4bb5-9e21-9ee927302321
+langcode: en
+status: true
+dependencies:
+  module:
+    - migrate_plus
+id: migration--migration
+disabled: true
+path: migration/migration
+resourceType: migration--migration
+resourceFields:
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  dependencies:
+    disabled: false
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: false
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: false
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  class:
+    disabled: false
+    fieldName: class
+    publicName: class
+    enhancer:
+      id: ''
+  field_plugin_method:
+    disabled: false
+    fieldName: field_plugin_method
+    publicName: field_plugin_method
+    enhancer:
+      id: ''
+  cck_plugin_method:
+    disabled: false
+    fieldName: cck_plugin_method
+    publicName: cck_plugin_method
+    enhancer:
+      id: ''
+  migration_tags:
+    disabled: false
+    fieldName: migration_tags
+    publicName: migration_tags
+    enhancer:
+      id: ''
+  migration_group:
+    disabled: false
+    fieldName: migration_group
+    publicName: migration_group
+    enhancer:
+      id: ''
+  label:
+    disabled: false
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+  source:
+    disabled: false
+    fieldName: source
+    publicName: source
+    enhancer:
+      id: ''
+  process:
+    disabled: false
+    fieldName: process
+    publicName: process
+    enhancer:
+      id: ''
+  destination:
+    disabled: false
+    fieldName: destination
+    publicName: destination
+    enhancer:
+      id: ''
+  migration_dependencies:
+    disabled: false
+    fieldName: migration_dependencies
+    publicName: migration_dependencies
+    enhancer:
+      id: ''

@@ -1,0 +1,83 @@
+uuid: bc37187c-a3fb-41f6-9ce6-09eab260a788
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_builder_styles
+id: layout_builder_style_group--layout_builder_style_group
+disabled: true
+path: layout_builder_style_group/layout_builder_style_group
+resourceType: layout_builder_style_group--layout_builder_style_group
+resourceFields:
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  dependencies:
+    disabled: false
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: false
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: false
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  label:
+    disabled: false
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+  multiselect:
+    disabled: false
+    fieldName: multiselect
+    publicName: multiselect
+    enhancer:
+      id: ''
+  form_type:
+    disabled: false
+    fieldName: form_type
+    publicName: form_type
+    enhancer:
+      id: ''
+  required:
+    disabled: false
+    fieldName: required
+    publicName: required
+    enhancer:
+      id: ''
+  weight:
+    disabled: false
+    fieldName: weight
+    publicName: weight
+    enhancer:
+      id: ''

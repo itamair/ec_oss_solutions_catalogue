@@ -1,0 +1,95 @@
+uuid: a69e0831-60d1-46fc-95af-9df98e29c541
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_builder_styles
+id: layout_builder_style--layout_builder_style
+disabled: true
+path: layout_builder_style/layout_builder_style
+resourceType: layout_builder_style--layout_builder_style
+resourceFields:
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  dependencies:
+    disabled: false
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: false
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: false
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  label:
+    disabled: false
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+  classes:
+    disabled: false
+    fieldName: classes
+    publicName: classes
+    enhancer:
+      id: ''
+  type:
+    disabled: false
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  group:
+    disabled: false
+    fieldName: group
+    publicName: group
+    enhancer:
+      id: ''
+  weight:
+    disabled: false
+    fieldName: weight
+    publicName: weight
+    enhancer:
+      id: ''
+  block_restrictions:
+    disabled: false
+    fieldName: block_restrictions
+    publicName: block_restrictions
+    enhancer:
+      id: ''
+  layout_restrictions:
+    disabled: false
+    fieldName: layout_restrictions
+    publicName: layout_restrictions
+    enhancer:
+      id: ''

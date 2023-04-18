@@ -1,0 +1,101 @@
+uuid: 7449c098-fa2f-4abf-8a87-c8d414ed5a7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - schemadotorg
+id: schemadotorg_mapping_type--schemadotorg_mapping_type
+disabled: true
+path: schemadotorg_mapping_type/schemadotorg_mapping_type
+resourceType: schemadotorg_mapping_type--schemadotorg_mapping_type
+resourceFields:
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  dependencies:
+    disabled: false
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: false
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: false
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  target_entity_type_id:
+    disabled: false
+    fieldName: target_entity_type_id
+    publicName: target_entity_type_id
+    enhancer:
+      id: ''
+  multiple:
+    disabled: false
+    fieldName: multiple
+    publicName: multiple
+    enhancer:
+      id: ''
+  recommended_schema_types:
+    disabled: false
+    fieldName: recommended_schema_types
+    publicName: recommended_schema_types
+    enhancer:
+      id: ''
+  default_schema_types:
+    disabled: false
+    fieldName: default_schema_types
+    publicName: default_schema_types
+    enhancer:
+      id: ''
+  default_schema_type_properties:
+    disabled: false
+    fieldName: default_schema_type_properties
+    publicName: default_schema_type_properties
+    enhancer:
+      id: ''
+  default_schema_type_view_displays:
+    disabled: false
+    fieldName: default_schema_type_view_displays
+    publicName: default_schema_type_view_displays
+    enhancer:
+      id: ''
+  default_base_fields:
+    disabled: false
+    fieldName: default_base_fields
+    publicName: default_base_fields
+    enhancer:
+      id: ''
+  default_component_weights:
+    disabled: false
+    fieldName: default_component_weights
+    publicName: default_component_weights
+    enhancer:
+      id: ''
