@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_descrip
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
-    - field.field.node.oss_publiccode_yml.field_publiccode_yml
     - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
     - node.type.oss_publiccode_yml
   module:
@@ -20,7 +19,6 @@ dependencies:
     - field_group
     - layout_builder
     - link
-    - text
     - user
 third_party_settings:
   field_group:
@@ -129,13 +127,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 8
-    region: content
-  field_publiccode_yml:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 10
     region: content
   field_publiccode_yml_fed_catalog:
     type: entity_reference_label

@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_descrip
     - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
-    - field.field.node.oss_publiccode_yml.field_publiccode_yml
     - field.field.node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
     - image.style.thumbnail
     - node.type.oss_publiccode_yml
@@ -22,7 +21,6 @@ dependencies:
     - link
     - path
     - svg_image
-    - text
     - yaml_editor
 third_party_settings:
   field_group:
@@ -41,7 +39,6 @@ third_party_settings:
         - title
         - field_oss_publiccode_yml_descrip
         - field_oss_publiccode_yml_content
-        - field_publiccode_yml
       label: 'General information'
       region: content
       parent_name: ''
@@ -126,14 +123,6 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_publiccode_yml:
-    type: text_textarea
-    weight: 5
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
     third_party_settings: {  }
   field_publiccode_yml_fed_catalog:
     type: options_select

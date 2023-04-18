@@ -12,10 +12,10 @@ target_entity_type_id: node
 target_bundle: oss_publiccode_yml
 schema_type: SoftwareApplication
 schema_properties:
-  field_oss_publiccode_yml_descrip: about
   created: dateCreated
   changed: dateModified
-  field_oss_publiccode_gitrepo_url: downloadUrl
+  field_oss_publiccode_yml_descrip: description
   langcode: inLanguage
   title: name
   field_oss_publiccode_yml_content: text
+  field_oss_publiccode_gitrepo_url: url
