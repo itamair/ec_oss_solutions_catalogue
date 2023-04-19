@@ -5,7 +5,6 @@ namespace Drupal\publiccode_yml_repositories\Plugin\migrate\process;
 use Drupal\migrate\ProcessPluginBase;
 use Drupal\migrate\MigrateExecutableInterface;
 use Drupal\migrate\Row;
-use Symfony\Component\Yaml\Yaml;
 
 /**
  * Returns the Description It value of the PubliccodeYm content.
@@ -22,15 +21,16 @@ class PubliccodeYmlDescription extends ProcessPluginBase {
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    $publiccode_yml_values = Yaml::parse($value);
+    /** @var \Drupal\publiccode_yml_repositories\Services\PubliccodeYmlParserInterface $publiccode_yml_parser */
+    $publiccode_yml_parser = \Drupal::service('publiccode_yml_parser');
+    $description_block = $publiccode_yml_parser->descriptionBlock($value);
     $description = '';
     $langcode = $row->getSourceProperty('langcode') ?? 'it';
-    if (isset($publiccode_yml_values) &&
-      array_key_exists('description', $publiccode_yml_values) &&
-      array_key_exists($langcode, $publiccode_yml_values['description']) &&
-      array_key_exists('longDescription', $publiccode_yml_values['description'][$langcode]) &&
-      !empty($publiccode_yml_values['description'][$langcode]['longDescription'])) {
-      $description = $publiccode_yml_values['description'][$langcode]['longDescription'];
+    if (!empty($description_block) &&
+      array_key_exists($langcode, $description_block) &&
+      array_key_exists('longDescription', $description_block[$langcode]) &&
+      !empty($description_block[$langcode]['longDescription'])) {
+      $description = $description_block[$langcode]['longDescription'];
     }
     return $description;
   }
