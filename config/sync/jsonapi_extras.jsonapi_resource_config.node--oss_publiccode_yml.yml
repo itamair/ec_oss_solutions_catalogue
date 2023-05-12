@@ -9,124 +9,16 @@ disabled: false
 path: node/oss_publiccode_yml
 resourceType: node--oss_publiccode_yml
 resourceFields:
-  nid:
-    disabled: false
-    fieldName: nid
-    publicName: nid
-    enhancer:
-      id: ''
-  uuid:
-    disabled: false
-    fieldName: uuid
-    publicName: uuid
-    enhancer:
-      id: ''
-  vid:
-    disabled: true
-    fieldName: vid
-    publicName: vid
-    enhancer:
-      id: ''
-  langcode:
-    disabled: false
-    fieldName: langcode
-    publicName: langcode
-    enhancer:
-      id: ''
-  type:
-    disabled: false
-    fieldName: type
-    publicName: type
-    enhancer:
-      id: ''
-  revision_timestamp:
-    disabled: true
-    fieldName: revision_timestamp
-    publicName: revision_timestamp
-    enhancer:
-      id: ''
-  revision_uid:
-    disabled: true
-    fieldName: revision_uid
-    publicName: revision_uid
-    enhancer:
-      id: ''
-  revision_log:
-    disabled: true
-    fieldName: revision_log
-    publicName: revision_log
-    enhancer:
-      id: ''
-  status:
-    disabled: false
-    fieldName: status
-    publicName: status
-    enhancer:
-      id: ''
-  uid:
-    disabled: false
-    fieldName: uid
-    publicName: uid
-    enhancer:
-      id: ''
-  title:
-    disabled: false
-    fieldName: title
-    publicName: title
-    enhancer:
-      id: ''
-  created:
-    disabled: false
-    fieldName: created
-    publicName: created
-    enhancer:
-      id: ''
   changed:
     disabled: false
     fieldName: changed
     publicName: changed
     enhancer:
       id: ''
-  promote:
-    disabled: false
-    fieldName: promote
-    publicName: promote
-    enhancer:
-      id: ''
-  sticky:
-    disabled: false
-    fieldName: sticky
-    publicName: sticky
-    enhancer:
-      id: ''
-  default_langcode:
-    disabled: false
-    fieldName: default_langcode
-    publicName: default_langcode
-    enhancer:
-      id: ''
-  revision_default:
+  content_translation_outdated:
     disabled: true
-    fieldName: revision_default
-    publicName: revision_default
-    enhancer:
-      id: ''
-  revision_translation_affected:
-    disabled: true
-    fieldName: revision_translation_affected
-    publicName: revision_translation_affected
-    enhancer:
-      id: ''
-  path:
-    disabled: false
-    fieldName: path
-    publicName: path
-    enhancer:
-      id: ''
-  menu_link:
-    disabled: true
-    fieldName: menu_link
-    publicName: menu_link
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
     enhancer:
       id: ''
   content_translation_source:
@@ -135,10 +27,34 @@ resourceFields:
     publicName: content_translation_source
     enhancer:
       id: ''
-  content_translation_outdated:
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  field_description:
     disabled: true
-    fieldName: content_translation_outdated
-    publicName: content_translation_outdated
+    fieldName: field_description
+    publicName: field_description
+    enhancer:
+      id: ''
+  field_git_repo_url:
+    disabled: true
+    fieldName: field_git_repo_url
+    publicName: field_git_repo_url
+    enhancer:
+      id: ''
+  field_oss_created:
+    disabled: true
+    fieldName: field_oss_created
+    publicName: field_oss_created
     enhancer:
       id: ''
   field_oss_publiccode_active:
@@ -195,9 +111,123 @@ resourceFields:
     publicName: field_oss_publiccode_yml_logo
     enhancer:
       id: ''
+  field_oss_solution_source:
+    disabled: true
+    fieldName: field_oss_solution_source
+    publicName: field_oss_solution_source
+    enhancer:
+      id: ''
+  field_oss_updated:
+    disabled: true
+    fieldName: field_oss_updated
+    publicName: field_oss_updated
+    enhancer:
+      id: ''
   field_publiccode_yml_fed_catalog:
     disabled: false
     fieldName: field_publiccode_yml_fed_catalog
     publicName: field_publiccode_yml_fed_catalog
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: true
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  nid:
+    disabled: false
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  promote:
+    disabled: false
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: true
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  revision_timestamp:
+    disabled: true
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: true
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  sticky:
+    disabled: false
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  type:
+    disabled: false
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  uid:
+    disabled: false
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: true
+    fieldName: vid
+    publicName: vid
     enhancer:
       id: ''

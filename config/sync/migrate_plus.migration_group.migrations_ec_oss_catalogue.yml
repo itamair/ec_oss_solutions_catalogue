@@ -1,0 +1,10 @@
+uuid: 7952e564-2237-4760-a625-1794bfaf66ef
+langcode: it
+status: true
+dependencies: {  }
+id: migrations_ec_oss_catalogue
+label: 'Migrations EC OSS Catalogue'
+description: ''
+source_type: null
+module: null
+shared_configuration: null

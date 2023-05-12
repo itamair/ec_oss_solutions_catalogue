@@ -1,0 +1,23 @@
+name: 'Git Project Content Type'
+description: 'Describe a GIT Project Solution, according to its GIT repo informations.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - better_exposed_filters
+  - field
+  - field_formatter_range
+  - field_group
+  - jsonapi_extras
+  - language
+  - link
+  - menu_ui
+  - node
+  - path
+  - schemadotorg
+  - svg_image
+  - taxonomy
+  - text
+  - user
+  - views
+version: '1.0'
+package: 'EC OSS Solutions Catalogue'

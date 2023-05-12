@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publiccode_yml_repository
+id: taxonomy_term.publiccode_yml_repository.name
+field_name: name
+entity_type: taxonomy_term
+bundle: publiccode_yml_repository
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.git_project.field_description
+    - field.field.node.git_project.field_git_repo_url
+    - field.field.node.git_project.field_oss_solution_source
+    - node.type.git_project
+id: node.git_project
+target_entity_type_id: node
+target_bundle: git_project
+schema_type: SoftwareApplication
+schema_properties:
+  field_oss_solution_source: applicationSuite
+  created: dateCreated
+  changed: dateModified
+  field_description: description
+  langcode: inLanguage
+  title: name
+  field_git_repo_url: url

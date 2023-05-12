@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.oss_publiccode_yml
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - node
+    - openapi
+    - schemata
+    - search
+    - shortcut
+    - system
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false

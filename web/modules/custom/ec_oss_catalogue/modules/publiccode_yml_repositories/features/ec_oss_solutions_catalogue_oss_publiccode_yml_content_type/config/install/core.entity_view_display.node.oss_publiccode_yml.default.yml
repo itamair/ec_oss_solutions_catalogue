@@ -1,0 +1,158 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.oss_publiccode_yml.field_description
+    - field.field.node.oss_publiccode_yml.field_git_repo_url
+    - field.field.node.oss_publiccode_yml.field_oss_created
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_active
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_aliases
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_id
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_content
+    - field.field.node.oss_publiccode_yml.field_oss_publiccode_yml_logo
+    - field.field.node.oss_publiccode_yml.field_oss_solution_source
+    - field.field.node.oss_publiccode_yml.field_oss_updated
+    - node.type.oss_publiccode_yml
+  module:
+    - datetime
+    - field_formatter_range
+    - field_group
+    - layout_builder
+    - link
+    - user
+third_party_settings:
+  field_group:
+    group_publiccodeyml:
+      children:
+        - field_oss_publiccode_yml_content
+      label: 'Publiccode.Yml Content'
+      parent_name: ''
+      region: content
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+    group_description:
+      children:
+        1: field_description
+      label: Description
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.oss_publiccode_yml.default
+targetEntityType: node
+bundle: oss_publiccode_yml
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_git_repo_url:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_oss_created:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: d_m_y
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_oss_publiccode_active:
+    type: boolean
+    label: inline
+    settings:
+      format: yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_oss_publiccode_aliases:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_oss_publiccode_id:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_oss_publiccode_yml_content:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_oss_solution_source:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      field_formatter_range:
+        order: 0
+        limit: 0
+        offset: 0
+    weight: 4
+    region: content
+  field_oss_updated:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: d_m_y
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  langcode:
+    type: language
+    label: inline
+    settings:
+      link_to_entity: false
+      native_language: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+hidden:
+  field_oss_publiccode_yml_logo: true

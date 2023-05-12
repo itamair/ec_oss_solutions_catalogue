@@ -1,0 +1,83 @@
+uuid: f400eb08-f6a9-434a-8eb3-c6fb0a5390f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - features
+id: features_bundle--features_bundle
+disabled: true
+path: features_bundle/features_bundle
+resourceType: features_bundle--features_bundle
+resourceFields:
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  dependencies:
+    disabled: false
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: false
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: false
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  name:
+    disabled: false
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+  machine_name:
+    disabled: false
+    fieldName: machine_name
+    publicName: machine_name
+    enhancer:
+      id: ''
+  description:
+    disabled: false
+    fieldName: description
+    publicName: description
+    enhancer:
+      id: ''
+  assignments:
+    disabled: false
+    fieldName: assignments
+    publicName: assignments
+    enhancer:
+      id: ''
+  profile_name:
+    disabled: false
+    fieldName: profile_name
+    publicName: profile_name
+    enhancer:
+      id: ''
+  is_profile:
+    disabled: false
+    fieldName: is_profile
+    publicName: is_profile
+    enhancer:
+      id: ''

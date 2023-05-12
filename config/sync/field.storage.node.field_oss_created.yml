@@ -1,0 +1,20 @@
+uuid: 5b031899-f64a-4d74-b9e0-a3d970fc2cae
+langcode: it
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_oss_created
+field_name: field_oss_created
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

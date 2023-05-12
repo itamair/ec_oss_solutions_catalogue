@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publiccode_yml_fed_catalog
+    - node.type.oss_publiccode_yml
+    - taxonomy.vocabulary.publiccode_yml_repository
+id: node.oss_publiccode_yml.field_publiccode_yml_fed_catalog
+field_name: field_publiccode_yml_fed_catalog
+entity_type: node
+bundle: oss_publiccode_yml
+label: 'Publiccode Yml Fed Catalog'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      publiccode_yml_repository: publiccode_yml_repository
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

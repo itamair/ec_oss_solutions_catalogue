@@ -1,0 +1,11 @@
+uuid: 628c92de-90da-4f46-bf59-0427b93bb8eb
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.git_project
+id: node.git_project
+target_entity_type_id: node
+target_bundle: git_project
+default_langcode: site_default
+language_alterable: false

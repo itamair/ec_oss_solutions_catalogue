@@ -3,19 +3,9 @@ langcode: it
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
-    - node.type.oss_publiccode_yml
+    - filter.format.markdown_syntax
   module:
-    - comment
-    - contact
     - filter
-    - media
-    - node
-    - openapi
-    - schemata
-    - search
-    - shortcut
-    - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -23,22 +13,4 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
-  - 'access content'
-  - 'access content overview'
-  - 'access openapi api docs'
-  - 'access schemata data models'
-  - 'access shortcuts'
-  - 'access site-wide contact form'
-  - 'access user profiles'
-  - 'create oss_publiccode_yml content'
-  - 'delete own oss_publiccode_yml content'
-  - 'edit own comments'
-  - 'edit own oss_publiccode_yml content'
-  - 'post comments'
-  - 'search content'
-  - 'skip comment approval'
-  - 'use text format basic_html'
-  - 'view media'
-  - 'view own unpublished content'
-  - 'view user email addresses'
+  - 'use text format markdown_syntax'

@@ -39,6 +39,7 @@
         "drupal/entity_type_clone": "^1.7",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/examples": "^3.0",
+        "drupal/features": "^3.12",
         "drupal/feeds": "^3.0@alpha",
         "drupal/field_formatter_range": "^1.4",
         "drupal/field_group": "^3.4",
@@ -49,6 +50,7 @@
         "drupal/jquery_ui": "^1.6",
         "drupal/jsonapi_extras": "^3.23",
         "drupal/layout_builder_styles": "^2.0",
+        "drupal/markdown": "^3.0@RC",
         "drupal/masquerade": "^2.0@RC",
         "drupal/mediteran": "^1.29",
         "drupal/migrate_plus": "^6.0",
@@ -75,6 +77,7 @@
         "drupal/webprofiler": "^9.0",
         "drupal/yaml_editor": "^1.1",
         "drush/drush": "^11.0",
+        "league/commonmark": "^1.6.7",
         "mnsami/composer-custom-directory-installer": "^2.0"
     },
     "conflict": {
@@ -155,6 +158,9 @@
             },
             "drupal/color_field": {
                 "#3312329 PHP8.1 compatibility": "https://www.drupal.org/files/issues/2022-09-28/php81-compatibility-3312329-2.patch"
+            },
+            "drupal/markdown": {
+                "#3265416 Error when using markdown module with PHP 8.1 on Drupal 9.3": "https://www.drupal.org/files/issues/2023-04-21/3265416-markdown-php-81-25.patch"
             }
         }
     },

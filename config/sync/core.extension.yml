@@ -20,6 +20,7 @@ module:
   computed_field: 0
   config: 0
   config_translation: 0
+  config_update: 0
   contact: 0
   contextual: 0
   custom_field: 0
@@ -29,11 +30,14 @@ module:
   devel: 0
   devel_generate: 0
   dynamic_page_cache: 0
+  ec_oss_catalogue: 0
   editor: 0
   entity_reference_revisions: 0
   entity_type_clone: 0
   entity_usage: 0
   examples: 0
+  features: 0
+  features_ui: 0
   field: 0
   field_formatter_range: 0
   field_group: 0
@@ -41,6 +45,7 @@ module:
   file: 0
   filter: 0
   geofield: 0
+  git_projects_federator: 0
   hal: 0
   help: 0
   history: 0
@@ -58,6 +63,7 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  markdown: 0
   masquerade: 0
   media: 0
   menu_link_content: 0

@@ -8,7 +8,7 @@ slogan: ''
 page:
   403: ''
   404: ''
-  front: /publiccode-yml-oss-solutions
+  front: /ec_oss_solutions_catalogue
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

@@ -3,8 +3,8 @@ langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.node.field_publiccode_yml_fed_catalog
-    - taxonomy.vocabulary.publiccode_yml_repository
+    - field.storage.node.field_oss_solution_source
+    - taxonomy.vocabulary.oss_solution_source
   module:
     - better_exposed_filters
     - node
@@ -277,15 +277,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
-        field_publiccode_yml_fed_catalog:
-          id: field_publiccode_yml_fed_catalog
-          table: node__field_publiccode_yml_fed_catalog
-          field: field_publiccode_yml_fed_catalog
+        field_oss_solution_source:
+          id: field_oss_solution_source
+          table: node__field_oss_solution_source
+          field: field_oss_solution_source
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Federated Catalog'
+          label: 'Federated Source'
           exclude: false
           alter:
             alter_text: false
@@ -678,10 +678,10 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_publiccode_yml_fed_catalog_target_id:
-          id: field_publiccode_yml_fed_catalog_target_id
-          table: node__field_publiccode_yml_fed_catalog
-          field: field_publiccode_yml_fed_catalog_target_id
+        field_oss_solution_source_target_id:
+          id: field_oss_solution_source_target_id
+          table: node__field_oss_solution_source
+          field: field_oss_solution_source_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -691,14 +691,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_publiccode_yml_fed_catalog_target_id_op
-            label: 'Federated Catalog'
+            operator_id: field_oss_solution_source_target_id_op
+            label: 'Federated Source'
             description: ''
             use_operator: false
-            operator: field_publiccode_yml_fed_catalog_target_id_op
+            operator: field_oss_solution_source_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_publiccode_yml_fed_catalog_target_id
+            identifier: field_oss_solution_source_target_id
             required: false
             remember: false
             multiple: false
@@ -720,7 +720,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          vid: publiccode_yml_repository
+          vid: oss_solution_source
           type: select
           hierarchy: false
           limit: true
@@ -859,7 +859,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_publiccode_yml_fed_catalog'
+        - 'config:field.storage.node.field_oss_solution_source'
         - schemadotorg_descriptions.settings
   page_admin_content:
     id: page_admin_content
@@ -894,5 +894,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_publiccode_yml_fed_catalog'
+        - 'config:field.storage.node.field_oss_solution_source'
         - schemadotorg_descriptions.settings

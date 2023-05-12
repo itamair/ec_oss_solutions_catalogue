@@ -1,0 +1,269 @@
+uuid: 5eeec825-5bdd-4806-91ae-9e906909e88d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.git_project
+id: node--git_project
+disabled: false
+path: node/git_project
+resourceType: node--git_project
+resourceFields:
+  body:
+    disabled: false
+    fieldName: body
+    publicName: text
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: true
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  content_translation_source:
+    disabled: true
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  field_description:
+    disabled: true
+    fieldName: field_description
+    publicName: field_description
+    enhancer:
+      id: ''
+  field_git_project_id:
+    disabled: true
+    fieldName: field_git_project_id
+    publicName: field_git_project_id
+    enhancer:
+      id: ''
+  field_git_readme_md:
+    disabled: true
+    fieldName: field_git_readme_md
+    publicName: field_git_readme_md
+    enhancer:
+      id: ''
+  field_git_repo_url:
+    disabled: true
+    fieldName: field_git_repo_url
+    publicName: field_git_repo_url
+    enhancer:
+      id: ''
+  field_oss_solution_source:
+    disabled: true
+    fieldName: field_oss_solution_source
+    publicName: field_oss_solution_source
+    enhancer:
+      id: ''
+  field_readme_md:
+    disabled: true
+    fieldName: field_readme_md
+    publicName: field_readme_md
+    enhancer:
+      id: ''
+  field_tags:
+    disabled: false
+    fieldName: field_tags
+    publicName: field_tags
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: true
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  nid:
+    disabled: false
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  promote:
+    disabled: false
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: true
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  revision_timestamp:
+    disabled: true
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: true
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  schema_application_category:
+    disabled: false
+    fieldName: schema_application_category
+    publicName: application_category
+    enhancer:
+      id: ''
+  schema_application_sub_category:
+    disabled: false
+    fieldName: schema_application_sub_category
+    publicName: application_sub_category
+    enhancer:
+      id: ''
+  schema_feature_list:
+    disabled: false
+    fieldName: schema_feature_list
+    publicName: feature_list
+    enhancer:
+      id: ''
+  schema_git_url:
+    disabled: false
+    fieldName: schema_git_url
+    publicName: download_url
+    enhancer:
+      id: ''
+  schema_memory_requirements:
+    disabled: false
+    fieldName: schema_memory_requirements
+    publicName: memory_requirements
+    enhancer:
+      id: ''
+  schema_operating_system:
+    disabled: false
+    fieldName: schema_operating_system
+    publicName: operating_system
+    enhancer:
+      id: ''
+  schema_release_notes:
+    disabled: false
+    fieldName: schema_release_notes
+    publicName: release_notes
+    enhancer:
+      id: ''
+  schema_screenshot:
+    disabled: false
+    fieldName: schema_screenshot
+    publicName: screenshot
+    enhancer:
+      id: ''
+  schema_software_add_on:
+    disabled: false
+    fieldName: schema_software_add_on
+    publicName: software_add_on
+    enhancer:
+      id: ''
+  schema_software_help:
+    disabled: false
+    fieldName: schema_software_help
+    publicName: software_help
+    enhancer:
+      id: ''
+  schema_software_requirements:
+    disabled: false
+    fieldName: schema_software_requirements
+    publicName: software_requirements
+    enhancer:
+      id: ''
+  schema_software_version:
+    disabled: false
+    fieldName: schema_software_version
+    publicName: software_version
+    enhancer:
+      id: ''
+  schema_storage_requirements:
+    disabled: false
+    fieldName: schema_storage_requirements
+    publicName: storage_requirements
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  sticky:
+    disabled: false
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  type:
+    disabled: false
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  uid:
+    disabled: false
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: true
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
