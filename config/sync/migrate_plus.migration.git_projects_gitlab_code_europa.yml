@@ -34,6 +34,10 @@ source:
       label: 'Url of the Gitlab Code Europa repo'
       selector: web_url
     -
+      name: avatar_url
+      label: avatar_url
+      selector: avatar_url
+    -
       name: created_at
       label: 'Creation date in Zulu time (UTC)'
       selector: created_at
@@ -46,6 +50,8 @@ source:
       type: string
     web_url:
       type: string
+  constants:
+    file_destination: 'public://git_projects_icons/'
 process:
   type:
     plugin: default_value
@@ -83,6 +89,15 @@ process:
       from_timezone: UTC
       to_timezone: UTC
   field_git_repo_url: web_url
+  field_git_repo_icon:
+    plugin: gitlab_project_icon_import
+    source: avatar_url
+    skip_on_missing_source: true
+    skip_on_error: true
+    rename: true
+    destination: constants/file_destination
+    title: name
+    alt: name
   field_description: description
   field_git_readme_md/value:
     -

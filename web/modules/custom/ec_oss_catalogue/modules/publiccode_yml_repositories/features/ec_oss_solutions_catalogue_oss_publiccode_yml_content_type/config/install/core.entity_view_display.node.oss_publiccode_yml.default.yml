@@ -28,27 +28,13 @@ third_party_settings:
       label: 'Publiccode.Yml Content'
       parent_name: ''
       region: content
-      weight: 10
+      weight: 9
       format_type: details
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
         open: false
-        description: ''
-    group_description:
-      children:
-        1: field_description
-      label: Description
-      parent_name: ''
-      region: content
-      weight: 1
-      format_type: details
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        open: true
         description: ''
   layout_builder:
     enabled: false
@@ -63,7 +49,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 8
     region: content
   field_git_repo_url:
     type: link
@@ -75,7 +61,7 @@ content:
       rel: '0'
       target: _blank
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_oss_created:
     type: datetime_default
@@ -84,7 +70,7 @@ content:
       timezone_override: ''
       format_type: d_m_y
     third_party_settings: {  }
-    weight: 8
+    weight: 6
     region: content
   field_oss_publiccode_active:
     type: boolean
@@ -94,7 +80,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 1
     region: content
   field_oss_publiccode_aliases:
     type: string
@@ -102,7 +88,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
+    weight: 4
     region: content
   field_oss_publiccode_id:
     type: string
@@ -110,7 +96,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_oss_publiccode_yml_content:
     type: basic_string
@@ -129,7 +115,7 @@ content:
         order: 0
         limit: 0
         offset: 0
-    weight: 4
+    weight: 0
     region: content
   field_oss_updated:
     type: datetime_default
@@ -138,7 +124,7 @@ content:
       timezone_override: ''
       format_type: d_m_y
     third_party_settings: {  }
-    weight: 9
+    weight: 7
     region: content
   langcode:
     type: language
@@ -147,12 +133,12 @@ content:
       link_to_entity: false
       native_language: true
     third_party_settings: {  }
-    weight: 2
+    weight: 5
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 11
+    weight: 10
     region: content
 hidden:
   field_oss_publiccode_yml_logo: true

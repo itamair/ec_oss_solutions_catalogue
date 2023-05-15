@@ -5,26 +5,17 @@ dependencies:
     - field.field.node.git_project.field_description
     - field.field.node.git_project.field_git_project_id
     - field.field.node.git_project.field_git_readme_md
+    - field.field.node.git_project.field_git_repo_icon
     - field.field.node.git_project.field_git_repo_url
     - field.field.node.git_project.field_oss_solution_source
+    - image.style.medium
     - node.type.git_project
   module:
     - field_formatter_range
-    - field_group
     - link
+    - svg_image
     - text
     - user
-third_party_settings:
-  field_group:
-    group_software_application:
-      children:
-        - field_oss_solution_source
-      label: 'Software application information'
-      parent_name: ''
-      region: content
-      weight: 0
-      format_type: fieldset
-      format_settings: {  }
 id: node.git_project.default
 targetEntityType: node
 bundle: git_project
@@ -35,7 +26,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
   field_git_project_id:
     type: string
@@ -43,14 +34,29 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_git_readme_md:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 5
+    region: content
+  field_git_repo_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_git_repo_url:
     type: link
@@ -74,12 +80,12 @@ content:
         order: 0
         limit: 0
         offset: 0
-    weight: 108
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
 hidden:
   langcode: true

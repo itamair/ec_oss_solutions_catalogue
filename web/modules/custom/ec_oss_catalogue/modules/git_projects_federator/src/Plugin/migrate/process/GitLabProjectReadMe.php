@@ -21,7 +21,7 @@ use GuzzleHttp\Exception\RequestException;
  *   id = "gitlab_code_europa_project_readme"
  * )
  */
-class GitLabCodeEuropaProjectReadMe extends ProcessPluginBase implements ContainerFactoryPluginInterface {
+class GitLabProjectReadMe extends ProcessPluginBase implements ContainerFactoryPluginInterface {
 
   /**
    * The HTTP client.

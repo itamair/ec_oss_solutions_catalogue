@@ -1,6 +1,10 @@
 langcode: it
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.markdown_syntax
+  module:
+    - filter
 id: authenticated
 label: 'Authenticated user'
 weight: 1

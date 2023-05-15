@@ -63,6 +63,12 @@ resourceFields:
     publicName: field_git_readme_md
     enhancer:
       id: ''
+  field_git_repo_icon:
+    disabled: true
+    fieldName: field_git_repo_icon
+    publicName: field_git_repo_icon
+    enhancer:
+      id: ''
   field_git_repo_url:
     disabled: true
     fieldName: field_git_repo_url

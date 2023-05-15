@@ -9,3 +9,4 @@ dependencies:
   - svg_image:svg_image
   - migrate_plus:migrate_plus
   - migrate_tools:migrate_tools
+  - migrate_file:migrate_file

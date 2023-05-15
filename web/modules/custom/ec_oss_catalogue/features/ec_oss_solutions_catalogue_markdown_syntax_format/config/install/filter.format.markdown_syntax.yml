@@ -30,4 +30,4 @@ filters:
           filter_caption: false
           media_embed: false
       override: false
-    filterFormat: null
+    filterFormat: markdown_syntax

@@ -53,6 +53,7 @@
         "drupal/markdown": "^3.0@RC",
         "drupal/masquerade": "^2.0@RC",
         "drupal/mediteran": "^1.29",
+        "drupal/migrate_file": "^2.1",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_scheduler": "^1.0@RC",
         "drupal/migrate_tools": "^6.0",

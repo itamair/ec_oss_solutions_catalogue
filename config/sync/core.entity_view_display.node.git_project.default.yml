@@ -6,12 +6,15 @@ dependencies:
     - field.field.node.git_project.field_description
     - field.field.node.git_project.field_git_project_id
     - field.field.node.git_project.field_git_readme_md
+    - field.field.node.git_project.field_git_repo_icon
     - field.field.node.git_project.field_git_repo_url
     - field.field.node.git_project.field_oss_solution_source
+    - image.style.medium
     - node.type.git_project
   module:
     - field_formatter_range
     - link
+    - svg_image
     - text
     - user
 id: node.git_project.default
@@ -24,7 +27,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_git_project_id:
     type: string
@@ -32,14 +35,29 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_git_readme_md:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
+    region: content
+  field_git_repo_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_git_repo_url:
     type: link
@@ -51,7 +69,7 @@ content:
       rel: '0'
       target: _blank
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_oss_solution_source:
     type: entity_reference_label
@@ -68,7 +86,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
 hidden:
   langcode: true
