@@ -18,6 +18,7 @@ excluded:
   - jsonapi_extras.jsonapi_resource_config.entity_form_mode--entity_form_mode
   - jsonapi_extras.jsonapi_resource_config.entity_view_display--entity_view_display
   - jsonapi_extras.jsonapi_resource_config.entity_view_mode--entity_view_mode
+  - jsonapi_extras.jsonapi_resource_config.features_bundle--features_bundle
   - jsonapi_extras.jsonapi_resource_config.field_config--field_config
   - jsonapi_extras.jsonapi_resource_config.field_storage_config--field_storage_config
   - jsonapi_extras.jsonapi_resource_config.file--file
@@ -37,7 +38,6 @@ excluded:
   - jsonapi_extras.jsonapi_resource_config.menu_link_content--menu_link_content
   - jsonapi_extras.jsonapi_resource_config.migration--migration
   - jsonapi_extras.jsonapi_resource_config.migration_group--migration_group
-  - jsonapi_extras.jsonapi_resource_config.node--oss_publiccode_yml
   - jsonapi_extras.jsonapi_resource_config.node_type--node_type
   - jsonapi_extras.jsonapi_resource_config.paragraph--contact_point
   - jsonapi_extras.jsonapi_resource_config.paragraph--from_library
@@ -49,6 +49,7 @@ excluded:
   - jsonapi_extras.jsonapi_resource_config.rest_resource_config--rest_resource_config
   - jsonapi_extras.jsonapi_resource_config.shortcut--default
   - jsonapi_extras.jsonapi_resource_config.shortcut_set--shortcut_set
+  - jsonapi_extras.jsonapi_resource_config.taxonomy_vocabulary--taxonomy_vocabulary
   - jsonapi_extras.jsonapi_resource_config.tour--tour
   - jsonapi_extras.jsonapi_resource_config.ultimate_cron_job--ultimate_cron_job
   - jsonapi_extras.jsonapi_resource_config.view--view
