@@ -7,6 +7,8 @@ dependencies:
     - node.type.oss_publiccode_yml
   module:
     - image
+_core:
+  default_config_hash: EWSZjhiv83lPHR6XitdjdQbVVB9hg9CHhAZKVCxnoOg
 id: node.oss_publiccode_yml.field_oss_publiccode_yml_logo
 field_name: field_oss_publiccode_yml_logo
 entity_type: node

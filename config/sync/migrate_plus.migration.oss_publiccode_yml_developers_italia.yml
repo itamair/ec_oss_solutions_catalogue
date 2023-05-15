@@ -2,6 +2,8 @@ uuid: 6f7b4fd0-2b4a-42b2-a5f0-9285625cbfc2
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: hy8Wnt2nsjRZOjACWwfnSkrl3Q2kNatmmfOHVPQNOKQ
 id: oss_publiccode_yml_developers_italia
 class: null
 field_plugin_method: null

@@ -16,6 +16,8 @@ dependencies:
     - path
     - svg_image
     - text
+_core:
+  default_config_hash: e-ZvdSbEZg5iVdf61VQNdeiSWh0WBEo281V4Xcs9gdk
 id: node.git_project.default
 targetEntityType: node
 bundle: git_project

@@ -40,6 +40,8 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+_core:
+  default_config_hash: 0X5C88dm7APdE3O8BpjX6mjYWGw0AeFknNOEDWUn4Tg
 id: node.oss_publiccode_yml.default
 targetEntityType: node
 bundle: oss_publiccode_yml

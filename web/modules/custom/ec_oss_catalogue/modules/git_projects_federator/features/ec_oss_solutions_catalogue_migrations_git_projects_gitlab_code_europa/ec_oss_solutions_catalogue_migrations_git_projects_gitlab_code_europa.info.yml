@@ -1,7 +1,0 @@
-name: 'Migrations Git Projects Gitlab Code Europa'
-type: module
-core_version_requirement: '^8.9 || ^9'
-dependencies:
-  - 'migrate_plus:migrate_plus'
-version: '1.0'
-package: 'EC OSS Solutions Catalogue'

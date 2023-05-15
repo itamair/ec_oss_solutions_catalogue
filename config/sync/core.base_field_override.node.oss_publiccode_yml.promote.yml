@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.oss_publiccode_yml
+_core:
+  default_config_hash: DJVNi9LdSiyn9-95UwxKBAdRNIXKUFHLiyfic5L9UBc
 id: node.oss_publiccode_yml.promote
 field_name: promote
 entity_type: node

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\un_developer_importer\Plugin\migrate\process;
+namespace Drupal\git_projects_federator\Plugin\migrate\process;
 
 use Drupal\migrate_file\Plugin\migrate\process\ImageImport;
 use GuzzleHttp\Exception\ClientException;
@@ -23,7 +23,7 @@ use Drupal\node\Entity\Node;
  *   id = "gitlab_project_icon_import"
  * )
  */
-class GitLabProjectIconImport extends ImageImport {
+class GitLabCodeEuropaProjectIconImport extends ImageImport {
 
   /**
    * Check if a source exists.
@@ -70,9 +70,10 @@ class GitLabProjectIconImport extends ImageImport {
     $this->configuration['id_only'] = FALSE;
     // Run the parent transform to do all the file handling.
     $value = parent::transform($value, $migrate_executable, $row, $destination_property);
+    $destination_nid = $row->getDestinationProperty('nid');
 
     // Check if, with null value, the Field Icon already exists and keep it.
-    if ($value === NULL && $node = Node::load($row->getDestinationProperty('nid'))) {
+    if ($value === NULL && isset($destination_nid) && $node = Node::load($destination_nid)) {
       $file = $node->get('field_icon')->entity;
       if ($file instanceof File) {
         $value = [

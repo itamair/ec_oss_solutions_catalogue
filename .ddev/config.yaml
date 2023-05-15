@@ -1,4 +1,4 @@
-name: publiccode-yml-repositories
+name: ec-oss-solutions-catalogue
 type: drupal9
 docroot: web
 php_version: "8.1"
@@ -13,6 +13,8 @@ database:
   version: "10.4"
 nfs_mount_enabled: false
 mutagen_enabled: false
+mailhog_port: "8027"
+mailhog_https_port: "8028"
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
@@ -149,8 +151,8 @@ nodejs_version: "16"
 # The phpmyadmin (dba) port is not normally bound on the host at all, instead being routed
 # through ddev-router, but it can be specified and bound.
 
-mailhog_port: "8027"
-mailhog_https_port: "8028"
+# mailhog_port: "8025"
+# mailhog_https_port: "8026"
 # The MailHog ports can be changed from the default 8025 and 8026
 
 # host_mailhog_port: "8025"

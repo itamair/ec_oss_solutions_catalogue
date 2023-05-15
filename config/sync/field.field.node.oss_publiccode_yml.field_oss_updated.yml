@@ -7,6 +7,8 @@ dependencies:
     - node.type.oss_publiccode_yml
   module:
     - datetime
+_core:
+  default_config_hash: kQpoK0G_zpXIa8L3Kkatsy3Ctl55VJfCGol3h5v71ZA
 id: node.oss_publiccode_yml.field_oss_updated
 field_name: field_oss_updated
 entity_type: node

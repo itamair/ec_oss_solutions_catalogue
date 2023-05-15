@@ -2,6 +2,8 @@ uuid: 7952e564-2237-4760-a625-1794bfaf66ef
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 1PGjY4aMDaMUxwYt8jeNPi5OEjJ1UBzuN4Cvwa__WpI
 id: migrations_ec_oss_catalogue
 label: 'Migrations EC OSS Catalogue'
 description: ''

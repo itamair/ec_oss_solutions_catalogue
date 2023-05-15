@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_description
     - node.type.git_project
+_core:
+  default_config_hash: '-MLJUJC3lfuUENohlfpVXfZ-G2pf49LSq-i3LPcYkoo'
 id: node.git_project.field_description
 field_name: field_description
 entity_type: node

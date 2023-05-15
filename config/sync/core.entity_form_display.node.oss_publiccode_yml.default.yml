@@ -45,6 +45,8 @@ third_party_settings:
       format_type: details
       format_settings:
         open: true
+_core:
+  default_config_hash: fWzIp8bLATuCWsEVrLMv9NtzzwmBKHqfEN2e9JaU9yc
 id: node.oss_publiccode_yml.default
 targetEntityType: node
 bundle: oss_publiccode_yml

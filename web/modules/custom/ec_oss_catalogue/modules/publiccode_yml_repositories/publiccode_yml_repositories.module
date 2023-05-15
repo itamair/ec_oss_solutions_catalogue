@@ -11,13 +11,6 @@ use Drupal\migrate\MigrateException;
 use Drupal\Component\Plugin\Exception\PluginException;
 
 /**
- * Implements hook_page_attachments().
- */
-function publiccode_yml_repositories_page_attachments(array &$page) {
-  $page['#attached']['library'][] = 'publiccode_yml_repositories/common';
-}
-
-/**
  * Implements hook_cron().
  */
 function publiccode_yml_repositories_importer_cron() {

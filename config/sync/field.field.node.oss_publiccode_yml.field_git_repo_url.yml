@@ -7,6 +7,8 @@ dependencies:
     - node.type.oss_publiccode_yml
   module:
     - link
+_core:
+  default_config_hash: YBUarvmKWvelPrcq6yBErRLucDbHTA0QrP3m_b_xZc0
 id: node.oss_publiccode_yml.field_git_repo_url
 field_name: field_git_repo_url
 entity_type: node

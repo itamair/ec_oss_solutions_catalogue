@@ -7,6 +7,8 @@ dependencies:
     - node.type.git_project
   module:
     - link
+_core:
+  default_config_hash: nzurAEOB3_Fp1ezGjiDwXtGnkh1ddbyY1Zk64AtMLvg
 id: node.git_project.field_git_repo_url
 field_name: field_git_repo_url
 entity_type: node

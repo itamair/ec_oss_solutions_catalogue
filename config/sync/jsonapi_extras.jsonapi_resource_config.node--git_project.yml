@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.git_project
+_core:
+  default_config_hash: 8nDl454nAWNX9vfFW4rzet74yYjTQcSk8z6_nIqxUNY
 id: node--git_project
 disabled: false
 path: node/git_project

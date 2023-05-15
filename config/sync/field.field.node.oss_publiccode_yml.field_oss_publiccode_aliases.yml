@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_oss_publiccode_aliases
     - node.type.oss_publiccode_yml
+_core:
+  default_config_hash: rn_AuUpCAJh1YSR6k3NYwIGtS2lfvAl-KN4LMnTE-50
 id: node.oss_publiccode_yml.field_oss_publiccode_aliases
 field_name: field_oss_publiccode_aliases
 entity_type: node

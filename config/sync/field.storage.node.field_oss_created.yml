@@ -5,6 +5,8 @@ dependencies:
   module:
     - datetime
     - node
+_core:
+  default_config_hash: NocsNfslemxsRMDcH_M-tdTPXbZKElzPkFq_KsbXXNY
 id: node.field_oss_created
 field_name: field_oss_created
 entity_type: node

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_description
     - field.storage.node.field_git_readme_md
+    - field.storage.node.field_git_repo_icon
     - field.storage.node.field_git_repo_url
     - field.storage.node.field_oss_publiccode_active
     - field.storage.node.field_oss_publiccode_yml_logo
@@ -22,6 +23,8 @@ dependencies:
     - taxonomy
     - text
     - user
+_core:
+  default_config_hash: CPJTjKnyd9nPJ2Jk6YnwqLTKSxp_IjNvFbvkCSZFhs8
 id: ec_oss_solutions_catalogue
 label: 'EC OSS Solutions Catalogue'
 module: views
@@ -38,6 +41,76 @@ display:
     display_options:
       title: 'EC OSS Solutions Catalogue'
       fields:
+        field_git_repo_icon:
+          id: field_git_repo_icon
+          table: node__field_git_repo_icon
+          field: field_git_repo_icon
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Git Repo Icon'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: ''
+            image_style: thumbnail
+            image_loading:
+              attribute: eager
+            svg_attributes:
+              width: null
+              height: null
+            svg_render_as_image: true
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_oss_publiccode_yml_logo:
           id: field_oss_publiccode_yml_logo
           table: node__field_oss_publiccode_yml_logo
@@ -83,7 +156,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: '{{ field_git_repo_icon }} '
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -93,7 +166,7 @@ display:
             image_link: content
             image_style: thumbnail
             image_loading:
-              attribute: lazy
+              attribute: eager
             svg_attributes:
               width: null
               height: null
@@ -1046,6 +1119,7 @@ display:
       tags:
         - 'config:field.storage.node.field_description'
         - 'config:field.storage.node.field_git_readme_md'
+        - 'config:field.storage.node.field_git_repo_icon'
         - 'config:field.storage.node.field_git_repo_url'
         - 'config:field.storage.node.field_oss_publiccode_active'
         - 'config:field.storage.node.field_oss_publiccode_yml_logo'
@@ -1081,6 +1155,7 @@ display:
       tags:
         - 'config:field.storage.node.field_description'
         - 'config:field.storage.node.field_git_readme_md'
+        - 'config:field.storage.node.field_git_repo_icon'
         - 'config:field.storage.node.field_git_repo_url'
         - 'config:field.storage.node.field_oss_publiccode_active'
         - 'config:field.storage.node.field_oss_publiccode_yml_logo'

@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.git_project.field_git_repo_url
     - field.field.node.git_project.field_oss_solution_source
     - node.type.git_project
+_core:
+  default_config_hash: FhWMu12o3lhwKlC8DmJD1ygfT31splJOZt1h02O-q-o
 id: node.git_project
 target_entity_type_id: node
 target_bundle: git_project

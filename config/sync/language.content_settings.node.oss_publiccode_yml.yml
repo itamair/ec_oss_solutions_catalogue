@@ -11,6 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: 8u2DXKc8CwAJIsl78yusYZLZrrPZEGPcXowsFXodMVg
 id: node.oss_publiccode_yml
 target_entity_type_id: node
 target_bundle: oss_publiccode_yml

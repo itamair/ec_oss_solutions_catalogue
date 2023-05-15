@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.oss_publiccode_yml
+_core:
+  default_config_hash: MchMZH5jsBNgyBY1VLry5CW_jlrcWUwEI_Q9I190kLQ
 id: node.oss_publiccode_yml.created
 field_name: created
 entity_type: node

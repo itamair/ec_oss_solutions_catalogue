@@ -17,6 +17,8 @@ dependencies:
     - node.type.oss_publiccode_yml
   module:
     - user
+_core:
+  default_config_hash: 5wJnX5Jhh29i8jASulFQ9mkmT2aHBpamcm4txEF4xMc
 id: node.oss_publiccode_yml.teaser
 targetEntityType: node
 bundle: oss_publiccode_yml

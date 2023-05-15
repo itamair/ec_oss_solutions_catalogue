@@ -7,6 +7,8 @@ dependencies:
     - node.type.git_project
   module:
     - image
+_core:
+  default_config_hash: pDWM71xl99QWSCnvRMIfy0_iqwu9gPmt4Jl36IMrNp4
 id: node.git_project.field_git_repo_icon
 field_name: field_git_repo_icon
 entity_type: node

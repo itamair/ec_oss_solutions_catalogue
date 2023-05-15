@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: fNGf_LHrH8vW6pyrfK670ahz0lhYiZEpJ0geq9pfVPo
 id: node.field_oss_publiccode_aliases
 field_name: field_oss_publiccode_aliases
 entity_type: node

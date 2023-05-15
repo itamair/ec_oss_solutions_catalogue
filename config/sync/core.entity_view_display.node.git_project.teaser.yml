@@ -13,6 +13,8 @@ dependencies:
     - node.type.git_project
   module:
     - user
+_core:
+  default_config_hash: dQViMXlKGoFJ4yL4QceYp9rP8liPuB8AcNwUsUAuxoQ
 id: node.git_project.teaser
 targetEntityType: node
 bundle: git_project

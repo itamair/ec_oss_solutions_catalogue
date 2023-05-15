@@ -17,6 +17,8 @@ dependencies:
     - svg_image
     - text
     - user
+_core:
+  default_config_hash: vHgExqrwi9Z5z4ziMI8dQpw60HrgcbEyodSStxK1J9g
 id: node.git_project.default
 targetEntityType: node
 bundle: git_project
@@ -51,13 +53,13 @@ content:
       image_link: ''
       image_style: medium
       image_loading:
-        attribute: lazy
+        attribute: eager
       svg_attributes:
         width: null
         height: null
       svg_render_as_image: true
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_git_repo_url:
     type: link
@@ -81,7 +83,7 @@ content:
         order: 0
         limit: 0
         offset: 0
-    weight: 0
+    weight: 1
     region: content
   links:
     settings: {  }

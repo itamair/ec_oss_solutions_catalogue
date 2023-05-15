@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.git_project
+_core:
+  default_config_hash: ApOqQpw-CPuzth3MGUGdE18cyNjbBBZAF67-Qdg8_aw
 id: node.git_project
 target_entity_type_id: node
 target_bundle: git_project

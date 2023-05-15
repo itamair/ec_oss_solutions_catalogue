@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: kyk4u1052ZcxlroobDzBXEFLX5UwqnAU4lhAjqRAwCk
 id: node.field_git_project_id
 field_name: field_git_project_id
 entity_type: node

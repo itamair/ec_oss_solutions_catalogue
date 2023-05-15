@@ -2,6 +2,8 @@ uuid: 6f7b4fd0-2b4a-42b2-a5f0-9285625cbfc4
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: eUEFS0_-jxza50fOlQkwUqJl1QPbdUWeSqGZbBS4oxU
 id: git_projects_gitlab_code_europa
 class: null
 field_plugin_method: null

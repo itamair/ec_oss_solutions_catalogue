@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_oss_solution_source
     - node.type.git_project
     - taxonomy.vocabulary.oss_solution_source
+_core:
+  default_config_hash: i7-uV5rAcS8tXTewI3I-5R1kcJUa5qikIN5R-2PkuB8
 id: node.git_project.field_oss_solution_source
 field_name: field_oss_solution_source
 entity_type: node

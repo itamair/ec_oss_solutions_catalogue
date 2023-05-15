@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: XS9K_ZgzeTdHPngxbJNol3BP0EUR0UvZqjiXZkGQrP0
 id: node.field_oss_publiccode_yml_content
 field_name: field_oss_publiccode_yml_content
 entity_type: node

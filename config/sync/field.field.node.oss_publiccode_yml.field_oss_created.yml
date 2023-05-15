@@ -7,6 +7,8 @@ dependencies:
     - node.type.oss_publiccode_yml
   module:
     - datetime
+_core:
+  default_config_hash: PIfuX1-rR3DiskpMJ4dz-U1hyLxN0GM5-kSGhM4btqA
 id: node.oss_publiccode_yml.field_oss_created
 field_name: field_oss_created
 entity_type: node

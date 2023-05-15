@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.oss_publiccode_yml
+_core:
+  default_config_hash: 2zhTwPu4v5KPFzyCUSST7XyvZx6I8ANRDmXabGDE75g
 id: node.oss_publiccode_yml.sticky
 field_name: sticky
 entity_type: node

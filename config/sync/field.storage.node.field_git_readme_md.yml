@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: H_EXyakGxnNK4LJM7yMG3T1Lf2uCU1UB4VBCfHlFdQs
 id: node.field_git_readme_md
 field_name: field_git_readme_md
 entity_type: node
