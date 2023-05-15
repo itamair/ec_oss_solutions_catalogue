@@ -37,8 +37,9 @@
  * example.org, with all subdomains included.
  */
 $settings['trusted_host_patterns'] = [
-  '^publiccode-yml-repositories.ddev.site$',
+  '^ec-oss-solutions-catalogue.ddev.site$',
   '^www.geodemocracy.com$',
+  '^www.italomairo.com$',
 ];
 
 // Set up a config sync directory.
