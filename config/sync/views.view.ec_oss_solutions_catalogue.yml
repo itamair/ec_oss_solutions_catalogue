@@ -1010,6 +1010,47 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_git_repo_icon_target_id:
+          id: field_git_repo_icon_target_id
+          table: node__field_git_repo_icon
+          field: field_git_repo_icon_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            label: 'Git Repo Icon (field_git_repo_icon:target_id)'
+            description: null
+            use_operator: false
+            operator: field_git_repo_icon_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_git_repo_icon_target_id
+            required: false
+            remember: false
+            multiple: false
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -1021,17 +1062,26 @@ display:
           row_class: ''
           default_row_class: true
           columns:
+            field_git_repo_icon: field_git_repo_icon
             field_oss_publiccode_yml_logo: field_oss_publiccode_yml_logo
             title: title
             field_oss_publiccode_active: field_oss_publiccode_active
-            field_oss_publiccode_gitrepo_url: field_oss_publiccode_gitrepo_url
-            field_oss_publiccode_created: field_oss_publiccode_created
-            field_oss_publiccode_updated: field_oss_publiccode_updated
-            field_publiccode_yml_fed_catalog: field_publiccode_yml_fed_catalog
+            field_description: field_description
+            field_git_repo_url: field_git_repo_url
+            langcode: langcode
+            field_oss_solution_source: field_oss_solution_source
+            field_git_readme_md: field_git_readme_md
           default: '-1'
           info:
-            field_oss_publiccode_yml_logo:
+            field_git_repo_icon:
               sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_oss_publiccode_yml_logo:
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
@@ -1051,26 +1101,33 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_oss_publiccode_gitrepo_url:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_oss_publiccode_created:
-              sortable: true
+            field_description:
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_oss_publiccode_updated:
-              sortable: true
+            field_git_repo_url:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            langcode:
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_publiccode_yml_fed_catalog:
+            field_oss_solution_source:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_git_readme_md:
+              sortable: false
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
