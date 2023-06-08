@@ -43,7 +43,6 @@
         "drupal/feeds": "^3.0@alpha",
         "drupal/field_formatter_range": "^1.4",
         "drupal/field_group": "^3.4",
-        "drupal/geofield": "^1.52",
         "drupal/gin": "^3.0@RC",
         "drupal/image_field_caption": "^1.2",
         "drupal/imagefield_slideshow": "^2.0",

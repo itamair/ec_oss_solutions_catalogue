@@ -44,7 +44,6 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  geofield: 0
   git_projects_federator: 0
   hal: 0
   help: 0
