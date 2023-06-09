@@ -1,4 +1,4 @@
 services:
-  gitlab_code_europa_helper:
-      class: Drupal\git_projects_federator\Services\GitLabCodeEuropaHelper
+  gitlab_helper:
+      class: Drupal\git_projects_federator\Services\GitLabHelper
       arguments: [ '@http_client']

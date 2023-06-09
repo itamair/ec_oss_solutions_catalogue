@@ -18,10 +18,10 @@ use GuzzleHttp\Exception\RequestException;
  * @see \Drupal\migrate\Plugin\MigrateProcessInterface
  *
  * @MigrateProcessPlugin(
- *   id = "gitlab_project_readme"
+ *   id = "gitlab_project_publiccode_yml_content"
  * )
  */
-class GitLabProjectReadMe extends ProcessPluginBase implements ContainerFactoryPluginInterface {
+class GitLabProjectPubliccodeYmlContent extends ProcessPluginBase implements ContainerFactoryPluginInterface {
 
   /**
    * The HTTP client.
@@ -72,25 +72,26 @@ class GitLabProjectReadMe extends ProcessPluginBase implements ContainerFactoryP
   /**
    * {@inheritdoc}
    */
-  public function transform($project_id, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    $readme_md = '';
+  public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
+    $project_id = $value;
+    $publiccode_yml_content = NULL;
     $gitlab_domain = $row->getSource()["gitlab_domain"];
     $project_info = $this->gitLabHelper->gitLabProjectInfo($gitlab_domain, $project_id);
     if (!empty($project_info) && isset($project_info['default_branch'])) {
-      $url = $this->gitLabHelper->getProjectsEndpoint($gitlab_domain) . '/' . $project_id . '/repository/files/README.md/raw?ref=' . $project_info['default_branch'];
+      $url = $this->gitLabHelper->getProjectsEndpoint($gitlab_domain) . '/' . $project_id . '/repository/files/publiccode.yml/raw?ref=' . $project_info['default_branch'];
       $options = [];
       try {
-        $readme_md_response = $this->httpClient->get($url, $options);
-        $readme_md = $readme_md_response->getBody()->getContents();
+        $publiccode_yml_response = $this->httpClient->get($url, $options);
+        $publiccode_yml_content = $publiccode_yml_response->getBody()->getContents();
       }
       catch (RequestException $e) {
-/*        \Drupal::logger('git_projects')->warning($this->t('@message. No Readme file found for Git Project id:@id', [
+        \Drupal::logger('git_projects')->warning($this->t('@message. No Publiccode.yml file found for Git Project id:@id', [
           '@message' => $e->getMessage(),
           '@id' => $project_id,
-        ]));*/
+        ]));
       }
     }
-    return $readme_md;
+    return $publiccode_yml_content ?? NULL;
   }
 
 }

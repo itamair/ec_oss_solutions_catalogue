@@ -10,7 +10,7 @@ use Drupal\Component\Serialization\Json;
 /**
  * Provides a GitLab Code Europa Helper Service.
  */
-class GitLabCodeEuropaHelper {
+class GitLabHelper {
 
   /**
    * The HTTP client.
@@ -64,15 +64,14 @@ class GitLabCodeEuropaHelper {
     ClientInterface $http_client
   ) {
     $this->perPage = 100;
-    $this->projectsEndPoint = 'https://code.europa.eu/api/v4/projects';
-    $this->usersEndPoint = 'https://code.europa.eu//api/v4/users';
     $this->httpClient = $http_client;
-    // $this->gitLabProjectsPagesUrls = $this->setGitLabProjectsPagesUrls();
-    // $this->gitLabUsersPagesUrls = $this->setGitLabUsersPagesUrls();
   }
 
   /**
    * Get GitLab Project Info.
+   *
+   *  @param string $gitlab_domain
+   *   The gitlab domain string.
    *
    * @param int $id
    *   The project id.
@@ -80,8 +79,8 @@ class GitLabCodeEuropaHelper {
    * @return array
    *   The GitLab Projects Pages Urls list.
    */
-  public function gitLabProjectInfo($id): array {
-    $project_end_point = 'https://code.europa.eu/api/v4/projects/' . $id;
+  public function gitLabProjectInfo(string $gitlab_domain, int $id): array {
+    $project_end_point = $gitlab_domain . '/api/v4/projects/' . $id;
     try {
       $response = $this->httpClient->get($project_end_point);
       return JSON::decode($response->getBody()->getContents());
@@ -92,12 +91,41 @@ class GitLabCodeEuropaHelper {
   }
 
   /**
-   * Set the GitLab Projects Pages Urls list.
+   * Return the GitLab Projects Endpoint.
+   *
+   *  @param string $gitlab_domain
+   *   The gitlab domain string.
+   *
+   * @return string
+   *   The Projects Endpoint path.
+   */
+  public function getProjectsEndpoint(string $gitlab_domain): string {
+    return $gitlab_domain . '/api/v4/projects';
+  }
+
+  /**
+   * Return the GitLab Users Endpoint.
+   *
+   *  @param string $gitlab_domain
+   *   The gitlab domain string.
+   *
+   * @return string
+   *   The Users Endpoint path.
+   */
+  public function getUsersEndPoint(string $gitlab_domain): string {
+    return $gitlab_domain . '/api/v4/users';
+  }
+
+  /**
+   * Get the GitLab Projects Pages Urls list.
+   *
+   *  @param string $gitlab_domain
+   *   The gitlab domain string.
    *
    * @return array
    *   The GitLab Projects Pages Urls list.
    */
-  protected function setGitLabProjectsPagesUrls(): array {
+  public function getGitLabProjectsPagesUrls(string $gitlab_domain): array {
     $page = 1;
     $total_pages = 1;
     $gitlab_projects_pages_urls = [];
@@ -118,14 +146,14 @@ class GitLabCodeEuropaHelper {
         // meantime updates.
         $total_pages = $gitlab_projects_pages_urls_response_headers['X-Total-Pages'][0];
         $options['query']['page'] = $page;
-        $gitlab_projects_pages_urls[] = $this->projectsEndPoint . '?' . UrlHelper::buildQuery($options['query']);
+        $gitlab_projects_pages_urls[] = $this->getProjectsEndpoint($gitlab_domain) . '?' . UrlHelper::buildQuery($options['query']);
         $page++;
 
       }
       catch (ConnectException $e) {
         \Drupal::messenger()->addError(t('@e. Migrations cannot be performed because of connection failure to: @hostname', [
           '@e' => $e->getMessage(),
-          '@hostname' => $this->projectsEndPoint,
+          '@hostname' => $gitlab_domain,
         ]));
         return [];
       }
@@ -134,22 +162,15 @@ class GitLabCodeEuropaHelper {
   }
 
   /**
-   * Return the GitLab Projects Pages Urls list.
+   * Return the GitLab Users Pages Urls list.
    *
-   * @return array
-   *   The GitLab Projects Pages Urls list.
-   */
-  public function getGitLabProjectsPagesUrls(): array {
-    return $this->gitLabProjectsPagesUrls;
-  }
-
-  /**
-   * Set the GitLab Users Pages Urls list.
+   *  @param string $gitlab_domain
+   *   The gitlab domain string.
    *
    * @return array
    *   The GitLab Users Pages Urls list.
    */
-  protected function setGitLabUsersPagesUrls(): array {
+  public function getGitLabUsersPagesUrls(string $gitlab_domain): array {
     $page = 1;
     $total_pages = 1;
     $gitlab_users_pages_urls = [];
@@ -170,49 +191,19 @@ class GitLabCodeEuropaHelper {
         // meantime updates.
         $total_pages = $gitlab_users_pages_urls_response_headers['X-Total-Pages'][0];
         $options['query']['page'] = $page;
-        $gitlab_users_pages_urls[] = $this->usersEndPoint . '?' . UrlHelper::buildQuery($options['query']);
+        $gitlab_users_pages_urls[] = $this->getUsersEndPoint($gitlab_domain) .'?' . UrlHelper::buildQuery($options['query']);
         $page++;
 
       }
       catch (ConnectException $e) {
         \Drupal::messenger()->addError(t('@e. Migrations cannot be performed because of connection failure to: @hostname', [
           '@e' => $e->getMessage(),
-          '@hostname' => $this->projectsEndPoint,
+          '@hostname' => $gitlab_domain,
         ]));
         return [];
       }
     }
     return $gitlab_users_pages_urls;
-  }
-
-  /**
-   * Return the GitLab Users Pages Urls list.
-   *
-   * @return array
-   *   The GitLab Users Pages Urls list.
-   */
-  public function getGitLabUsersPagesUrls(): array {
-    return $this->gitLabUsersPagesUrls;
-  }
-
-  /**
-   * Return the GitLab Projects Endpoint.
-   *
-   * @return string
-   *   The Projects Endpoint path.
-   */
-  public function getProjectsEndpoint(): string {
-    return $this->projectsEndPoint;
-  }
-
-  /**
-   * Return the GitLab Users Endpoint.
-   *
-   * @return string
-   *   The Users Endpoint path.
-   */
-  public function getUsersEndpoint(): string {
-    return $this->usersEndPoint;
   }
 
 }

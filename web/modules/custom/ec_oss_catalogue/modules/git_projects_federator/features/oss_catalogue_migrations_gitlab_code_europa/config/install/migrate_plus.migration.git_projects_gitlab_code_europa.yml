@@ -13,6 +13,7 @@ source:
   plugin: url
   data_fetcher_plugin: http
   data_parser_plugin: json
+  gitlab_domain: 'https://code.europa.eu'
   urls:
     - 'https://code.europa.eu/api/v4/projects?archived=FALSE&per_page=100'
   fields:
@@ -52,6 +53,7 @@ source:
   constants:
     file_destination: 'public://git_projects_icons/'
 process:
+  gitlab_domain: gitlab_domain
   type:
     plugin: default_value
     default_value: git_project
@@ -100,9 +102,8 @@ process:
   field_description: description
   field_git_readme_md/value:
     -
-      plugin: gitlab_code_europa_project_readme
+      plugin: gitlab_project_readme
       source: id
-      git_domain: 'https://code.europa.eu/'
   field_git_readme_md/format:
     plugin: default_value
     default_value: markdown_syntax

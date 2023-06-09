@@ -7,15 +7,34 @@ dependencies:
     - field.field.node.git_project.field_git_readme_md
     - field.field.node.git_project.field_git_repo_icon
     - field.field.node.git_project.field_git_repo_url
+    - field.field.node.git_project.field_oss_publiccode_yml_content
     - field.field.node.git_project.field_oss_solution_source
     - image.style.medium
     - node.type.git_project
   module:
     - field_formatter_range
+    - field_group
     - link
     - svg_image
     - text
     - user
+third_party_settings:
+  field_group:
+    group_publiccode_yml_content:
+      children:
+        - field_oss_publiccode_yml_content
+      label: 'Publiccode.Yml Content'
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
 id: node.git_project.default
 targetEntityType: node
 bundle: git_project
@@ -34,7 +53,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_git_readme_md:
     type: text_default
@@ -50,13 +69,13 @@ content:
       image_link: ''
       image_style: medium
       image_loading:
-        attribute: lazy
+        attribute: eager
       svg_attributes:
         width: null
         height: null
       svg_render_as_image: true
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_git_repo_url:
     type: link
@@ -69,6 +88,13 @@ content:
       target: _blank
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_oss_publiccode_yml_content:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_oss_solution_source:
     type: entity_reference_label
@@ -85,7 +111,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 8
     region: content
 hidden:
   langcode: true

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.git_project.field_git_readme_md
     - field.field.node.git_project.field_git_repo_icon
     - field.field.node.git_project.field_git_repo_url
+    - field.field.node.git_project.field_oss_publiccode_yml_content
     - field.field.node.git_project.field_oss_solution_source
     - node.type.git_project
   module:
@@ -31,5 +32,6 @@ hidden:
   field_git_readme_md: true
   field_git_repo_icon: true
   field_git_repo_url: true
+  field_oss_publiccode_yml_content: true
   field_oss_solution_source: true
   langcode: true

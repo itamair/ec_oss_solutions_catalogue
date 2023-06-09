@@ -23,7 +23,7 @@ use Drupal\node\Entity\Node;
  *   id = "gitlab_project_icon_import"
  * )
  */
-class GitLabCodeEuropaProjectIconImport extends ImageImport {
+class GitLabProjectIconImport extends ImageImport {
 
   /**
    * Check if a source exists.

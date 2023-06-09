@@ -77,6 +77,12 @@ resourceFields:
     publicName: field_git_repo_url
     enhancer:
       id: ''
+  field_oss_publiccode_yml_content:
+    disabled: true
+    fieldName: field_oss_publiccode_yml_content
+    publicName: field_oss_publiccode_yml_content
+    enhancer:
+      id: ''
   field_oss_solution_source:
     disabled: true
     fieldName: field_oss_solution_source
