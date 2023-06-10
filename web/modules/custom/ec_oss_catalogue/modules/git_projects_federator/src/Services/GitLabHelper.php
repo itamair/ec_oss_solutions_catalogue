@@ -63,7 +63,7 @@ class GitLabHelper {
   public function __construct(
     ClientInterface $http_client
   ) {
-    $this->perPage = 100;
+    $this->perPage = 50;
     $this->httpClient = $http_client;
   }
 
@@ -140,7 +140,7 @@ class GitLabHelper {
     while ($page <= $total_pages) {
       $options['query']['page'] = $page;
       try {
-        $gitlab_projects_pages_urls_response = $this->httpClient->get($this->projectsEndPoint, $options);
+        $gitlab_projects_pages_urls_response = $this->httpClient->get($this->getProjectsEndpoint($gitlab_domain), $options);
         $gitlab_projects_pages_urls_response_headers = $gitlab_projects_pages_urls_response->getHeaders();
         // Re-fetch each cycle the number of total pages, to eventually catch
         // meantime updates.
@@ -185,7 +185,7 @@ class GitLabHelper {
     while ($page <= $total_pages) {
       $options['query']['page'] = $page;
       try {
-        $gitlab_users_pages_urls_response = $this->httpClient->get($this->usersEndPoint, $options);
+        $gitlab_users_pages_urls_response = $this->httpClient->get($this->getProjectsEndpoint($gitlab_domain), $options);
         $gitlab_users_pages_urls_response_headers = $gitlab_users_pages_urls_response->getHeaders();
         // Re-fetch each cycle the number of total pages, to eventually catch
         // meantime updates.
