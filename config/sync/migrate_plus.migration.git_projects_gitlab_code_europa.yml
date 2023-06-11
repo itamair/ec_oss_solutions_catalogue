@@ -15,10 +15,9 @@ label: 'Git Projects Gitlab Code Europa'
 source:
   plugin: git_projects_urls
   data_fetcher_plugin: http
-  data_parser_plugin: json
+  data_parser_plugin: json_gitlab
   gitlab_domain: 'https://code.europa.eu'
-  urls:
-    - 'https://code.europa.eu/api/v4/projects?archived=FALSE&per_page=100'
+  urls: null
   fields:
     -
       name: id

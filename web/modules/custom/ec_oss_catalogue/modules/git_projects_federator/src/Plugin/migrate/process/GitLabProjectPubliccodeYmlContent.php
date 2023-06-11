@@ -85,10 +85,10 @@ class GitLabProjectPubliccodeYmlContent extends ProcessPluginBase implements Con
         $publiccode_yml_content = $publiccode_yml_response->getBody()->getContents();
       }
       catch (RequestException $e) {
-        \Drupal::logger('git_projects')->warning($this->t('@message. No Publiccode.yml file found for Git Project id:@id', [
+/*        \Drupal::logger('git_projects')->warning($this->t('@message. No Publiccode.yml file found for Git Project id:@id', [
           '@message' => $e->getMessage(),
           '@id' => $project_id,
-        ]));
+        ]));*/
       }
     }
     return $publiccode_yml_content ?? NULL;

@@ -35,8 +35,8 @@ class GitProjectsUrls extends Url {
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, MigrationInterface $migration) {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $migration);
-    $this->gitLabHelper = \Drupal::service('git_projects_federator.gitlab_helper');
-    $this->sourceUrls = $this->gitLabHelper->getGitLabProjectsPagesUrls();
+    $this->gitLabHelper = \Drupal::service('gitlab_helper');
+    $this->sourceUrls = $this->gitLabHelper->getGitLabProjectsPagesUrls($configuration["gitlab_domain"]);
     $this->httpClient = \Drupal::httpClient();
   }
 }
