@@ -6,7 +6,6 @@ core_version_requirement: ^9 || ^10
 
 dependencies:
   - ec_oss_catalogue:ec_oss_catalogue
-  - oss_publiccode_yml:oss_publiccode_yml
-  - migrations_oss_publiccode_yaml_developers_italia:migrations_oss_publiccode_yaml_developers_italia
+  - oss_catalogue_migrations_publiccodeyaml_devsitalia:oss_catalogue_migrations_publiccodeyaml_devsitalia
   - yaml_editor:yaml_editor
   - svg_image:svg_image
