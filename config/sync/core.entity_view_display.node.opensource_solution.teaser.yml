@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.opensource_solution.field_git_repo_description
     - field.field.node.opensource_solution.field_oss_created
     - field.field.node.opensource_solution.field_oss_description
     - field.field.node.opensource_solution.field_oss_git_repo_icon
@@ -48,6 +49,7 @@ content:
     weight: 2
     region: content
 hidden:
+  field_git_repo_description: true
   field_oss_created: true
   field_oss_git_repo_icon: true
   field_oss_git_repo_id: true

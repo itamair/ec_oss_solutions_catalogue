@@ -14,7 +14,7 @@ interface PubliccodeYmlParserInterface {
    *   The publiccode.yml_content string.
    *
    * @return array
-   *   The langcodes associative array of OSS Descriptions.
+   *   The language codes associative array of OSS Descriptions.
    */
   public function descriptionBlock(string $yml_value): array;
 

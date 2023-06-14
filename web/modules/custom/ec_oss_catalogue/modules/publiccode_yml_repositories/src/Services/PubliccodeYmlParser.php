@@ -30,12 +30,16 @@ class PubliccodeYmlParser implements PubliccodeYmlParserInterface {
    * {@inheritdoc}
    */
   public function descriptionBlock(string $yml_value): array {
-    $publiccode_yml_values = $this->serializationYaml->decode($yml_value);
     $description_block = [];
-    if (array_key_exists('description', $publiccode_yml_values)) {
-      $description_block = $publiccode_yml_values['description'];
+    try {
+      $publiccode_yml_values = $this->serializationYaml->decode($yml_value);
+      if (array_key_exists('description', $publiccode_yml_values)) {
+        $description_block = $publiccode_yml_values['description'];
+      }
+    }
+    catch (\Exception $e) {
+
     }
     return $description_block;
   }
-
 }

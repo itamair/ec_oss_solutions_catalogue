@@ -3,6 +3,7 @@ _core:
 langcode: it
 module:
   admin_toolbar: 0
+  admin_toolbar_tools: 0
   ajax_example: 0
   auto_entitylabel: 0
   automated_cron: 0
