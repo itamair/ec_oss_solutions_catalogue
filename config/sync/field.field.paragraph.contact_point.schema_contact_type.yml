@@ -10,9 +10,9 @@ field_name: schema_contact_type
 entity_type: paragraph
 bundle: contact_point
 label: 'Contact type'
-description: ''
+description: 'A person or organization can have different contact points, for different purposes.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

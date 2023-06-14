@@ -1,0 +1,20 @@
+uuid: 42446beb-0b82-4a47-a8d1-4c81f0e0c882
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.migrate_example_advanced_comment
+id: comment.migrate_example_advanced_comment.name
+field_name: name
+entity_type: comment
+bundle: migrate_example_advanced_comment
+label: Name
+description: 'The comment author''s name.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

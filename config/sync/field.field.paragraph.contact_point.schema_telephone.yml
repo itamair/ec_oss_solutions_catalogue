@@ -12,9 +12,9 @@ field_name: schema_telephone
 entity_type: paragraph
 bundle: contact_point
 label: Telephone
-description: ''
+description: 'The telephone number.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

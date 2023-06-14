@@ -1,0 +1,20 @@
+uuid: b01d28ea-fd3f-47a8-b7e6-a00be16073de
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.migrate_example_advanced_comment
+id: comment.migrate_example_advanced_comment.uid
+field_name: uid
+entity_type: comment
+bundle: migrate_example_advanced_comment
+label: 'User ID'
+description: 'The user ID of the comment author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

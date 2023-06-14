@@ -1,0 +1,18 @@
+uuid: fd5b2122-c0ff-4ef5-8c81-6ad870aa127a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.contact_point
+id: paragraph.contact_point.created
+field_name: created
+entity_type: paragraph
+bundle: contact_point
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

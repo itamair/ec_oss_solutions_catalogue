@@ -1,0 +1,22 @@
+uuid: fc9b7d65-a065-4bd7-be65-ecc5fc4e9e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_wine_regions
+id: taxonomy_term.migrate_example_wine_regions.status
+field_name: status
+entity_type: taxonomy_term
+bundle: migrate_example_wine_regions
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

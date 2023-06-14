@@ -12,9 +12,9 @@ field_name: field_media_audio_file
 entity_type: media
 bundle: document
 label: 'Content URL'
-description: ''
+description: 'Actual bytes of the media object, for example the image file or video file.'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

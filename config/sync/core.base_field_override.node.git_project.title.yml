@@ -1,0 +1,18 @@
+uuid: 09487ed0-8b2d-4d72-b1d9-ae6c025ac53c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.git_project
+id: node.git_project.title
+field_name: title
+entity_type: node
+bundle: git_project
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

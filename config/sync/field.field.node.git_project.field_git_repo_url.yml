@@ -14,9 +14,9 @@ field_name: field_git_repo_url
 entity_type: node
 bundle: git_project
 label: 'GIT Repo Url'
-description: ''
+description: 'URL of the item.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

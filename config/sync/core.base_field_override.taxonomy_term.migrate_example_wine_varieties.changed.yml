@@ -1,0 +1,18 @@
+uuid: e8de2dc0-1804-49b2-b0bb-5b1210963ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_wine_varieties
+id: taxonomy_term.migrate_example_wine_varieties.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: migrate_example_wine_varieties
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

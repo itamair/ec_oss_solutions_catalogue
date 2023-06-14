@@ -1,0 +1,18 @@
+uuid: 139b7206-c01c-41ff-bc03-2a526af7724d
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.migrate_example_advanced_comment
+id: comment.migrate_example_advanced_comment.hostname
+field_name: hostname
+entity_type: comment
+bundle: migrate_example_advanced_comment
+label: Hostname
+description: 'The comment author''s hostname.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultHostname'
+settings: {  }
+field_type: string

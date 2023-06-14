@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\publiccode_yml_repositories\Plugin\migrate\process;
+namespace Drupal\ec_oss_catalogue\Plugin\migrate\process;
 
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\migrate\Plugin\MigrationInterface;

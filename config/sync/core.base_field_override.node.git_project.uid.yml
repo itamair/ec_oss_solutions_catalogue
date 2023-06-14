@@ -1,0 +1,20 @@
+uuid: 2beff5b7-594f-41d0-83bf-828949134357
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.git_project
+id: node.git_project.uid
+field_name: uid
+entity_type: node
+bundle: git_project
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

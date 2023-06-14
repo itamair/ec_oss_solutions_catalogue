@@ -1,0 +1,22 @@
+uuid: 060750f9-3e7a-41bb-b91a-b6715b888a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.opensource_solution
+id: node.opensource_solution.promote
+field_name: promote
+entity_type: node
+bundle: opensource_solution
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

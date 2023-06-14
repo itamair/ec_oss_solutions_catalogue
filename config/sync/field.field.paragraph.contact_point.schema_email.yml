@@ -10,9 +10,9 @@ field_name: schema_email
 entity_type: paragraph
 bundle: contact_point
 label: Email
-description: ''
+description: 'Email address.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

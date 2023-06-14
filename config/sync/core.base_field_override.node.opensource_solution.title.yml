@@ -1,0 +1,18 @@
+uuid: 5a0d4a43-be49-4eff-81c9-d6504141d961
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.opensource_solution
+id: node.opensource_solution.title
+field_name: title
+entity_type: node
+bundle: opensource_solution
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

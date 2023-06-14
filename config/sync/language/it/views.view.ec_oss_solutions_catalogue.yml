@@ -3,16 +3,8 @@ display:
     display_title: Master
     display_options:
       fields:
-        field_oss_publiccode_active:
-          label: Attive
-        field_description:
-          label: Descrizione
         langcode:
           label: Lingua
       exposed_form:
         options:
           reset_button_label: Ripristina
-      filters:
-        field_oss_publiccode_active_value:
-          expose:
-            label: Attive
