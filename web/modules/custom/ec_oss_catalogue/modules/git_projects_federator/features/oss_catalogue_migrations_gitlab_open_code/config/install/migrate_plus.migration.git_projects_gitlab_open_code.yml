@@ -15,6 +15,7 @@ source:
   data_parser_plugin: json_gitlab
   gitlab_domain: 'https://gitlab.opencode.de'
   urls: null
+  langcode: en
   fields:
     -
       name: id
@@ -52,7 +53,7 @@ source:
   constants:
     file_destination: 'public://git_projects_icons/'
 process:
-  gitlab_domain: gitlab_domain
+  langcode: en
   type:
     plugin: default_value
     default_value: opensource_solution
@@ -98,6 +99,7 @@ process:
     destination: constants/file_destination
     title: name
     alt: name
+  field_git_repo_description: description
   field_oss_publiccode_yml_content:
     -
       plugin: gitlab_project_publiccode_yml_content
@@ -105,7 +107,18 @@ process:
     -
       plugin: skip_on_empty
       method: row
-  field_oss_description: description
+  field_oss_description:
+    -
+      plugin: gitlab_project_publiccode_yml_content
+      source: id
+    -
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: publiccode_yml_description
+    -
+      plugin: skip_on_empty
+      method: process
   field_oss_git_repo_readme_md/value:
     -
       plugin: gitlab_project_readme

@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.opensource_solution.field_git_repo_description
     - field.field.node.opensource_solution.field_oss_created
     - field.field.node.opensource_solution.field_oss_description
     - field.field.node.opensource_solution.field_oss_git_repo_icon
@@ -32,9 +33,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_git_repo_description:
+    type: string_textarea
+    weight: 11
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
   field_oss_created:
     type: datetime_default
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -64,10 +73,10 @@ content:
     third_party_settings: {  }
   field_oss_git_repo_readme_md:
     type: text_textarea
-    weight: 11
+    weight: 12
     region: content
     settings:
-      rows: 5
+      rows: 8
       placeholder: ''
     third_party_settings: {  }
   field_oss_git_repo_url:
@@ -105,7 +114,7 @@ content:
     third_party_settings: {  }
   field_oss_updated:
     type: datetime_default
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -118,27 +127,27 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 18
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 15
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 17
     region: content
     settings:
       display_label: true
@@ -158,7 +167,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 17
+    weight: 18
     region: content
     settings:
       match_operator: CONTAINS
