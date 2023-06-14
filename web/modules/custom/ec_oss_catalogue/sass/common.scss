@@ -79,3 +79,41 @@
 .wide-image {
   margin-left: 0 !important;
 }
+
+// Git Readme.md field styling.
+.field--name-field-oss-git-repo-readme-md .field__item {
+  color: darkslategray;
+  font-size: 1rem;
+  margin: 20px;
+  h1 {
+    color: darkslategray;
+    font-size: 1.8rem;
+    margin-top: 1.2rem;
+    margin-bottom: inherit;
+  }
+  h2 {
+    color: darkslategray;
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: inherit;
+  }
+  h3 {
+    color: darkslategray;
+    font-size: 1.4rem;
+    margin-top: 1.1rem;
+    margin-bottom: inherit;
+  }
+  h4,
+  h5,
+  h6 {
+    color: darkslategray;
+    font-size: 1.1rem;
+    margin-top: 1.1rem;
+    margin-bottom: inherit;
+  }
+  p {
+    color: darkslategray;
+    margin-top: inherit;
+    margin-bottom: inherit;
+  }
+}

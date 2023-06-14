@@ -57,7 +57,7 @@ source:
 process:
   type:
     plugin: default_value
-    default_value: oss_publiccode_yml
+    default_value: opensource_solution
   uuid: id
   langcode: langcode
   title:
@@ -67,7 +67,7 @@ process:
     -
       plugin: skip_on_empty
       method: row
-  field_oss_publiccode_id: id
+  field_oss_git_repo_id: id
   field_oss_created:
     -
       plugin: skip_on_empty
@@ -101,17 +101,16 @@ process:
   field_oss_publiccode_active:
     plugin: convert_boolean
     source: active
-  field_git_repo_url: url
-  field_oss_publiccode_aliases: aliases
+  field_oss_git_repo_url: url
   field_oss_publiccode_yml_content: publiccodeYml
-  field_description:
+  field_oss_description:
     -
       plugin: publiccode_yml_description
       source: publiccodeYml
     -
       plugin: skip_on_empty
       method: process
-  field_oss_solution_source:
+  field_oss_source:
     -
       plugin: default_value
       default_value: 'Developers Italia'

@@ -108,15 +108,7 @@ process:
     -
       plugin: skip_on_empty
       method: row
-  field_oss_description:
-    -
-      plugin: gitlab_project_publiccode_yml_content
-      source: id
-    -
-      plugin: publiccode_yml_description
-    -
-      plugin: skip_on_empty
-      method: process
+  field_oss_description: description
   field_oss_git_repo_readme_md/value:
     -
       plugin: gitlab_project_readme

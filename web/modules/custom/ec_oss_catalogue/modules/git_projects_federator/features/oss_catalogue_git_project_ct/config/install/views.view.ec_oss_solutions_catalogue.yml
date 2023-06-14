@@ -2,17 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_description
-    - field.storage.node.field_git_project_id
-    - field.storage.node.field_git_readme_md
-    - field.storage.node.field_git_repo_icon
-    - field.storage.node.field_git_repo_url
-    - field.storage.node.field_oss_publiccode_active
-    - field.storage.node.field_oss_publiccode_yml_logo
-    - field.storage.node.field_oss_solution_source
-    - image.style.thumbnail
-    - node.type.git_project
-    - node.type.oss_publiccode_yml
+    - field.storage.node.field_oss_description
+    - field.storage.node.field_oss_git_repo_icon
+    - field.storage.node.field_oss_git_repo_id
+    - field.storage.node.field_oss_git_repo_readme_md
+    - field.storage.node.field_oss_git_repo_url
+    - field.storage.node.field_oss_publiccode_yml_content
+    - field.storage.node.field_oss_source
+    - image.style.medium
+    - node.type.opensource_solution
     - system.menu.main
     - taxonomy.vocabulary.oss_solution_source
   module:
@@ -37,17 +35,17 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'EC OSS Solutions Catalogue'
+      title: 'Open Source Solutions List'
       fields:
-        field_git_project_id:
-          id: field_git_project_id
-          table: node__field_git_project_id
-          field: field_git_project_id
+        field_oss_git_repo_id:
+          id: field_oss_git_repo_id
+          table: node__field_oss_git_repo_id
+          field: field_oss_git_repo_id
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Id
+          label: 'Git Repo Id'
           exclude: false
           alter:
             alter_text: false
@@ -102,16 +100,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_git_repo_icon:
-          id: field_git_repo_icon
-          table: node__field_git_repo_icon
-          field: field_git_repo_icon
+        field_oss_git_repo_icon:
+          id: field_oss_git_repo_icon
+          table: node__field_oss_git_repo_icon
+          field: field_oss_git_repo_icon
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
           label: 'Git Repo Icon'
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -154,80 +152,10 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: ''
-            image_style: thumbnail
-            image_loading:
-              attribute: eager
-            svg_attributes:
-              width: null
-              height: null
-            svg_render_as_image: true
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_oss_publiccode_yml_logo:
-          id: field_oss_publiccode_yml_logo
-          table: node__field_oss_publiccode_yml_logo
-          field: field_oss_publiccode_yml_logo
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: Logo
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: '{{ field_git_repo_icon }} '
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
             image_link: content
-            image_style: thumbnail
+            image_style: medium
             image_loading:
-              attribute: eager
+              attribute: lazy
             svg_attributes:
               width: null
               height: null
@@ -307,15 +235,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_oss_publiccode_active:
-          id: field_oss_publiccode_active
-          table: node__field_oss_publiccode_active
-          field: field_oss_publiccode_active
+        field_oss_description:
+          id: field_oss_description
+          table: node__field_oss_description
+          field: field_oss_description
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Active
+          label: 'OSS Description'
           exclude: false
           alter:
             alter_text: false
@@ -334,72 +262,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: boolean
-          settings:
-            format: true-false
-            format_custom_false: ''
-            format_custom_true: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_description:
-          id: field_description
-          table: node__field_description
-          field: field_description
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: Description
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 200
+            max_length: 150
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -434,15 +297,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_git_repo_url:
-          id: field_git_repo_url
-          table: node__field_git_repo_url
-          field: field_git_repo_url
+        field_oss_git_repo_url:
+          id: field_oss_git_repo_url
+          table: node__field_oss_git_repo_url
+          field: field_oss_git_repo_url
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'GIT Repo Url'
+          label: 'Git Repo Url'
           exclude: false
           alter:
             alter_text: false
@@ -567,10 +430,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_oss_solution_source:
-          id: field_oss_solution_source
-          table: node__field_oss_solution_source
-          field: field_oss_solution_source
+        field_oss_source:
+          id: field_oss_source
+          table: node__field_oss_source
+          field: field_oss_source
           relationship: none
           group_type: group
           admin_label: ''
@@ -630,10 +493,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_git_readme_md:
-          id: field_git_readme_md
-          table: node__field_git_readme_md
-          field: field_git_readme_md
+        field_oss_git_repo_readme_md:
+          id: field_oss_git_repo_readme_md
+          table: node__field_oss_git_repo_readme_md
+          field: field_oss_git_repo_readme_md
           relationship: none
           group_type: group
           admin_label: ''
@@ -681,6 +544,68 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_oss_publiccode_yml_content:
+          id: field_oss_publiccode_yml_content
+          table: node__field_oss_publiccode_yml_content
+          field: field_oss_publiccode_yml_content
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Publiccode.yml File Content'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -813,8 +738,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            git_project: git_project
-            oss_publiccode_yml: oss_publiccode_yml
+            opensource_solution: opensource_solution
           group: 1
           exposed: false
           expose:
@@ -887,29 +811,30 @@ display:
             group_items: {  }
           fields:
             title: title
-            field_description: field_description
-            field_git_readme_md: field_git_readme_md
-        field_oss_publiccode_active_value:
-          id: field_oss_publiccode_active_value
-          table: node__field_oss_publiccode_active
-          field: field_oss_publiccode_active_value
+            field_oss_description: field_oss_description
+            field_oss_git_repo_readme_md: field_oss_git_repo_readme_md
+            field_oss_publiccode_yml_content: field_oss_publiccode_yml_content
+        field_oss_git_repo_id_value:
+          id: field_oss_git_repo_id_value
+          table: node__field_oss_git_repo_id
+          field: field_oss_git_repo_id_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: boolean
-          operator: '='
-          value: All
+          plugin_id: string
+          operator: contains
+          value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: ''
-            label: Active
+            operator_id: field_oss_git_repo_id_value_op
+            label: 'Git Repo Id'
             description: ''
             use_operator: false
-            operator: field_oss_publiccode_active_value_op
+            operator: field_oss_git_repo_id_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_oss_publiccode_active_value
+            identifier: field_oss_git_repo_id_value
             required: false
             remember: false
             multiple: false
@@ -917,6 +842,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -980,10 +906,54 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_oss_solution_source_target_id:
-          id: field_oss_solution_source_target_id
-          table: node__field_oss_solution_source
-          field: field_oss_solution_source_target_id
+        field_oss_git_repo_readme_md_value:
+          id: field_oss_git_repo_readme_md_value
+          table: node__field_oss_git_repo_readme_md
+          field: field_oss_git_repo_readme_md_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_oss_git_repo_readme_md_value_op
+            label: 'Git Readme.md (field_oss_git_repo_readme_md)'
+            description: ''
+            use_operator: true
+            operator: field_oss_git_repo_readme_md_value_op
+            operator_limit_selection: true
+            operator_list:
+              contains: contains
+              empty: empty
+              'not empty': 'not empty'
+            identifier: field_oss_git_repo_readme_md_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_oss_source_target_id:
+          id: field_oss_source_target_id
+          table: node__field_oss_source
+          field: field_oss_source_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -993,14 +963,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_oss_solution_source_target_id_op
+            operator_id: field_oss_source_target_id_op
             label: 'Federated Source'
             description: ''
             use_operator: false
-            operator: field_oss_solution_source_target_id_op
+            operator: field_oss_source_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_oss_solution_source_target_id
+            identifier: field_oss_source_target_id
             required: false
             remember: false
             multiple: false
@@ -1027,91 +997,6 @@ display:
           hierarchy: false
           limit: true
           error_message: true
-        field_git_readme_md_value:
-          id: field_git_readme_md_value
-          table: node__field_git_readme_md
-          field: field_git_readme_md_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: string
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_git_readme_md_value_op
-            label: 'Git Readme.md'
-            description: ''
-            use_operator: true
-            operator: field_git_readme_md_value_op
-            operator_limit_selection: true
-            operator_list:
-              contains: contains
-              empty: empty
-              'not empty': 'not empty'
-            identifier: field_git_readme_md_value
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        field_git_repo_icon_target_id:
-          id: field_git_repo_icon_target_id
-          table: node__field_git_repo_icon
-          field: field_git_repo_icon_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: numeric
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
-          expose:
-            label: 'Git Repo Icon (field_git_repo_icon:target_id)'
-            description: null
-            use_operator: false
-            operator: field_git_repo_icon_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_git_repo_icon_target_id
-            required: false
-            remember: false
-            multiple: false
-            min_placeholder: null
-            max_placeholder: null
-            placeholder: null
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -1235,14 +1120,13 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_description'
-        - 'config:field.storage.node.field_git_project_id'
-        - 'config:field.storage.node.field_git_readme_md'
-        - 'config:field.storage.node.field_git_repo_icon'
-        - 'config:field.storage.node.field_git_repo_url'
-        - 'config:field.storage.node.field_oss_publiccode_active'
-        - 'config:field.storage.node.field_oss_publiccode_yml_logo'
-        - 'config:field.storage.node.field_oss_solution_source'
+        - 'config:field.storage.node.field_oss_description'
+        - 'config:field.storage.node.field_oss_git_repo_icon'
+        - 'config:field.storage.node.field_oss_git_repo_id'
+        - 'config:field.storage.node.field_oss_git_repo_readme_md'
+        - 'config:field.storage.node.field_oss_git_repo_url'
+        - 'config:field.storage.node.field_oss_publiccode_yml_content'
+        - 'config:field.storage.node.field_oss_source'
         - schemadotorg_descriptions.settings
   page_ec_oss_solutions_catalogue:
     id: page_ec_oss_solutions_catalogue
@@ -1272,12 +1156,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_description'
-        - 'config:field.storage.node.field_git_project_id'
-        - 'config:field.storage.node.field_git_readme_md'
-        - 'config:field.storage.node.field_git_repo_icon'
-        - 'config:field.storage.node.field_git_repo_url'
-        - 'config:field.storage.node.field_oss_publiccode_active'
-        - 'config:field.storage.node.field_oss_publiccode_yml_logo'
-        - 'config:field.storage.node.field_oss_solution_source'
+        - 'config:field.storage.node.field_oss_description'
+        - 'config:field.storage.node.field_oss_git_repo_icon'
+        - 'config:field.storage.node.field_oss_git_repo_id'
+        - 'config:field.storage.node.field_oss_git_repo_readme_md'
+        - 'config:field.storage.node.field_oss_git_repo_url'
+        - 'config:field.storage.node.field_oss_publiccode_yml_content'
+        - 'config:field.storage.node.field_oss_source'
         - schemadotorg_descriptions.settings
