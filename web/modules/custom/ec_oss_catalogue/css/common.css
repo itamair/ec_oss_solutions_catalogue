@@ -70,8 +70,8 @@
   }
 }
 /* line 75, ../sass/common.scss */
-.views-field-field-oss-publiccode-yml-logo {
-  min-width: 150px !important;
+.views-field.views-field-field-oss-git-repo-icon {
+  min-width: 100px !important;
 }
 
 /* line 79, ../sass/common.scss */
