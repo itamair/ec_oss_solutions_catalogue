@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.opensource_solution.field_oss_git_repo_url
     - field.field.node.opensource_solution.field_oss_publiccode_active
     - field.field.node.opensource_solution.field_oss_publiccode_yml_content
+    - field.field.node.opensource_solution.field_oss_short_description
     - field.field.node.opensource_solution.field_oss_source
     - field.field.node.opensource_solution.field_oss_updated
     - image.style.medium
@@ -32,7 +33,7 @@ third_party_settings:
       label: 'Publiccode.Yml Content'
       parent_name: ''
       region: content
-      weight: 9
+      weight: 10
       format_type: details
       format_settings:
         classes: ''
@@ -67,7 +68,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_oss_git_repo_icon:
     type: image
@@ -118,6 +119,13 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
+  field_oss_short_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
   field_oss_source:
     type: entity_reference_label
     label: inline
@@ -142,7 +150,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
 hidden:
   field_oss_publiccode_active: true
