@@ -58,7 +58,7 @@ class GitHubHelper {
    *
    * @var string
    */
-  private string $gitAccessToken = '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';
+  private string $gitAccessToken = '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';
 
   /**
    * Constructor of the GitHub Helper Service.
