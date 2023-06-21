@@ -45,5 +45,5 @@ dependencies:
   - 'svg_image:svg_image'
   - 'ultimate_cron:ultimate_cron'
   - 'yaml_editor:yaml_editor'
-version: '1.0'
+version: '1.1'
 package: 'OSS Catalogue'

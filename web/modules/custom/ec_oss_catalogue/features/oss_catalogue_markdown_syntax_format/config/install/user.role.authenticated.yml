@@ -1,10 +1,15 @@
-langcode: it
+langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.markdown_syntax
+    - filter.format.basic_html
   module:
+    - comment
+    - contact
     - filter
+    - search
+    - shortcut
+    - system
 id: authenticated
 label: 'Authenticated user'
 weight: 1

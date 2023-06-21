@@ -10,9 +10,9 @@ migration_tags:
 migration_group: migrations_ec_oss_catalogue
 label: 'Git Projects Gitlab Open CoDE'
 source:
-  plugin: git_projects_urls
+  plugin: gitlab_projects_urls
   data_fetcher_plugin: http
-  data_parser_plugin: json_gitlab
+  data_parser_plugin: json
   gitlab_domain: 'https://gitlab.opencode.de'
   urls: null
   langcode: en
@@ -116,6 +116,18 @@ process:
       method: process
     -
       plugin: publiccode_yml_description
+    -
+      plugin: skip_on_empty
+      method: process
+  field_oss_short_description:
+    -
+      plugin: gitlab_project_publiccode_yml_content
+      source: id
+    -
+      plugin: skip_on_empty
+      method: process
+    -
+      plugin: publiccode_yml_short_description
     -
       plugin: skip_on_empty
       method: process

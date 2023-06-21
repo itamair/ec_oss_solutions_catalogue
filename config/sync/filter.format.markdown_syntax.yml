@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - markdown
+_core:
+  default_config_hash: Fz58mmRkFcx8MUu5byeHTSiv4jzImJ8nM783Hcfaqv0
 name: 'Markdown Syntax'
 format: markdown_syntax
 weight: 0
@@ -14,6 +16,7 @@ filters:
     status: true
     weight: -15
     settings:
+      override: false
       id: commonmark
       enabled: true
       render_strategy:
@@ -30,5 +33,4 @@ filters:
           filter_align: false
           filter_caption: false
           media_embed: false
-      override: false
     filterFormat: markdown_syntax

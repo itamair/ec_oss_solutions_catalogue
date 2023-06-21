@@ -1,45 +1,41 @@
-uuid: 6f7b4fd0-2b4a-42b2-a5f0-9285625cbfx5
+uuid: 6f7b4fd0-2b4a-42b2-a5f0-9285625ccfc8
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: eUEFS0_-jxza50fOlQkwUqJl1QPbdUWeSqGZbBS4yxZ
-id: git_projects_gitlab_open_code
+  default_config_hash: eUEFS0_-jxza50fOlQkwUqJl1QPbdUWeSqGZbBS4uxY
+id: git_repos_github_ctt_spain
 class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
   - ec_oss_catalogue
 migration_group: migrations_ec_oss_catalogue
-label: 'Git Projects Gitlab Open CoDE'
+label: 'Git Repos GitHub CTT Spain'
 source:
-  plugin: gitlab_projects_urls
+  plugin: github_projects_urls
   data_fetcher_plugin: http
-  data_parser_plugin: json_gitlab
-  gitlab_domain: 'https://gitlab.opencode.de'
+  data_parser_plugin: json_github
+  github_owner: ctt-gob-es
   urls: null
   langcode: en
   fields:
     -
       name: id
-      label: 'The unique Identifier of the Gitlab Open CoDE project'
+      label: 'The unique Identifier of the Github CTT Spain project'
       selector: id
     -
       name: name
-      label: 'Gitlab Open CoDE project name'
+      label: 'Github CTT Spain project name'
       selector: name
     -
       name: description
-      label: 'Gitlab Open CoDE project description'
+      label: 'Github CTT Spain project description'
       selector: description
     -
-      name: web_url
-      label: 'Url of the Gitlab Open CoDE repo'
-      selector: web_url
-    -
-      name: avatar_url
-      label: avatar_url
-      selector: avatar_url
+      name: url
+      label: 'Url of the Github CTT Spain repo'
+      selector: url
     -
       name: created_at
       label: 'Creation date in Zulu time (UTC)'
@@ -51,12 +47,12 @@ source:
   ids:
     id:
       type: string
-    web_url:
+    url:
       type: string
   constants:
     file_destination: 'public://git_projects_icons/'
 process:
-  langcode: en
+  gitlab_domain: gitlab_domain
   type:
     plugin: default_value
     default_value: opensource_solution
@@ -92,7 +88,7 @@ process:
       to_format: Y-m-d
       from_timezone: UTC
       to_timezone: UTC
-  field_oss_git_repo_url: web_url
+  field_oss_git_repo_url: url
   field_oss_git_repo_icon:
     plugin: gitlab_project_icon_import
     source: avatar_url
@@ -103,48 +99,10 @@ process:
     title: name
     alt: name
   field_git_repo_description: description
-  field_oss_publiccode_yml_content:
-    -
-      plugin: gitlab_project_publiccode_yml_content
-      source: id
-    -
-      plugin: skip_on_empty
-      method: row
-  field_oss_description:
-    -
-      plugin: gitlab_project_publiccode_yml_content
-      source: id
-    -
-      plugin: skip_on_empty
-      method: process
-    -
-      plugin: publiccode_yml_description
-    -
-      plugin: skip_on_empty
-      method: process
-  field_oss_short_description:
-    -
-      plugin: gitlab_project_publiccode_yml_content
-      source: id
-    -
-      plugin: skip_on_empty
-      method: process
-    -
-      plugin: publiccode_yml_short_description
-    -
-      plugin: skip_on_empty
-      method: process
-  field_oss_git_repo_readme_md/value:
-    -
-      plugin: gitlab_project_readme
-      source: id
-  field_oss_git_repo_readme_md/format:
-    plugin: default_value
-    default_value: markdown_syntax
   field_oss_source:
     -
       plugin: default_value
-      default_value: 'GITLAB Open CoDE'
+      default_value: 'Github CTT Spain'
     -
       plugin: entity_generate
       entity_type: taxonomy_term

@@ -1,16 +1,28 @@
 uuid: ee378226-00bc-4c48-b8ea-c4b40cbced8d
-langcode: it
+langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.markdown_syntax
+    - filter.format.basic_html
   module:
+    - comment
+    - contact
     - filter
+    - search
+    - shortcut
+    - system
 _core:
-  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
 label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'use text format markdown_syntax'
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

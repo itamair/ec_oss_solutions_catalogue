@@ -110,6 +110,13 @@ process:
     -
       plugin: skip_on_empty
       method: process
+  field_oss_short_description:
+    -
+      plugin: publiccode_yml_short_description
+      source: publiccodeYml
+    -
+      plugin: skip_on_empty
+      method: process
   field_oss_source:
     -
       plugin: default_value

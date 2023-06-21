@@ -13,6 +13,7 @@ filters:
     status: true
     weight: -15
     settings:
+      override: false
       id: commonmark
       enabled: true
       render_strategy:
@@ -29,5 +30,4 @@ filters:
           filter_align: false
           filter_caption: false
           media_embed: false
-      override: false
     filterFormat: markdown_syntax

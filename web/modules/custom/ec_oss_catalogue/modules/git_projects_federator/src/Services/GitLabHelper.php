@@ -8,7 +8,7 @@ use Drupal\Component\Utility\UrlHelper;
 use Drupal\Component\Serialization\Json;
 
 /**
- * Provides a GitLab Code Europa Helper Service.
+ * Provides a GitLab Helper Service.
  */
 class GitLabHelper {
 
@@ -55,7 +55,7 @@ class GitLabHelper {
   public array $gitLabUsersPagesUrls;
 
   /**
-   * Constructor of the UnDeveloperGitLabFetcher Service.
+   * Constructor of the GitLab Helper Service.
    *
    * @param \GuzzleHttp\ClientInterface $http_client
    *   The HTTP client.

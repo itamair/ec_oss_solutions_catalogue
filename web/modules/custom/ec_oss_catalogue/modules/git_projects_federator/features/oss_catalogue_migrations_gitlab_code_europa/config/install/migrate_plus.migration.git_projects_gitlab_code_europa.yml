@@ -10,9 +10,9 @@ migration_tags:
 migration_group: migrations_ec_oss_catalogue
 label: 'Git Projects Gitlab Code Europa'
 source:
-  plugin: git_projects_urls
+  plugin: gitlab_projects_urls
   data_fetcher_plugin: http
-  data_parser_plugin: json_gitlab
+  data_parser_plugin: json
   gitlab_domain: 'https://code.europa.eu'
   urls: null
   langcode: en
@@ -53,7 +53,7 @@ source:
   constants:
     file_destination: 'public://git_projects_icons/'
 process:
-  gitlab_domain: gitlab_domain
+  langcode: en
   type:
     plugin: default_value
     default_value: opensource_solution
