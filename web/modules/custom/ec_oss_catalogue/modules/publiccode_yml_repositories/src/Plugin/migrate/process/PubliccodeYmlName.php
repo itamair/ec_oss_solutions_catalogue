@@ -22,12 +22,18 @@ class PubliccodeYmlName extends ProcessPluginBase {
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    $publiccode_yml_values = Yaml::parse($value);
-    if (isset($publiccode_yml_values) && array_key_exists('name', $publiccode_yml_values) &&  !empty($publiccode_yml_values['name'])) {
-      $name = $publiccode_yml_values['name'];
+    try {
+      $publiccode_yml_values = Yaml::parse($value);
+      if (isset($publiccode_yml_values) && array_key_exists('name', $publiccode_yml_values) && !empty($publiccode_yml_values['name'])) {
+        $name = $publiccode_yml_values['name'];
+      }
+      else {
+        $name = $row->getSourceProperty("id");
+      }
     }
-    else {
-      $name = $row->getSourceProperty("id");
+    catch (\Exception $e) {
+      watchdog_exception('publiccode_yml_repositories', $e);
+      $name = $e->getMessage();
     }
     return $name;
   }

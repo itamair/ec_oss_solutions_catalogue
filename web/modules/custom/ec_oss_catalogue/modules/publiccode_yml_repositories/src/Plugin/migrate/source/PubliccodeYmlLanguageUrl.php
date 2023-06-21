@@ -20,15 +20,15 @@ class PubliccodeYmlLanguageUrl extends Url {
    */
   public function prepareRow(Row $row) {
     if ($row->hasSourceProperty('publiccodeYml')) {
-      $publiccode_yml_values = Yaml::parse($row->getSourceProperty('publiccodeYml'));
-      // Set a default langcode as italian.
-      $langcode = 'it';
-      if (isset($publiccode_yml_values) &&
-        array_key_exists('description', $publiccode_yml_values) &&
-        array_key_exists('en', $publiccode_yml_values['description'])) {
-        $langcode = 'en';
-      }
-      try {
+      try{
+        $publiccode_yml_values = Yaml::parse($row->getSourceProperty('publiccodeYml'));
+        // Set a default langcode as italian.
+        $langcode = 'it';
+        if (isset($publiccode_yml_values) &&
+          array_key_exists('description', $publiccode_yml_values) &&
+          array_key_exists('en', $publiccode_yml_values['description'])) {
+          $langcode = 'en';
+        }
         $row->setSourceProperty('langcode', $langcode);
       }
       catch (\Exception $e) {
