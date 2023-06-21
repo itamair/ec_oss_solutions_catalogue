@@ -49,6 +49,7 @@ class GitLabProjectReadMe extends ProcessPluginBase implements ContainerFactoryP
    * @param \GuzzleHttp\ClientInterface $http_client
    *   The HTTP client.
    * @param \Drupal\git_projects_federator\Services\GitLabHelper $gitlab_helper
+   *   The GitLab Helper
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, ClientInterface $http_client, GitLabHelper $gitlab_helper) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);

@@ -99,6 +99,13 @@ process:
     title: name
     alt: name
   field_git_repo_description: description
+  field_oss_git_repo_readme_md/value:
+    -
+      plugin: github_project_readme
+      source: name
+  field_oss_git_repo_readme_md/format:
+    plugin: default_value
+    default_value: markdown_syntax
   field_oss_source:
     -
       plugin: default_value

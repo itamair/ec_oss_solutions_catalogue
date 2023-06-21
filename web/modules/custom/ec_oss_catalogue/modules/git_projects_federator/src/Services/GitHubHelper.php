@@ -74,6 +74,16 @@ class GitHubHelper {
   }
 
   /**
+   * Get GitHub Access Token.
+   *
+   * @return string
+   *   The GitHub Access Token.
+   */
+  public function getGitAccessToken(): string {
+    return $this->gitAccessToken;
+  }
+
+  /**
    * Get GitHub Project Info.
    *
    *  @param string $github_owner
@@ -85,10 +95,15 @@ class GitHubHelper {
    * @return array
    *   The GitHub Projects Pages Urls list.
    */
-  public function githubProjectInfo(string $github_owner, int $project_name): array {
+  public function githubProjectInfo(string $github_owner, string $project_name): array {
+    $options = [
+      'headers' => [
+        'Authorization' => 'Bearer ' . $this->gitAccessToken,
+      ],
+    ];
     $project_end_point = 'https://api.github.com/repos/' . $github_owner . '/' . $project_name;
     try {
-      $response = $this->httpClient->get($project_end_point);
+      $response = $this->httpClient->get($project_end_point, $options);
       return JSON::decode($response->getBody()->getContents());
     }
     catch (ConnectException $e) {
