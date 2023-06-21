@@ -8,3 +8,7 @@ display:
       exposed_form:
         options:
           reset_button_label: Ripristina
+      filters:
+        combine:
+          expose:
+            label: Cerca
