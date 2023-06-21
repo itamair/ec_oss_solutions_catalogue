@@ -55,3 +55,5 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   include $app_root . '/' . $site_path . '/settings.ddev.php';
 }
+
+$settings['github_access_token'] =  $_ENV['github_access_token'];

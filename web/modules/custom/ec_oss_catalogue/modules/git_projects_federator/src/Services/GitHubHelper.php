@@ -5,6 +5,7 @@ namespace Drupal\git_projects_federator\Services;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ConnectException;
 use Drupal\Component\Serialization\Json;
+use Drupal\Core\Site\Settings;
 
 /**
  * Provides a GitHub Helper Service.
@@ -58,7 +59,7 @@ class GitHubHelper {
    *
    * @var string
    */
-  private string $gitAccessToken = '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';
+  private string $gitAccessToken;
 
   /**
    * Constructor of the GitHub Helper Service.
@@ -71,6 +72,7 @@ class GitHubHelper {
   ) {
     $this->perPage = 30;
     $this->httpClient = $http_client;
+    $this->gitAccessToken = Settings::get('github_access_token');
   }
 
   /**

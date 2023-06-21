@@ -45,3 +45,6 @@ phpunit.xml
 .htaccess
 
 development.services.local.yml
+
+# Ignore .env files as they are personal
+.env
