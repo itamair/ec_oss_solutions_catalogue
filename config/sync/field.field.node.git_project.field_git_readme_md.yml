@@ -1,0 +1,21 @@
+uuid: 4ccb583b-6965-4e3c-a5c4-4f58282d9759
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_git_readme_md
+    - node.type.git_project
+  module:
+    - text
+id: node.git_project.field_git_readme_md
+field_name: field_git_readme_md
+entity_type: node
+bundle: git_project
+label: 'Git Readme.md'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

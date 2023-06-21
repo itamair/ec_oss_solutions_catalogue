@@ -12,7 +12,7 @@ label: 'Git Projects Gitlab Open CoDE'
 source:
   plugin: gitlab_projects_urls
   data_fetcher_plugin: http
-  data_parser_plugin: json
+  data_parser_plugin: json_gitlab
   gitlab_domain: 'https://gitlab.opencode.de'
   urls: null
   langcode: en

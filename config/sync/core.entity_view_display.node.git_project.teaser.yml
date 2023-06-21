@@ -1,7 +1,9 @@
+uuid: 4a93f0c3-a361-4225-aa5e-cfa0877bdae9
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.field.node.git_project.field_git_project_id
     - field.field.node.git_project.field_git_readme_md
     - field.field.node.git_project.field_git_repo_icon
@@ -10,27 +12,23 @@ dependencies:
     - node.type.git_project
   module:
     - user
-id: node.git_project.default
+id: node.git_project.teaser
 targetEntityType: node
 bundle: git_project
-mode: default
+mode: teaser
 content:
-  field_tags:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 101
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 200
     region: content
 hidden:
+  field_description: true
   field_git_project_id: true
   field_git_readme_md: true
   field_git_repo_icon: true
+  field_git_repo_url: true
   field_oss_publiccode_yml_content: true
+  field_oss_solution_source: true
+  field_tags: true
   langcode: true

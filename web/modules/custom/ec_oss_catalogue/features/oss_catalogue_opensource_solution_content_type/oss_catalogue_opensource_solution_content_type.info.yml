@@ -38,7 +38,6 @@ dependencies:
   - 'jsonapi_extras:jsonapi_extras'
   - 'layout_builder_styles:layout_builder_styles'
   - 'migrate_plus:migrate_plus'
-  - 'oss_catalogue_oss_publiccode_yml_content_type:oss_catalogue_oss_publiccode_yml_content_type'
   - 'paragraphs:paragraphs'
   - 'paragraphs:paragraphs_library'
   - 'pathauto:pathauto'

@@ -3,13 +3,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.git_project.field_description
     - field.field.node.git_project.field_git_project_id
     - field.field.node.git_project.field_git_readme_md
     - field.field.node.git_project.field_git_repo_icon
-    - field.field.node.git_project.field_git_repo_url
     - field.field.node.git_project.field_oss_publiccode_yml_content
-    - field.field.node.git_project.field_oss_solution_source
+    - field.field.node.git_project.field_tags
     - node.type.git_project
   module:
     - user
@@ -31,4 +29,5 @@ hidden:
   field_git_repo_url: true
   field_oss_publiccode_yml_content: true
   field_oss_solution_source: true
+  field_tags: true
   langcode: true

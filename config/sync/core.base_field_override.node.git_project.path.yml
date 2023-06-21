@@ -1,18 +1,20 @@
+uuid: ae852f1f-33ec-428c-93aa-8f1f0e044b9d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_description
     - node.type.git_project
-id: node.git_project.field_description
-field_name: field_description
+  module:
+    - path
+id: node.git_project.path
+field_name: path
 entity_type: node
 bundle: git_project
-label: Description
+label: 'URL alias'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: path

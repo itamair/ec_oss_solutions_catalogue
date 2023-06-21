@@ -1,0 +1,19 @@
+uuid: 09f850e3-63ef-45e0-8a7b-0de4aa7b9438
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oss_publiccode_yml_content
+    - node.type.git_project
+id: node.git_project.field_oss_publiccode_yml_content
+field_name: field_oss_publiccode_yml_content
+entity_type: node
+bundle: git_project
+label: 'Publiccode.yml File Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
