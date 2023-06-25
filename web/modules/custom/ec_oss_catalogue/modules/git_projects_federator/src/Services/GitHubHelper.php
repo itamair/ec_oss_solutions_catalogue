@@ -143,9 +143,6 @@ class GitHubHelper {
       'headers' => [
         'Authorization' => 'Bearer ' . $this->gitAccessToken,
       ],
-      'query' => [
-        'per_page' => $this->perPage,
-      ],
     ];
 
     $github_projects_pages_urls[] = $this->getReposEndpoint($github_owner);
@@ -162,9 +159,10 @@ class GitHubHelper {
 
         // Tmp set $pages_remaining to FALSE to run only one iteration with
         // $per_page.
-        $pages_remaining = FALSE;
+        // $pages_remaining = FALSE;
         if ($pages_remaining) {
-          $github_projects_pages_urls[] = preg_match($next_pattern, $link_header);
+          preg_match($next_pattern, $link_header, $matches);
+          $github_projects_pages_urls[] = $matches[0];
         }
       }
       catch (ConnectException $e) {
