@@ -3,9 +3,9 @@ _core:
 langcode: it
 first_day: 1
 country:
-  default: IT
+  default: BE
 timezone:
-  default: Europe/Rome
+  default: Europe/Brussels
   user:
     configurable: true
     default: 0

@@ -18,7 +18,7 @@ source:
   data_parser_plugin: json_github
   github_owner: ctt-gob-es
   urls: null
-  langcode: en
+  langcode: es
   fields:
     -
       name: id
@@ -52,6 +52,7 @@ source:
   constants:
     file_destination: 'public://git_projects_icons/'
 process:
+  langcode: langcode
   gitlab_domain: gitlab_domain
   type:
     plugin: default_value

@@ -1,0 +1,57 @@
+display:
+  default:
+    display_title: 'Por defecto'
+    display_options:
+      fields:
+        field_oss_git_repo_id:
+          separator: ', '
+        field_oss_git_repo_icon:
+          separator: ', '
+        title:
+          separator: ', '
+        field_git_repo_description:
+          separator: ', '
+        field_oss_short_description:
+          separator: ', '
+        field_oss_git_repo_url:
+          separator: ', '
+        langcode:
+          label: Idioma
+          separator: ', '
+        field_oss_source:
+          separator: ', '
+        field_oss_git_repo_readme_md:
+          separator: ', '
+        field_oss_publiccode_yml_content:
+          separator: ', '
+        field_oss_description:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          bef:
+            general:
+              secondary_label: 'Opciones avanzadas'
+      filters:
+        combine:
+          expose:
+            label: Buscar
+      header:
+        result:
+          content: 'Mostrando @start - @end de @total'
+  page_ec_oss_solutions_catalogue:
+    display_title: Página

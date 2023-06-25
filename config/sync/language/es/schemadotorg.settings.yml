@@ -1,0 +1,60 @@
+schema_properties:
+  default_fields:
+    FAQPage--mainEntity:
+      label: Preguntas
+    MenuItem--offers:
+      label: Precio
+    Person--familyName:
+      label: Apellidos
+    Person--givenName:
+      label: Nombre
+    QAPage--mainEntity:
+      label: Preguntas
+    Question--acceptedAnswer:
+      label: Respuesta
+    Question--name:
+      label: Pregunta
+    MediaGallery--hasPart:
+      label: Multimedia
+    ImageGallery--hasPart:
+      label: Imágenes
+    VideoGallery--hasPart:
+      label: Vídeos
+    affiliation:
+      label: Afiliaciones
+    attendee:
+      label: Asistentes
+    blogPost:
+      label: 'Entradas de blog'
+    category:
+      label: Categorías
+    character:
+      label: Caracteres
+    comment:
+      label: Comentarios
+    contributor:
+      label: Contribuyentes
+    educationalLevel:
+      label: Dificultad
+    hasMenu:
+      label: Menús
+    hasMenuItem:
+      label: 'Elementos de menú'
+    hasPart:
+      label: Elementos
+    itemListElement:
+      label: Elementos
+    member:
+      label: Miembros
+    organizer:
+      label: Organizadores
+    publication:
+      label: Publicaciones
+    recipeCategory:
+      label: 'categorías de receta'
+    relatedLink:
+      label: 'Enlaces relacionados'
+    step:
+      label: Pasos
+    tool:
+      label: Herramientas

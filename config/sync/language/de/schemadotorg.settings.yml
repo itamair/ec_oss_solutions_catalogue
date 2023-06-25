@@ -1,0 +1,82 @@
+schema_properties:
+  default_fields:
+    FAQPage--mainEntity:
+      label: Fragen
+    MenuItem--offers:
+      label: Preis
+    Person--additionalName:
+      label: 'Zweiter Vorname'
+    Person--familyName:
+      label: Nachname
+    Person--givenName:
+      label: Vorname
+    QAPage--mainEntity:
+      label: Fragen
+    Question--acceptedAnswer:
+      label: Antwort
+    Question--name:
+      label: Frage
+    MediaGallery--hasPart:
+      label: Medien
+    ImageGallery--hasPart:
+      label: Bilder
+    VideoGallery--hasPart:
+      label: Videos
+    affiliation:
+      label: Mitgliedschaften
+    artist:
+      label: Künstler
+    attendee:
+      label: Teilnehmer
+    award:
+      label: Auszeichnungen
+    blogPost:
+      label: 'Blog Beiträge'
+    category:
+      label: Kategorien
+    character:
+      label: Zeichen
+    comment:
+      label: Kommentare
+    containsSeason:
+      label: Jahreszeiten
+    contributor:
+      label: Mitwirkende
+    educationalLevel:
+      label: Schwierigkeit
+    employee:
+      label: Mitarbeiter
+    episode:
+      label: Folgen
+    hasMenu:
+      label: Menüs
+    hasMenuItem:
+      label: Menüpunkte
+    hasPart:
+      label: Elemente
+    itemListElement:
+      label: Elemente
+    material:
+      label: Materialien
+    member:
+      label: Mitglieder
+    openingHours:
+      label: Öffnungszeiten
+    openingHoursSpecification:
+      label: Öffnungszeiten
+    organizer:
+      label: Organisatioren
+    performer:
+      label: 'Ausführende Künstler'
+    publication:
+      label: Veröffentlichungen
+    recipeCategory:
+      label: Rezept-Kategorien
+    relatedLink:
+      label: 'Darauf bezogene Links'
+    step:
+      label: Arbeitsschritte
+    tool:
+      label: Werkzeuge
+    usesDevice:
+      label: Geräte
