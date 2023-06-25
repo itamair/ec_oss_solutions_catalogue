@@ -2,15 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_git_readme_md
-    - node.type.git_project
+    - taxonomy.vocabulary.oss_solution_source
   module:
     - text
-id: node.git_project.field_git_readme_md
-field_name: field_git_readme_md
-entity_type: node
-bundle: git_project
-label: 'Git Readme.md'
+id: taxonomy_term.oss_solution_source.description
+field_name: description
+entity_type: taxonomy_term
+bundle: oss_solution_source
+label: Description
 description: ''
 required: false
 translatable: false

@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.git_project
+    - taxonomy.vocabulary.oss_solution_source
   module:
     - path
-id: node.git_project.path
+id: taxonomy_term.oss_solution_source.path
 field_name: path
-entity_type: node
-bundle: git_project
+entity_type: taxonomy_term
+bundle: oss_solution_source
 label: 'URL alias'
 description: ''
 required: false

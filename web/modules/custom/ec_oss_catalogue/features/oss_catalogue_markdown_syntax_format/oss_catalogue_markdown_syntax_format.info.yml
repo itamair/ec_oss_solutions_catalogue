@@ -36,5 +36,5 @@ dependencies:
   - 'paragraphs:paragraphs_library'
   - 'pathauto:pathauto'
   - 'ultimate_cron:ultimate_cron'
-version: '1.1'
+version: '1.2'
 package: 'OSS Catalogue'

@@ -53,4 +53,6 @@ excluded:
   - jsonapi_extras.jsonapi_resource_config.tour--tour
   - jsonapi_extras.jsonapi_resource_config.ultimate_cron_job--ultimate_cron_job
   - jsonapi_extras.jsonapi_resource_config.view--view
+  - filter.format.basic_html
+  - user.role.authenticated
 required: true

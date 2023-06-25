@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.git_project
-id: node.git_project.title
-field_name: title
-entity_type: node
-bundle: git_project
-label: Title
+    - taxonomy.vocabulary.oss_solution_source
+id: taxonomy_term.oss_solution_source.name
+field_name: name
+entity_type: taxonomy_term
+bundle: oss_solution_source
+label: Name
 description: ''
 required: true
 translatable: false

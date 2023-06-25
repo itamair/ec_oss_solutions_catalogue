@@ -1048,7 +1048,7 @@ display:
           exposed: true
           expose:
             operator_id: field_oss_git_repo_readme_md_value_op
-            label: 'Git Readme.md (field_oss_git_repo_readme_md)'
+            label: 'Git Readme.md'
             description: ''
             use_operator: true
             operator: field_oss_git_repo_readme_md_value_op
