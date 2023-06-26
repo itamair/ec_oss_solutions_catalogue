@@ -7,6 +7,8 @@ dependencies:
     - node.type.opensource_solution
   module:
     - text
+_core:
+  default_config_hash: zdpIIORJfiA3i3KF73tDL2QHVX7W8Kwa8opyAZWjR9A
 id: node.opensource_solution.field_oss_git_repo_readme_md
 field_name: field_oss_git_repo_readme_md
 entity_type: node

@@ -7,6 +7,8 @@ dependencies:
     - node.type.opensource_solution
   module:
     - datetime
+_core:
+  default_config_hash: CErj6IDiNTsfPOCmg78rE6i5TLBjum096IFLxJCP5SA
 id: node.opensource_solution.field_oss_created
 field_name: field_oss_created
 entity_type: node

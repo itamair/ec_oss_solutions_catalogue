@@ -11,6 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: 3wkK5vL9uU2xBr0Hpuk7gk97lmO4hKN1guir72pySMI
 id: node.opensource_solution
 target_entity_type_id: node
 target_bundle: opensource_solution

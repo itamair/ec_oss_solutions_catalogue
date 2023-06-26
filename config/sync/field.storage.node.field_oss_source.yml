@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - taxonomy
+_core:
+  default_config_hash: bTf1tjoXR1UtxDwGxBPTqPwUxBQDB0FbgiphHruxuks
 id: node.field_oss_source
 field_name: field_oss_source
 entity_type: node

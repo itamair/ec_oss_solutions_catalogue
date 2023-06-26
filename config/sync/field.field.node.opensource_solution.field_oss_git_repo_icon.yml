@@ -7,6 +7,8 @@ dependencies:
     - node.type.opensource_solution
   module:
     - image
+_core:
+  default_config_hash: oQQXv0TpouurX13FkwmtcqsqNj_gI7THDy8Kb02ys2A
 id: node.opensource_solution.field_oss_git_repo_icon
 field_name: field_oss_git_repo_icon
 entity_type: node

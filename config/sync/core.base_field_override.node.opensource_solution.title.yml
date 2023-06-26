@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.opensource_solution
+_core:
+  default_config_hash: rrmOIrkTXVghEDGcBWU6SYFoWdoO_F7u413lhhPLIn8
 id: node.opensource_solution.title
 field_name: title
 entity_type: node

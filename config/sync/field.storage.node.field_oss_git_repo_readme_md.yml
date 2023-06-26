@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: Tx772JU52LQaRVO5C1NciZk68VDElUkeRfzQ-7bJL5U
 id: node.field_oss_git_repo_readme_md
 field_name: field_oss_git_repo_readme_md
 entity_type: node

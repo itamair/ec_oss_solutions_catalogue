@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Publiccode Yml Repository'
-vid: publiccode_yml_repository
-description: ''
-weight: 0

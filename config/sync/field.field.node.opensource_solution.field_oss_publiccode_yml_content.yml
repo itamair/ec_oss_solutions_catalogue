@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_oss_publiccode_yml_content
     - node.type.opensource_solution
+_core:
+  default_config_hash: 9qTV3wbKntOvKiZ64N1P6chUuPXFprJu5KWBD6Q8DXE
 id: node.opensource_solution.field_oss_publiccode_yml_content
 field_name: field_oss_publiccode_yml_content
 entity_type: node

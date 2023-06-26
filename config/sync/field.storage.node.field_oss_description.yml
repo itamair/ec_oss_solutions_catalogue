@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: 31mC9TO-lKa-umaNodQ8Es40LWuDccz64TN2ZagpJc4
 id: node.field_oss_description
 field_name: field_oss_description
 entity_type: node

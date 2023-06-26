@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_oss_description
     - node.type.opensource_solution
+_core:
+  default_config_hash: Vbld0W_xkZCRlm4c_LATr07LlXFGQhYehvn7DBrz3sA
 id: node.opensource_solution.field_oss_description
 field_name: field_oss_description
 entity_type: node

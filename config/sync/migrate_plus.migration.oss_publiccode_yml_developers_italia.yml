@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: hy8Wnt2nsjRZOjACWwfnSkrl3Q2kNatmmfOHVPQNOKQ
+  default_config_hash: XuXvEE3gsaPhnB0x4eBePm58GHUyq5SlmmFpJWCsJqA
 id: oss_publiccode_yml_developers_italia
 class: null
 field_plugin_method: null

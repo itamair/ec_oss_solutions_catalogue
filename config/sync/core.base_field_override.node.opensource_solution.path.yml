@@ -6,6 +6,8 @@ dependencies:
     - node.type.opensource_solution
   module:
     - path
+_core:
+  default_config_hash: hODkNIsZeBlHAED1ByZsE5PKLNaNmDvNHr0cqiRBBCU
 id: node.opensource_solution.path
 field_name: path
 entity_type: node

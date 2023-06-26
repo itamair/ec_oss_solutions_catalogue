@@ -6,6 +6,8 @@ dependencies:
     - file
     - image
     - node
+_core:
+  default_config_hash: Xz9PvzOWSgpoSmXONdeIHIf1mZ3_u0bxAQeV0cd4wDc
 id: node.field_oss_git_repo_icon
 field_name: field_oss_git_repo_icon
 entity_type: node

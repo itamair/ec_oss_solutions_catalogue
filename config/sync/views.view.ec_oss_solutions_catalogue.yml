@@ -25,7 +25,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: CPJTjKnyd9nPJ2Jk6YnwqLTKSxp_IjNvFbvkCSZFhs8
+  default_config_hash: Ha0bzoA71wICo_db9klmGFTRCdcEVNucgvvweaEfhiU
 id: ec_oss_solutions_catalogue
 label: 'EC OSS Solutions Catalogue'
 module: views

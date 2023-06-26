@@ -2,6 +2,8 @@ uuid: 50ad9e31-a1ad-4bd7-8be9-655fb73752de
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: Ho09xagGHFID1wsNcUHSvAhD98up9itO3hTAY7MXX4Q
 name: 'OSS Solution Source'
 vid: oss_solution_source
 description: ''

@@ -1,8 +1,0 @@
-# Schema for the configuration files of the publiccode_yml_repositories module.
-publiccode_yml_repositories.settings:
-  type: config_object
-  label: 'publiccode_yml_repositories settings'
-  mapping:
-    example:
-      type: string
-      label: 'Example'

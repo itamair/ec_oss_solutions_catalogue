@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.opensource_solution
+_core:
+  default_config_hash: iLgE9Z_IQcx9gDFYT9TNdJVuk7pDr1x6lYDd2OvPT8E
 id: node.opensource_solution.sticky
 field_name: sticky
 entity_type: node

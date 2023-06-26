@@ -83,10 +83,13 @@ module:
   openapi_ui_swagger: 0
   optional_end_date: 0
   options: 0
+  oss_catalogue_migrations_publiccodeyaml_devsitalia: 0
+  oss_catalogue_opensource_solution_content_type: 0
   page_cache: 0
   paragraphs_library: 0
   path: 0
   path_alias: 0
+  publiccode_yml_repositories: 0
   rdf: 0
   replicate: 0
   replicate_ui: 0

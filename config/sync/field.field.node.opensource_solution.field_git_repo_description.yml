@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_git_repo_description
     - node.type.opensource_solution
+_core:
+  default_config_hash: bKgbRtO8wTSYUKQIL0_u-cvLa4EPy2rDT76yf4P-u78
 id: node.opensource_solution.field_git_repo_description
 field_name: field_git_repo_description
 entity_type: node

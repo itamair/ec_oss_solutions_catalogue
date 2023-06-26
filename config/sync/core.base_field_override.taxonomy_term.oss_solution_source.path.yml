@@ -6,6 +6,8 @@ dependencies:
     - taxonomy.vocabulary.oss_solution_source
   module:
     - path
+_core:
+  default_config_hash: iUwHbX1zt-nDVt0S_XZXdiiWh_-TDXPdSLNiSmfD-xA
 id: taxonomy_term.oss_solution_source.path
 field_name: path
 entity_type: taxonomy_term

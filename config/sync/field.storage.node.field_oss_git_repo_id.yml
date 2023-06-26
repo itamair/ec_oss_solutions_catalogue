@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: uaaDGzLytWGrPKCzhHC_Jd2hcUDdmWTm169rPCc3fJ4
 id: node.field_oss_git_repo_id
 field_name: field_oss_git_repo_id
 entity_type: node

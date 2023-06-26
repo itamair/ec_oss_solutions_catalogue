@@ -20,6 +20,8 @@ dependencies:
   module:
     - link
     - user
+_core:
+  default_config_hash: PMXSKwQELq_21gqLnLRI_Bf71XYHIXs4n7Y5rQ4tLTU
 id: node.opensource_solution.teaser
 targetEntityType: node
 bundle: opensource_solution

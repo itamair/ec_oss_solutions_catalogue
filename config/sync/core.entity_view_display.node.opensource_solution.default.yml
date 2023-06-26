@@ -42,6 +42,8 @@ third_party_settings:
         open: false
         description: ''
         required_fields: false
+_core:
+  default_config_hash: RN8wop-ZSdz_twMXb2apG-60vDxvqPLfJbHbfFkS9LI
 id: node.opensource_solution.default
 targetEntityType: node
 bundle: opensource_solution

@@ -24,6 +24,8 @@ dependencies:
     - svg_image
     - text
     - yaml_editor
+_core:
+  default_config_hash: TzMPMCrlDHJfROUn8ROXzDUEm-QW2RZjabkYnXo4ETM
 id: node.opensource_solution.default
 targetEntityType: node
 bundle: opensource_solution

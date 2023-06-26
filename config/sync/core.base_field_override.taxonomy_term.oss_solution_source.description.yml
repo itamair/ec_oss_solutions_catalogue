@@ -6,6 +6,8 @@ dependencies:
     - taxonomy.vocabulary.oss_solution_source
   module:
     - text
+_core:
+  default_config_hash: Q2ZrtZ6Uc8sgXb2u4Djvy0tpmf1Lcs6ulJ_yO_s99E4
 id: taxonomy_term.oss_solution_source.description
 field_name: description
 entity_type: taxonomy_term

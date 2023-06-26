@@ -8,6 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+_core:
+  default_config_hash: hhuOLrEA0KJuaJMSHkWnMUhMmiB1rc1ZwQpGs8iFNLE
 name: 'Opensource Solution'
 type: opensource_solution
 description: 'Describe an Open Source Software (OSS) Solution, according to the EU publiccode.yml format'

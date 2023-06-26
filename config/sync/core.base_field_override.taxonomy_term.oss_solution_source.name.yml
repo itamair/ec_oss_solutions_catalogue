@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.oss_solution_source
+_core:
+  default_config_hash: aPmbQ0aOcy-B8iDPbQz09k7emPLb59xWJJZaS-t-ZyA
 id: taxonomy_term.oss_solution_source.name
 field_name: name
 entity_type: taxonomy_term
