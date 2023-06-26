@@ -90,9 +90,7 @@ class GitHubProjectReadMe extends ProcessPluginBase implements ContainerFactoryP
       if (!empty($project_info) && isset($project_info['default_branch'])) {
         $url = 'https://raw.githubusercontent.com/' . $github_owner . '/' . $project_name . '/' . $project_info['default_branch'] . '/README.md';
         $options = [
-          'headers' => [
-            'Authorization' => 'Bearer ' . $this->gitHubHelper->getGitAccessToken(),
-          ],
+          'headers' => $this->gitHubHelper->getRequestHeaders(),
         ];
         try {
           $readme_md_response = $this->httpClient->get($url, $options);

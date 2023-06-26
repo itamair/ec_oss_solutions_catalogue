@@ -59,7 +59,7 @@ class GitHubHelper {
    *
    * @var string
    */
-  private string $gitAccessToken;
+  private string $gitHubAccessToken;
 
   /**
    * Constructor of the GitHub Helper Service.
@@ -72,7 +72,7 @@ class GitHubHelper {
   ) {
     $this->perPage = 30;
     $this->httpClient = $http_client;
-    $this->gitAccessToken = Settings::get('github_access_token');
+    $this->gitHubAccessToken = Settings::get('github_access_token');
   }
 
   /**
@@ -81,8 +81,20 @@ class GitHubHelper {
    * @return string
    *   The GitHub Access Token.
    */
-  public function getGitAccessToken(): string {
-    return $this->gitAccessToken;
+  protected function getGitHubAccessToken(): string {
+    return $this->gitHubAccessToken;
+  }
+
+  /**
+   * Get GitHub Access Token.
+   *
+   * @return array
+   *   The GitHub Request Headers.
+   */
+  public function getRequestHeaders(): array {
+    return [
+      'Authorization' => 'Bearer ' . $this->gitHubAccessToken,
+    ];
   }
 
   /**
@@ -99,9 +111,7 @@ class GitHubHelper {
    */
   public function githubProjectInfo(string $github_owner, string $project_name): array {
     $options = [
-      'headers' => [
-        'Authorization' => 'Bearer ' . $this->gitAccessToken,
-      ],
+      'headers' => $this->getRequestHeaders(),
     ];
     $project_end_point = 'https://api.github.com/repos/' . $github_owner . '/' . $project_name;
     try {
@@ -141,7 +151,7 @@ class GitHubHelper {
     $github_projects_pages_urls = [];
     $options = [
       'headers' => [
-        'Authorization' => 'Bearer ' . $this->gitAccessToken,
+        'Authorization' => 'Bearer ' . $this->gitHubAccessToken,
       ],
     ];
 
