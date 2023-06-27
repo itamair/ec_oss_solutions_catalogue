@@ -7,13 +7,13 @@ use Drupal\migrate\Row;
 use Symfony\Component\Yaml\Yaml;
 
 /**
- * Source plugin for retrieving via URLs members data for each Git Project.
+ * Source plugin for setting PubliccodeYml Sources.
  *
  * @MigrateSource(
- *   id = "publiccode_yml_language_url"
+ *   id = "publiccode_yml_sources"
  * )
  */
-class PubliccodeYmlLanguageUrl extends Url {
+class PubliccodeYmlSources extends Url {
 
   /**
    * {@inheritdoc}
@@ -30,6 +30,17 @@ class PubliccodeYmlLanguageUrl extends Url {
           $langcode = 'en';
         }
         $row->setSourceProperty('langcode', $langcode);
+
+        if (isset($publiccode_yml_values) &&
+          array_key_exists('name', $publiccode_yml_values) && !empty($publiccode_yml_values['name'])) {
+          $name = $publiccode_yml_values['name'];
+        }
+        else {
+          $name = $row->getSourceProperty("id");
+        }
+
+        $row->setSourceProperty('name', $name);
+
       }
       catch (\Exception $e) {
         watchdog_exception('publiccode_yml_repositories', $e);

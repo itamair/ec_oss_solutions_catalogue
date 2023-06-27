@@ -13,29 +13,26 @@ use Symfony\Component\Yaml\Yaml;
  * @see \Drupal\migrate\Plugin\MigrateProcessInterface
  *
  * @MigrateProcessPlugin(
- *   id = "publiccode_yml_name"
+ *   id = "publiccode_yml_logo"
  * )
  */
-class PubliccodeYmlName extends ProcessPluginBase {
+class PubliccodeYmlLogo extends ProcessPluginBase {
 
   /**
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
+    $logo_url = "";
     try {
       $publiccode_yml_values = Yaml::parse($value);
-      if (isset($publiccode_yml_values) && array_key_exists('name', $publiccode_yml_values) && !empty($publiccode_yml_values['name'])) {
-        $name = $publiccode_yml_values['name'];
-      }
-      else {
-        $name = $row->getSourceProperty("id");
+      if (isset($publiccode_yml_values) && array_key_exists('logo', $publiccode_yml_values) && !empty($publiccode_yml_values['logo'])) {
+        $logo_url = $publiccode_yml_values['logo'];
       }
     }
     catch (\Exception $e) {
       watchdog_exception('publiccode_yml_repositories', $e);
-      $name = $e->getMessage();
     }
-    return $name;
+    return $logo_url;
   }
 
 }

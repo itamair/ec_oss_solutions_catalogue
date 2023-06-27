@@ -939,9 +939,7 @@ display:
             title: title
             field_git_repo_description: field_git_repo_description
             field_oss_short_description: field_oss_short_description
-            field_oss_git_repo_readme_md: field_oss_git_repo_readme_md
             field_oss_publiccode_yml_content: field_oss_publiccode_yml_content
-            field_oss_description: field_oss_description
         field_oss_git_repo_id_value:
           id: field_oss_git_repo_id_value
           table: node__field_oss_git_repo_id
