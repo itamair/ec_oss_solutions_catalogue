@@ -23,9 +23,6 @@
         }
     },
     "require": {
-        "league/commonmark": "^2.4",
-        "drupal/yaml_editor": "^1.1",
-        "drupal/svg_image": "^3.0",
-        "drupal/migrate_plus": "^6.0"
+        "league/commonmark": "^2.4"
     }
 }
