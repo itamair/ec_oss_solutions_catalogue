@@ -10,7 +10,7 @@ migration_tags:
 migration_group: migrations_ec_oss_catalogue
 label: 'OSS Publiccode Yaml Developers Italia'
 source:
-  plugin: publiccode_yml_language_url
+  plugin: publiccode_yml_sources
   data_fetcher_plugin: http
   data_parser_plugin: json
   urls:
@@ -25,6 +25,10 @@ source:
       name: langcode
       label: 'Publiccode.yml project langcode'
       selector: langcode
+    -
+      name: name
+      label: 'Publiccode.yml project name'
+      selector: name
     -
       name: url
       label: 'Url of the OSS Git repo'
@@ -60,13 +64,7 @@ process:
     default_value: opensource_solution
   uuid: id
   langcode: langcode
-  title:
-    -
-      plugin: publiccode_yml_name
-      source: publiccodeYml
-    -
-      plugin: skip_on_empty
-      method: row
+  title: name
   field_oss_git_repo_id: id
   field_oss_created:
     -
@@ -117,6 +115,18 @@ process:
     -
       plugin: skip_on_empty
       method: process
+  field_oss_git_repo_icon:
+    -
+      plugin: publiccode_yml_logo
+      source: publiccodeYml
+    -
+      plugin: image_import
+      skip_on_missing_source: true
+      skip_on_error: true
+      rename: true
+      destination: constants/file_destination
+      title: name
+      alt: name
   field_oss_source:
     -
       plugin: default_value

@@ -113,7 +113,7 @@ process:
   field_oss_source:
     -
       plugin: default_value
-      default_value: 'GITLAB Code Europa'
+      default_value: 'Gitlab Code Europa'
     -
       plugin: entity_generate
       entity_type: taxonomy_term
