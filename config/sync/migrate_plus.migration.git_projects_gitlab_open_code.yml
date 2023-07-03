@@ -144,7 +144,7 @@ process:
   field_oss_source:
     -
       plugin: default_value
-      default_value: 'GITLAB Open CoDE'
+      default_value: 'Gitlab Open CoDE'
     -
       plugin: entity_generate
       entity_type: taxonomy_term
