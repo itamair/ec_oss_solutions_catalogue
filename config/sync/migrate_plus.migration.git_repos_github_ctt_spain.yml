@@ -9,8 +9,8 @@ class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - ec_oss_catalogue
-migration_group: migrations_ec_oss_catalogue
+  - eu_oss_catalogue
+migration_group: migrations_eu_oss_catalogue
 label: 'Git Repos GitHub CTT Spain'
 source:
   plugin: github_projects_urls

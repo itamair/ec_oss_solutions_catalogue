@@ -10,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
   - eu_oss_catalogue
-migration_group: migrations_ec_oss_catalogue
+migration_group: migrations_eu_oss_catalogue
 label: 'Git Projects Gitlab Open CoDE'
 source:
   plugin: gitlab_projects_urls

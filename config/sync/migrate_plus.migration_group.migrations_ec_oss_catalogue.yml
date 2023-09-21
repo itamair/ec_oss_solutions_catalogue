@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: 1PGjY4aMDaMUxwYt8jeNPi5OEjJ1UBzuN4Cvwa__WpI
-id: migrations_ec_oss_catalogue
+id: migrations_eu_oss_catalogue
 label: 'Migrations EC OSS Catalogue'
 description: ''
 source_type: null
