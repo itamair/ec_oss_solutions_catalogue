@@ -86,7 +86,6 @@ module:
   oss_catalogue_migrations_github_ctt_spain: 0
   oss_catalogue_migrations_gitlab_code_europa: 0
   oss_catalogue_migrations_gitlab_open_code: 0
-  oss_catalogue_migrations_group_eu_oss_catalogue: 0
   oss_catalogue_migrations_publiccodeyaml_devsitalia: 0
   oss_catalogue_opensource_solution_content_type: 0
   page_cache: 0
