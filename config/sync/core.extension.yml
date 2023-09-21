@@ -141,7 +141,6 @@ module:
   yaml_editor: 0
   pathauto: 1
   schemadotorg_jsonapi: 1
-  content_translation: 10
   schemadotorg_descriptions: 10
   views: 10
   paragraphs: 11

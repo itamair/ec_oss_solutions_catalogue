@@ -4,13 +4,6 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.oss_solution_source
-  module:
-    - content_translation
-third_party_settings:
-  content_translation:
-    enabled: false
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: sqT5bH3CYvXrgxJ9VCm8mpx15IWCPBDuWHcHAnIZMnA
 id: taxonomy_term.oss_solution_source
