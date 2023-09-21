@@ -42,10 +42,6 @@ display:
           exposed_sorts_label: 'Sortieren nach'
           sort_asc_label: Aufsteigend
           sort_desc_label: Absteigend
-          text_input_required: 'Wählen Sie einen beliebigen Filter und klicken Sie auf Anwenden, um Ergebnisse zu sehen'
-          bef:
-            general:
-              secondary_label: 'Erweiterte Optionen'
       filters:
         combine:
           expose:

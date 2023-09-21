@@ -2,6 +2,10 @@ schema_properties:
   default_fields:
     FAQPage--mainEntity:
       label: Fragen
+    ImageGallery--hasPart:
+      label: Bilder
+    MediaGallery--hasPart:
+      label: Medien
     MenuItem--offers:
       label: Preis
     Person--additionalName:
@@ -16,10 +20,6 @@ schema_properties:
       label: Antwort
     Question--name:
       label: Frage
-    MediaGallery--hasPart:
-      label: Medien
-    ImageGallery--hasPart:
-      label: Bilder
     VideoGallery--hasPart:
       label: Videos
     affiliation:

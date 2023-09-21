@@ -23,7 +23,6 @@ dependencies:
     - path
     - svg_image
     - text
-    - yaml_editor
 _core:
   default_config_hash: TzMPMCrlDHJfROUn8ROXzDUEm-QW2RZjabkYnXo4ETM
 id: node.opensource_solution.default
@@ -99,11 +98,11 @@ content:
       display_label: true
     third_party_settings: {  }
   field_oss_publiccode_yml_content:
-    type: yaml_editor
+    type: string_textarea
     weight: 9
     region: content
     settings:
-      rows: '30'
+      rows: 30
       placeholder: ''
     third_party_settings: {  }
   field_oss_short_description:

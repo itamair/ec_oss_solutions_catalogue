@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/sandbox/itamair-3372413.git"
         }
     ],
     "require": {
@@ -39,6 +43,7 @@
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/entity_type_clone": "^1.7",
         "drupal/entity_usage": "^2.0@beta",
+        "drupal/eu_oss_catalogue": "1.0.x-dev",
         "drupal/examples": "^3.0",
         "drupal/features": "^3.12",
         "drupal/feeds": "^3.0@alpha",

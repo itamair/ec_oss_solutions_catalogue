@@ -1,7 +1,0 @@
-services:
-  gitlab_helper:
-      class: Drupal\git_projects_federator\Services\GitLabHelper
-      arguments: [ '@http_client']
-  github_helper:
-    class: Drupal\git_projects_federator\Services\GitHubHelper
-    arguments: [ '@http_client']

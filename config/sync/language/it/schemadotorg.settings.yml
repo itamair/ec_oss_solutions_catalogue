@@ -2,6 +2,10 @@ schema_properties:
   default_fields:
     FAQPage--mainEntity:
       label: Domande
+    ImageGallery--hasPart:
+      label: Immagini
+    MediaGallery--hasPart:
+      label: Media
     MenuItem--offers:
       label: Prezzo
     Person--familyName:
@@ -14,10 +18,6 @@ schema_properties:
       label: Risposta
     Question--name:
       label: Domanda
-    MediaGallery--hasPart:
-      label: Media
-    ImageGallery--hasPart:
-      label: Immagini
     category:
       label: Categorie
     character:
