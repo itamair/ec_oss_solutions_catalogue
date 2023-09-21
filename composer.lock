@@ -3630,7 +3630,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/sandbox/itamair-3372413.git",
-                "reference": "3cdfbca90baf92acc03119edd499699563e236a2"
+                "reference": "d75010615741bb98e8a14bcda17ca9f2c39b1cb5"
             },
             "require": {
                 "drupal/config_update": "2.0.0-alpha3",
@@ -3662,7 +3662,7 @@
                 "source": "https://git.drupalcode.org/sandbox/itamair-3372413.git",
                 "merges_requests": "https://git.drupalcode.org/sandbox/itamair-3372413/-/merge_requests"
             },
-            "time": "2023-09-21T12:33:01+00:00"
+            "time": "2023-09-21T12:57:21+00:00"
         },
         {
             "name": "drupal/examples",
